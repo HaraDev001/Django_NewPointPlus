@@ -1,0 +1,29 @@
+{
+  "name": "utils",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "build:dev": "tsc",
+    "build:prod": "tsc --removeComments",
+    "watch": "tsc --watch --incremental",
+    "lint": "prettier --check src/**/*.ts",
+    "fmt": "prettier --write src/**/*.ts",
+    "test:unit": "jest --passWithNoTests"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "husky": "^6.0.0",
+    "jest": "^27.0.5",
+    "lint-staged": "^11.0.0",
+    "prettier": "2.3.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4"
+  }
+}

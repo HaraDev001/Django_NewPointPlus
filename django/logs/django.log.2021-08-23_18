@@ -1,0 +1,1119 @@
+ [DEBUG] [2021-08-23 16:33:47] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 16:33:48] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 16:34:23] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 16:34:23] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 16:39:35] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 16:39:36] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 16:39:36] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 16:39:36] [utils] (0.006) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:39:36] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:39:36] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:39:41] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:39:42] [utils] (0.145) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:39:42] [utils] (0.008) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:39:42] [utils] (0.034) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:39:42] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:39:42] [utils] (0.035) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:39:42] [schema] CREATE TABLE `business_type` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `business_type_name` varchar(191) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 16:39:42] [utils] (0.124) CREATE TABLE `business_type` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `business_type_name` varchar(191) NOT NULL); args=None
+ [DEBUG] [2021-08-23 16:39:42] [utils] (0.021) SELECT engine FROM information_schema.tables WHERE table_name = 'business_type'; args=['business_type']
+ [DEBUG] [2021-08-23 16:39:42] [utils] (0.002) SELECT engine FROM information_schema.tables WHERE table_name = 'business_type'; args=['business_type']
+ [DEBUG] [2021-08-23 16:39:42] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'business_type'; args=['business_type']
+ [DEBUG] [2021-08-23 16:39:42] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'business_type'; args=['business_type']
+ [DEBUG] [2021-08-23 16:39:42] [schema] ALTER TABLE `provider` DROP COLUMN `auto_send_email`; (params ())
+ [DEBUG] [2021-08-23 16:39:42] [utils] (0.006) None; args=()
+ [DEBUG] [2021-08-23 16:39:52] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 16:39:53] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 16:39:53] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 16:39:58] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:39:58] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:39:58] [utils] (0.001) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:39:58] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:39:58] [utils] (0.041) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:39:58] [utils] (0.002) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:39:58] [utils] (0.037) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:39:58] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:39:58] [utils] (0.040) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:39:58] [schema] CREATE TABLE `business_type` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `business_type_name` varchar(191) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 16:39:58] [utils] (0.005) None; args=None
+ [DEBUG] [2021-08-23 16:41:51] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 16:41:51] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 16:41:51] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 16:41:51] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:41:51] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:41:51] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:41:56] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:41:56] [utils] (0.062) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:41:56] [utils] (0.002) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:41:57] [utils] (0.035) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:41:57] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:41:57] [utils] (0.041) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:41:57] [schema] CREATE TABLE `business_type` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `business_type_name` varchar(191) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 16:41:57] [utils] (0.001) None; args=None
+ [DEBUG] [2021-08-23 16:42:14] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 16:42:14] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 16:42:14] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 16:42:14] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:42:14] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:42:14] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:42:14] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:42:14] [utils] (0.035) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:42:14] [utils] (0.002) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:42:14] [utils] (0.036) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:42:14] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:42:14] [utils] (0.038) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:42:14] [schema] CREATE TABLE `business_type` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `business_type_name` varchar(191) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 16:42:14] [utils] (0.001) None; args=None
+ [DEBUG] [2021-08-23 16:47:11] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 16:47:12] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 16:47:12] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 16:47:12] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:47:12] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:47:12] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:47:12] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:47:12] [utils] (0.040) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:47:12] [utils] (0.002) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:47:12] [utils] (0.034) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:47:12] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:47:12] [utils] (0.039) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:47:12] [schema] CREATE TABLE `business_type` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `business_type_name` varchar(191) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 16:47:12] [utils] (0.039) CREATE TABLE `business_type` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `business_type_name` varchar(191) NOT NULL); args=None
+ [DEBUG] [2021-08-23 16:47:12] [utils] (0.004) SELECT engine FROM information_schema.tables WHERE table_name = 'business_type'; args=['business_type']
+ [DEBUG] [2021-08-23 16:47:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'business_type'; args=['business_type']
+ [DEBUG] [2021-08-23 16:47:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'business_type'; args=['business_type']
+ [DEBUG] [2021-08-23 16:47:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'business_type'; args=['business_type']
+ [DEBUG] [2021-08-23 16:47:12] [schema] ALTER TABLE `provider` DROP COLUMN `auto_send_email`; (params ())
+ [DEBUG] [2021-08-23 16:47:12] [utils] (0.002) None; args=()
+ [DEBUG] [2021-08-23 16:47:40] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 16:47:41] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 16:47:41] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 16:47:46] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:47:46] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:47:46] [utils] (0.001) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:47:46] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:47:46] [utils] (0.037) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:47:46] [utils] (0.002) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:47:46] [utils] (0.036) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:47:46] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:47:46] [utils] (0.042) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:47:46] [schema] CREATE TABLE `business_type` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `business_type_name` varchar(191) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 16:47:46] [utils] (0.003) None; args=None
+ [DEBUG] [2021-08-23 16:50:52] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 16:50:52] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 16:50:52] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 16:50:52] [utils] (0.001) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:50:52] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:50:52] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:50:58] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:50:58] [utils] (0.058) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:50:58] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:50:58] [utils] (0.036) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:50:58] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:50:58] [utils] (0.037) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:50:58] [schema] ALTER TABLE `provider` DROP COLUMN `auto_send_email`; (params ())
+ [DEBUG] [2021-08-23 16:50:58] [utils] (0.002) None; args=()
+ [DEBUG] [2021-08-23 16:51:22] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 16:51:23] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 16:51:23] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 16:51:28] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:51:28] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:51:28] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:51:28] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:51:28] [utils] (0.035) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:51:28] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:51:28] [utils] (0.040) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:51:28] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:51:28] [utils] (0.039) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:51:28] [schema] ALTER TABLE `provider` DROP COLUMN `auto_send_email`; (params ())
+ [DEBUG] [2021-08-23 16:51:28] [utils] (0.003) None; args=()
+ [DEBUG] [2021-08-23 16:53:26] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 16:53:26] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 16:53:26] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 16:53:31] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:53:31] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:53:31] [utils] (0.001) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:53:31] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.037) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.037) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.041) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.037) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',)
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'admin' AND `django_content_type`.`model` = 'logentry') LIMIT 21; args=('admin', 'logentry')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.002) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (1) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(1,)
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',)
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',)
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'permission') LIMIT 21; args=('auth', 'permission')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'group') LIMIT 21; args=('auth', 'group')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'user') LIMIT 21; args=('auth', 'user')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.002) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (2, 3, 4) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(2, 3, 4)
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',)
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',)
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'contenttypes' AND `django_content_type`.`model` = 'contenttype') LIMIT 21; args=('contenttypes', 'contenttype')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (5) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(5,)
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',)
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',)
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'sessions' AND `django_content_type`.`model` = 'session') LIMIT 21; args=('sessions', 'session')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (6) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(6,)
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',)
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'rest_framework_simplejwt'; args=('rest_framework_simplejwt',)
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'rest_framework_simplejwt'; args=('rest_framework_simplejwt',)
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'database'; args=('database',)
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.012) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('database', 'applycampaign'), ('database', 'consoleaccount'), ('database', 'industry'), ('database', 'officialposition'), ('database', 'provider'), ('database', 'transactioncategory'), ('database', 'useconditionconfig'), ('database', 'value'), ('database', 'terminalmanagementtag'), ('database', 'shopmanagementtag'), ('database', 'request'), ('database', 'companymanagementtag'), ('database', 'cardtransaction'), ('database', 'cardconfigpayment'), ('database', 'cardconfigcharge'), ('database', 'campaignapplyrule'), ('database', 'bonus'); args=('database', 'applycampaign', 'database', 'consoleaccount', 'database', 'industry', 'database', 'officialposition', 'database', 'provider', 'database', 'transactioncategory', 'database', 'useconditionconfig', 'database', 'value', 'database', 'terminalmanagementtag', 'database', 'shopmanagementtag', 'database', 'request', 'database', 'companymanagementtag', 'database', 'cardtransaction', 'database', 'cardconfigpayment', 'database', 'cardconfigcharge', 'database', 'campaignapplyrule', 'database', 'bonus')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'accounting') LIMIT 21; args=('database', 'accounting')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'applycampaign') LIMIT 21; args=('database', 'applycampaign')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'bonusconfig') LIMIT 21; args=('database', 'bonusconfig')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'campaign') LIMIT 21; args=('database', 'campaign')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'card') LIMIT 21; args=('database', 'card')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'cardconfig') LIMIT 21; args=('database', 'cardconfig')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'company') LIMIT 21; args=('database', 'company')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'consoleaccount') LIMIT 21; args=('database', 'consoleaccount')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'consumer') LIMIT 21; args=('database', 'consumer')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'industry') LIMIT 21; args=('database', 'industry')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'managementtag') LIMIT 21; args=('database', 'managementtag')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'officialposition') LIMIT 21; args=('database', 'officialposition')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'provider') LIMIT 21; args=('database', 'provider')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'shop') LIMIT 21; args=('database', 'shop')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'terminal') LIMIT 21; args=('database', 'terminal')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'transactioncategory') LIMIT 21; args=('database', 'transactioncategory')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'useconditionconfig') LIMIT 21; args=('database', 'useconditionconfig')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'valueconfig') LIMIT 21; args=('database', 'valueconfig')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'value') LIMIT 21; args=('database', 'value')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'transaction') LIMIT 21; args=('database', 'transaction')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'terminalmanagementtag') LIMIT 21; args=('database', 'terminalmanagementtag')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'shopmanagementtag') LIMIT 21; args=('database', 'shopmanagementtag')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'request') LIMIT 21; args=('database', 'request')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'companymanagementtag') LIMIT 21; args=('database', 'companymanagementtag')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'cardtransaction') LIMIT 21; args=('database', 'cardtransaction')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'carddetail') LIMIT 21; args=('database', 'carddetail')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'cardconfigpayment') LIMIT 21; args=('database', 'cardconfigpayment')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'cardconfigcharge') LIMIT 21; args=('database', 'cardconfigcharge')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'campaignapplyrule') LIMIT 21; args=('database', 'campaignapplyrule')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'bonus') LIMIT 21; args=('database', 'bonus')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'batchwaitingapplycampaign') LIMIT 21; args=('database', 'batchwaitingapplycampaign')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.004) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (29, 30, 31, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(29, 30, 31, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60)
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.011) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add キャンペーン適用履歴情報', 44, 'add_applycampaign'), ('Can change キャンペーン適用履歴情報', 44, 'change_applycampaign'), ('Can delete キャンペーン適用履歴情報', 44, 'delete_applycampaign'), ('Can view キャンペーン適用履歴情報', 44, 'view_applycampaign'), ('Can add 管理コンソールアカウント情報', 45, 'add_consoleaccount'), ('Can change 管理コンソールアカウント情報', 45, 'change_consoleaccount'), ('Can delete 管理コンソールアカウント情報', 45, 'delete_consoleaccount'), ('Can view 管理コンソールアカウント情報', 45, 'view_consoleaccount'), ('Can add 業種情報', 46, 'add_industry'), ('Can change 業種情報', 46, 'change_industry'), ('Can delete 業種情報', 46, 'delete_industry'), ('Can view 業種情報', 46, 'view_industry'), ('Can add 店舗情報', 47, 'add_officialposition'), ('Can change 店舗情報', 47, 'change_officialposition'), ('Can delete 店舗情報', 47, 'delete_officialposition'), ('Can view 店舗情報', 47, 'view_officialposition'), ('Can add 事業者情報', 48, 'add_provider'), ('Can change 事業者情報', 48, 'change_provider'), ('Can delete 事業者情報', 48, 'delete_provider'), ('Can view 事業者情報', 48, 'view_provider'), ('Can add 取引種別情報', 49, 'add_transactioncategory'), ('Can change 取引種別情報', 49, 'change_transactioncategory'), ('Can delete 取引種別情報', 49, 'delete_transactioncategory'), ('Can view 取引種別情報', 49, 'view_transactioncategory'), ('Can add 利用制限設定情報', 50, 'add_useconditionconfig'), ('Can change 利用制限設定情報', 50, 'change_useconditionconfig'), ('Can delete 利用制限設定情報', 50, 'delete_useconditionconfig'), ('Can view 利用制限設定情報', 50, 'view_useconditionconfig'), ('Can add バリュー情報', 51, 'add_value'), ('Can change バリュー情報', 51, 'change_value'), ('Can delete バリュー情報', 51, 'delete_value'), ('Can view バリュー情報', 51, 'view_value'), ('Can add 企業用管理タグ情報', 52, 'add_terminalmanagementtag'), ('Can change 企業用管理タグ情報', 52, 'change_terminalmanagementtag'), ('Can delete 企業用管理タグ情報', 52, 'delete_terminalmanagementtag'), ('Can view 企業用管理タグ情報', 52, 'view_terminalmanagementtag'), ('Can add 店舗情報', 53, 'add_shopmanagementtag'), ('Can change 店舗情報', 53, 'change_shopmanagementtag'), ('Can delete 店舗情報', 53, 'delete_shopmanagementtag'), ('Can view 店舗情報', 53, 'view_shopmanagementtag'), ('Can add 申請情報', 54, 'add_request'), ('Can change 申請情報', 54, 'change_request'), ('Can delete 申請情報', 54, 'delete_request'), ('Can view 申請情報', 54, 'view_request'), ('Can add 企業用管理タグ情報', 55, 'add_companymanagementtag'), ('Can change 企業用管理タグ情報', 55, 'change_companymanagementtag'), ('Can delete 企業用管理タグ情報', 55, 'delete_companymanagementtag'), ('Can view 企業用管理タグ情報', 55, 'view_companymanagementtag'), ('Can add カード取引情報', 56, 'add_cardtransaction'), ('Can change カード取引情報', 56, 'change_cardtransaction'), ('Can delete カード取引情報', 56, 'delete_cardtransaction'), ('Can view カード取引情報', 56, 'view_cardtransaction'), ('Can add カード決済設定情報', 57, 'add_cardconfigpayment'), ('Can change カード決済設定情報', 57, 'change_cardconfigpayment'), ('Can delete カード決済設定情報', 57, 'delete_cardconfigpayment'), ('Can view カード決済設定情報', 57, 'view_cardconfigpayment'), ('Can add カードチャージ設定情報', 58, 'add_cardconfigcharge'), ('Can change カードチャージ設定情報', 58, 'change_cardconfigcharge'), ('Can delete カードチャージ設定情報', 58, 'delete_cardconfigcharge'), ('Can view カードチャージ設定情報', 58, 'view_cardconfigcharge'), ('Can add キャンペーン適用条件情報', 59, 'add_campaignapplyrule'), ('Can change キャンペーン適用条件情報', 59, 'change_campaignapplyrule'), ('Can delete キャンペーン適用条件情報', 59, 'delete_campaignapplyrule'), ('Can view キャンペーン適用条件情報', 59, 'view_campaignapplyrule'), ('Can add 店舗情報', 60, 'add_bonus'), ('Can change 店舗情報', 60, 'change_bonus'), ('Can delete 店舗情報', 60, 'delete_bonus'), ('Can view 店舗情報', 60, 'view_bonus'); args=('Can add キャンペーン適用履歴情報', 44, 'add_applycampaign', 'Can change キャンペーン適用履歴情報', 44, 'change_applycampaign', 'Can delete キャンペーン適用履歴情報', 44, 'delete_applycampaign', 'Can view キャンペーン適用履歴情報', 44, 'view_applycampaign', 'Can add 管理コンソールアカウント情報', 45, 'add_consoleaccount', 'Can change 管理コンソールアカウント情報', 45, 'change_consoleaccount', 'Can delete 管理コンソールアカウント情報', 45, 'delete_consoleaccount', 'Can view 管理コンソールアカウント情報', 45, 'view_consoleaccount', 'Can add 業種情報', 46, 'add_industry', 'Can change 業種情報', 46, 'change_industry', 'Can delete 業種情報', 46, 'delete_industry', 'Can view 業種情報', 46, 'view_industry', 'Can add 店舗情報', 47, 'add_officialposition', 'Can change 店舗情報', 47, 'change_officialposition', 'Can delete 店舗情報', 47, 'delete_officialposition', 'Can view 店舗情報', 47, 'view_officialposition', 'Can add 事業者情報', 48, 'add_provider', 'Can change 事業者情報', 48, 'change_provider', 'Can delete 事業者情報', 48, 'delete_provider', 'Can view 事業者情報', 48, 'view_provider', 'Can add 取引種別情報', 49, 'add_transactioncategory', 'Can change 取引種別情報', 49, 'change_transactioncategory', 'Can delete 取引種別情報', 49, 'delete_transactioncategory', 'Can view 取引種別情報', 49, 'view_transactioncategory', 'Can add 利用制限設定情報', 50, 'add_useconditionconfig', 'Can change 利用制限設定情報', 50, 'change_useconditionconfig', 'Can delete 利用制限設定情報', 50, 'delete_useconditionconfig', 'Can view 利用制限設定情報', 50, 'view_useconditionconfig', 'Can add バリュー情報', 51, 'add_value', 'Can change バリュー情報', 51, 'change_value', 'Can delete バリュー情報', 51, 'delete_value', 'Can view バリュー情報', 51, 'view_value', 'Can add 企業用管理タグ情報', 52, 'add_terminalmanagementtag', 'Can change 企業用管理タグ情報', 52, 'change_terminalmanagementtag', 'Can delete 企業用管理タグ情報', 52, 'delete_terminalmanagementtag', 'Can view 企業用管理タグ情報', 52, 'view_terminalmanagementtag', 'Can add 店舗情報', 53, 'add_shopmanagementtag', 'Can change 店舗情報', 53, 'change_shopmanagementtag', 'Can delete 店舗情報', 53, 'delete_shopmanagementtag', 'Can view 店舗情報', 53, 'view_shopmanagementtag', 'Can add 申請情報', 54, 'add_request', 'Can change 申請情報', 54, 'change_request', 'Can delete 申請情報', 54, 'delete_request', 'Can view 申請情報', 54, 'view_request', 'Can add 企業用管理タグ情報', 55, 'add_companymanagementtag', 'Can change 企業用管理タグ情報', 55, 'change_companymanagementtag', 'Can delete 企業用管理タグ情報', 55, 'delete_companymanagementtag', 'Can view 企業用管理タグ情報', 55, 'view_companymanagementtag', 'Can add カード取引情報', 56, 'add_cardtransaction', 'Can change カード取引情報', 56, 'change_cardtransaction', 'Can delete カード取引情報', 56, 'delete_cardtransaction', 'Can view カード取引情報', 56, 'view_cardtransaction', 'Can add カード決済設定情報', 57, 'add_cardconfigpayment', 'Can change カード決済設定情報', 57, 'change_cardconfigpayment', 'Can delete カード決済設定情報', 57, 'delete_cardconfigpayment', 'Can view カード決済設定情報', 57, 'view_cardconfigpayment', 'Can add カードチャージ設定情報', 58, 'add_cardconfigcharge', 'Can change カードチャージ設定情報', 58, 'change_cardconfigcharge', 'Can delete カードチャージ設定情報', 58, 'delete_cardconfigcharge', 'Can view カードチャージ設定情報', 58, 'view_cardconfigcharge', 'Can add キャンペーン適用条件情報', 59, 'add_campaignapplyrule', 'Can change キャンペーン適用条件情報', 59, 'change_campaignapplyrule', 'Can delete キャンペーン適用条件情報', 59, 'delete_campaignapplyrule', 'Can view キャンペーン適用条件情報', 59, 'view_campaignapplyrule', 'Can add 店舗情報', 60, 'add_bonus', 'Can change 店舗情報', 60, 'change_bonus', 'Can delete 店舗情報', 60, 'delete_bonus', 'Can view 店舗情報', 60, 'view_bonus')
+ [DEBUG] [2021-08-23 16:53:32] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'database'; args=('database',)
+ [DEBUG] [2021-08-23 16:55:18] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 16:55:19] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 16:55:19] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 16:55:24] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:55:24] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:55:24] [utils] (0.060) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:55:24] [utils] (0.002) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:55:57] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 16:56:02] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:56:02] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:56:02] [utils] (0.001) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 16:56:02] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 16:56:03] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 16:56:03] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 16:56:03] [utils] (0.036) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:56:03] [utils] (0.002) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:56:03] [utils] (0.038) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:56:03] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 16:56:03] [utils] (0.039) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 16:56:03] [schema] CREATE TABLE `business_type` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `business_type_name` varchar(191) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 16:56:03] [utils] (0.003) None; args=None
+ [DEBUG] [2021-08-23 16:57:17] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 16:57:18] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 16:57:18] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 17:05:31] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 17:05:31] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 17:05:31] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 17:11:45] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 17:11:46] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 17:11:46] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 17:11:51] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 17:11:51] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 17:11:51] [utils] (0.064) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 17:11:51] [utils] (0.002) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 17:12:06] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 17:12:11] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 17:12:11] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 17:12:11] [utils] (0.001) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 17:12:11] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 17:12:12] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.034) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.002) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.036) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.037) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 17:12:12] [schema] CREATE TABLE `business_type` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `business_type_name` varchar(191) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.038) CREATE TABLE `business_type` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `business_type_name` varchar(191) NOT NULL); args=None
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.004) SELECT engine FROM information_schema.tables WHERE table_name = 'business_type'; args=['business_type']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'business_type'; args=['business_type']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'business_type'; args=['business_type']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'business_type'; args=['business_type']
+ [DEBUG] [2021-08-23 17:12:12] [schema] CREATE TABLE `corp_info` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `host` varchar(256) NOT NULL, `company_name` varchar(256) NOT NULL, `service_name` varchar(256) NOT NULL, `logo_url` varchar(256) NOT NULL, `privacy_policy_url` varchar(256) NOT NULL, `privacy_policy_regulation_date` datetime(6) NOT NULL, `privacy_policy_version` varchar(256) NULL, `terms_of_service_url` varchar(256) NOT NULL, `terms_of_service_regulation_date` datetime(6) NOT NULL, `terms_of_service_version` varchar(256) NOT NULL, `copyright_notice` varchar(256) NOT NULL, `e_money_card` integer NOT NULL, `prepaid_value` integer NOT NULL, `payable_bonus` integer NOT NULL, `exchange_bonus` integer NOT NULL); (params None)
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.054) CREATE TABLE `corp_info` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `host` varchar(256) NOT NULL, `company_name` varchar(256) NOT NULL, `service_name` varchar(256) NOT NULL, `logo_url` varchar(256) NOT NULL, `privacy_policy_url` varchar(256) NOT NULL, `privacy_policy_regulation_date` datetime(6) NOT NULL, `privacy_policy_version` varchar(256) NULL, `terms_of_service_url` varchar(256) NOT NULL, `terms_of_service_regulation_date` datetime(6) NOT NULL, `terms_of_service_version` varchar(256) NOT NULL, `copyright_notice` varchar(256) NOT NULL, `e_money_card` integer NOT NULL, `prepaid_value` integer NOT NULL, `payable_bonus` integer NOT NULL, `exchange_bonus` integer NOT NULL); args=None
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'corp_info'; args=['corp_info']
+ [DEBUG] [2021-08-23 17:12:12] [schema] ALTER TABLE `provider` DROP COLUMN `auto_send_email`; (params ())
+ [DEBUG] [2021-08-23 17:12:12] [utils] (0.003) None; args=()
+ [DEBUG] [2021-08-23 17:21:01] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 17:21:02] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 17:21:02] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 17:23:44] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 17:23:44] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 17:23:44] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 17:41:02] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 17:41:02] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 17:41:02] [base] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/usr/src/app/./config/middleware.py", line 52, in process_request
+    self.extra['url_name'] = resolve(request.path).url_name
+  File "/usr/local/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 585, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'v1_shop.urls' from '/usr/src/app/./v1_shop/urls.py'> (None:None) 'shop/api/v1/'>], [<URLResolver <module 'v1_console.urls' from '/usr/src/app/./v1_console/urls.py'> (None:None) 'console/api/v1/'>], [<URLResolver <module 'v1_card.urls' from '/usr/src/app/./v1_card/urls.py'> (None:None) 'card/api/v1/'>], [<URLResolver <module 'v1_terminal.urls' from '/usr/src/app/./v1_terminal/urls.py'> (None:None) 'terminal/api/v1/'>], [<URLResolver <module 'rest_framework.urls' from '/usr/local/lib/python3.8/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>], [<URLPattern 'api/schema/' [name='schema']>], [<URLPattern 'api/schema/swagger-ui/' [name='swagger-ui']>], [<URLPattern 'api/schema/redoc/' [name='redoc']>]], 'path': 'shop/api/v1'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 848, in _resolve_lookup
+    raise VariableDoesNotExist("Failed lookup for key "
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'v1_shop.urls' from '/usr/src/app/./v1_shop/urls.py'> (None:None) 'shop/api/v1/'>
+ [DEBUG] [2021-08-23 17:41:02] [base] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/usr/src/app/./config/middleware.py", line 52, in process_request
+    self.extra['url_name'] = resolve(request.path).url_name
+  File "/usr/local/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 585, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'v1_shop.urls' from '/usr/src/app/./v1_shop/urls.py'> (None:None) 'shop/api/v1/'>], [<URLResolver <module 'v1_console.urls' from '/usr/src/app/./v1_console/urls.py'> (None:None) 'console/api/v1/'>], [<URLResolver <module 'v1_card.urls' from '/usr/src/app/./v1_card/urls.py'> (None:None) 'card/api/v1/'>], [<URLResolver <module 'v1_terminal.urls' from '/usr/src/app/./v1_terminal/urls.py'> (None:None) 'terminal/api/v1/'>], [<URLResolver <module 'rest_framework.urls' from '/usr/local/lib/python3.8/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>], [<URLPattern 'api/schema/' [name='schema']>], [<URLPattern 'api/schema/swagger-ui/' [name='swagger-ui']>], [<URLPattern 'api/schema/redoc/' [name='redoc']>]], 'path': 'shop/api/v1'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 848, in _resolve_lookup
+    raise VariableDoesNotExist("Failed lookup for key "
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'v1_console.urls' from '/usr/src/app/./v1_console/urls.py'> (None:None) 'console/api/v1/'>
+ [DEBUG] [2021-08-23 17:41:02] [base] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/usr/src/app/./config/middleware.py", line 52, in process_request
+    self.extra['url_name'] = resolve(request.path).url_name
+  File "/usr/local/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 585, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'v1_shop.urls' from '/usr/src/app/./v1_shop/urls.py'> (None:None) 'shop/api/v1/'>], [<URLResolver <module 'v1_console.urls' from '/usr/src/app/./v1_console/urls.py'> (None:None) 'console/api/v1/'>], [<URLResolver <module 'v1_card.urls' from '/usr/src/app/./v1_card/urls.py'> (None:None) 'card/api/v1/'>], [<URLResolver <module 'v1_terminal.urls' from '/usr/src/app/./v1_terminal/urls.py'> (None:None) 'terminal/api/v1/'>], [<URLResolver <module 'rest_framework.urls' from '/usr/local/lib/python3.8/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>], [<URLPattern 'api/schema/' [name='schema']>], [<URLPattern 'api/schema/swagger-ui/' [name='swagger-ui']>], [<URLPattern 'api/schema/redoc/' [name='redoc']>]], 'path': 'shop/api/v1'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 848, in _resolve_lookup
+    raise VariableDoesNotExist("Failed lookup for key "
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'v1_card.urls' from '/usr/src/app/./v1_card/urls.py'> (None:None) 'card/api/v1/'>
+ [DEBUG] [2021-08-23 17:41:02] [base] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/usr/src/app/./config/middleware.py", line 52, in process_request
+    self.extra['url_name'] = resolve(request.path).url_name
+  File "/usr/local/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 585, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'v1_shop.urls' from '/usr/src/app/./v1_shop/urls.py'> (None:None) 'shop/api/v1/'>], [<URLResolver <module 'v1_console.urls' from '/usr/src/app/./v1_console/urls.py'> (None:None) 'console/api/v1/'>], [<URLResolver <module 'v1_card.urls' from '/usr/src/app/./v1_card/urls.py'> (None:None) 'card/api/v1/'>], [<URLResolver <module 'v1_terminal.urls' from '/usr/src/app/./v1_terminal/urls.py'> (None:None) 'terminal/api/v1/'>], [<URLResolver <module 'rest_framework.urls' from '/usr/local/lib/python3.8/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>], [<URLPattern 'api/schema/' [name='schema']>], [<URLPattern 'api/schema/swagger-ui/' [name='swagger-ui']>], [<URLPattern 'api/schema/redoc/' [name='redoc']>]], 'path': 'shop/api/v1'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 848, in _resolve_lookup
+    raise VariableDoesNotExist("Failed lookup for key "
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'v1_terminal.urls' from '/usr/src/app/./v1_terminal/urls.py'> (None:None) 'terminal/api/v1/'>
+ [DEBUG] [2021-08-23 17:41:02] [base] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/usr/src/app/./config/middleware.py", line 52, in process_request
+    self.extra['url_name'] = resolve(request.path).url_name
+  File "/usr/local/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 585, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'v1_shop.urls' from '/usr/src/app/./v1_shop/urls.py'> (None:None) 'shop/api/v1/'>], [<URLResolver <module 'v1_console.urls' from '/usr/src/app/./v1_console/urls.py'> (None:None) 'console/api/v1/'>], [<URLResolver <module 'v1_card.urls' from '/usr/src/app/./v1_card/urls.py'> (None:None) 'card/api/v1/'>], [<URLResolver <module 'v1_terminal.urls' from '/usr/src/app/./v1_terminal/urls.py'> (None:None) 'terminal/api/v1/'>], [<URLResolver <module 'rest_framework.urls' from '/usr/local/lib/python3.8/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>], [<URLPattern 'api/schema/' [name='schema']>], [<URLPattern 'api/schema/swagger-ui/' [name='swagger-ui']>], [<URLPattern 'api/schema/redoc/' [name='redoc']>]], 'path': 'shop/api/v1'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/template/base.py", line 848, in _resolve_lookup
+    raise VariableDoesNotExist("Failed lookup for key "
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_framework.urls' from '/usr/local/lib/python3.8/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) 'api-auth/'>
+ [WARNING] [2021-08-23 17:41:02] [log] Not Found: /shop/api/v1
+ [DEBUG] [2021-08-23 17:49:33] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 17:49:33] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 17:49:33] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 17:49:59] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 17:50:00] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 17:50:00] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 17:50:07] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 17:50:08] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 17:50:08] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 17:52:56] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 17:52:57] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [WARNING] [2021-08-23 17:52:57] [log] Not Found: /service/corp_info
+ [DEBUG] [2021-08-23 17:52:57] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 18:11:33] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 18:11:33] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 18:11:33] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 18:11:38] [schema] CREATE TABLE `django_migrations` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `app` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `applied` datetime(6) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:38] [schema] CREATE TABLE `django_content_type` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(100) NOT NULL, `app_label` varchar(100) NOT NULL, `model` varchar(100) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:38] [schema] ALTER TABLE `django_content_type` ADD CONSTRAINT `django_content_type_app_label_model_76bd3d3b_uniq` UNIQUE (`app_label`, `model`); (params ())
+ [DEBUG] [2021-08-23 18:11:38] [schema] CREATE TABLE `auth_permission` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(50) NOT NULL, `content_type_id` integer NOT NULL, `codename` varchar(100) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:39] [schema] CREATE TABLE `auth_group` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(80) NOT NULL UNIQUE); (params None)
+ [DEBUG] [2021-08-23 18:11:39] [schema] CREATE TABLE `auth_group_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `group_id` integer NOT NULL, `permission_id` integer NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:39] [schema] CREATE TABLE `auth_user` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `password` varchar(128) NOT NULL, `last_login` datetime(6) NOT NULL, `is_superuser` bool NOT NULL, `username` varchar(30) NOT NULL UNIQUE, `first_name` varchar(30) NOT NULL, `last_name` varchar(30) NOT NULL, `email` varchar(75) NOT NULL, `is_staff` bool NOT NULL, `is_active` bool NOT NULL, `date_joined` datetime(6) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:39] [schema] CREATE TABLE `auth_user_groups` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` integer NOT NULL, `group_id` integer NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:39] [schema] CREATE TABLE `auth_user_user_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` integer NOT NULL, `permission_id` integer NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:39] [schema] ALTER TABLE `auth_permission` ADD CONSTRAINT `auth_permission_content_type_id_codename_01ab375a_uniq` UNIQUE (`content_type_id`, `codename`); (params ())
+ [DEBUG] [2021-08-23 18:11:39] [schema] ALTER TABLE `auth_permission` ADD CONSTRAINT `auth_permission_content_type_id_2f476e4b_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:39] [schema] ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_permission_id_0cd325b0_uniq` UNIQUE (`group_id`, `permission_id`); (params ())
+ [DEBUG] [2021-08-23 18:11:39] [schema] ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_b120cbf9_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:39] [schema] ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissio_permission_id_84c5c92e_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:39] [schema] ALTER TABLE `auth_user_groups` ADD CONSTRAINT `auth_user_groups_user_id_group_id_94350c0c_uniq` UNIQUE (`user_id`, `group_id`); (params ())
+ [DEBUG] [2021-08-23 18:11:39] [schema] ALTER TABLE `auth_user_groups` ADD CONSTRAINT `auth_user_groups_user_id_6a12ed8b_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:39] [schema] ALTER TABLE `auth_user_groups` ADD CONSTRAINT `auth_user_groups_group_id_97559544_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:39] [schema] ALTER TABLE `auth_user_user_permissions` ADD CONSTRAINT `auth_user_user_permissions_user_id_permission_id_14a6b632_uniq` UNIQUE (`user_id`, `permission_id`); (params ())
+ [DEBUG] [2021-08-23 18:11:39] [schema] ALTER TABLE `auth_user_user_permissions` ADD CONSTRAINT `auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:39] [schema] ALTER TABLE `auth_user_user_permissions` ADD CONSTRAINT `auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:39] [schema] CREATE TABLE `django_admin_log` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `action_time` datetime(6) NOT NULL, `object_id` longtext NULL, `object_repr` varchar(200) NOT NULL, `action_flag` smallint UNSIGNED NOT NULL, `change_message` longtext NOT NULL, `content_type_id` integer NULL, `user_id` integer NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:40] [schema] ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:40] [schema] ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_user_id_c564eba6_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:40] [schema] ALTER TABLE `django_content_type` MODIFY `name` varchar(100) NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:40] [schema] ALTER TABLE `django_content_type` DROP COLUMN `name`; (params ())
+ [DEBUG] [2021-08-23 18:11:40] [schema] ALTER TABLE `auth_permission` MODIFY `name` varchar(255) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:40] [schema] ALTER TABLE `auth_user` MODIFY `email` varchar(254) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:40] [schema] ALTER TABLE `auth_user` MODIFY `last_login` datetime(6) NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:40] [schema] ALTER TABLE `auth_user` MODIFY `username` varchar(150) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:40] [schema] ALTER TABLE `auth_user` MODIFY `last_name` varchar(150) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:40] [schema] ALTER TABLE `auth_group` MODIFY `name` varchar(150) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:40] [schema] ALTER TABLE `auth_user` MODIFY `first_name` varchar(150) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:40] [schema] CREATE TABLE `accounting` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `accounting_type` integer NULL, `total_amount` integer NULL, `company_name` varchar(255) NULL, `shop_name` varchar(255) NULL, `terminal_number` varchar(255) NULL, `accounting_at` datetime(6) NULL, `card_id` varchar(255) NULL, `reference_accounting_id` varchar(32) NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:40] [schema] CREATE TABLE `apply_campaign` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `campaign_id` varchar(32) NOT NULL, `campaign_name` varchar(255) NOT NULL, `card_transaction_id` varchar(32) NOT NULL, `applied_at` datetime(6) NOT NULL, `bonus_id` varchar(32) NOT NULL, `bonus_category` integer NOT NULL, `bonus_grant_count` integer NOT NULL, `bonus_expired_at` date NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `bonus_config` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `reference_id` varchar(32) NOT NULL, `bonus_type` integer NOT NULL, `extend_expiration_count` integer NOT NULL, `extend_expiration_unit` integer NOT NULL, `start_available_date` datetime(6) NOT NULL, `end_available_date` datetime(6) NULL, `is_active` bool NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `campaign` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `name` varchar(255) NOT NULL, `apply_campaign_priority` integer NOT NULL, `start_campaign_at` datetime(6) NOT NULL, `end_campaign_at` datetime(6) NOT NULL, `note` longtext NULL, `bonus_type` integer NOT NULL, `bonus_grant_rule` varchar(256) NOT NULL, `bonus_grant_percent` double precision NULL, `bonus_grant_amount` integer NULL, `bonus_config_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `card` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `card_number` varchar(24) NOT NULL UNIQUE, `pin_number` varchar(255) NOT NULL, `magnetic_information` varchar(69) NULL UNIQUE, `status` integer NOT NULL, `activated_at` datetime(6) NULL, `destroyed_at` datetime(6) NULL, `is_locked` bool NOT NULL, `is_test` bool NOT NULL, `remarks` longtext NULL, `payable_available_total_balance` bigint NOT NULL, `replacement_source_card_number` varchar(255) NULL, `replacement_target_card_number` varchar(255) NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `card_config` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `card_name` varchar(255) NOT NULL, `card_type` varchar(3) NOT NULL, `card_design_url` longtext NOT NULL, `value_name` varchar(255) NOT NULL, `value_currency_unit` varchar(255) NOT NULL, `value_balance_limit` integer NOT NULL, `payable_bonus_name` varchar(255) NOT NULL, `payable_bonus_currency_unit` varchar(255) NOT NULL, `payable_bonus_balance_limit` integer NOT NULL, `exchange_bonus_name` varchar(255) NOT NULL, `exchange_bonus_currency_unit` varchar(255) NOT NULL, `exchange_bonus_balance_limit` integer NOT NULL, `start_available_date` datetime(6) NOT NULL, `end_available_date` datetime(6) NULL, `card_category` varchar(255) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `company` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `company_name` varchar(255) NOT NULL, `corporate_number` varchar(13) NOT NULL, `postal_code` varchar(7) NOT NULL, `address_pref` varchar(2) NOT NULL, `address_city` varchar(255) NOT NULL, `address_town` varchar(255) NULL, `address_other` varchar(255) NULL, `phone_number` varchar(15) NOT NULL, `available_service` varchar(255) NOT NULL, `available_transaction_type` varchar(255) NOT NULL, `start_available_date` date NOT NULL, `end_available_date` date NULL, `status` integer NOT NULL, `remarks` varchar(255) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `console_account` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `email` varchar(255) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `consumer` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `status` integer NOT NULL, `consumer_number` varchar(255) NOT NULL, `email` varchar(255) NOT NULL, `user_name` varchar(255) NOT NULL, `user_phonetic_name` varchar(255) NOT NULL, `nickname` varchar(255) NULL, `phone_number` varchar(255) NOT NULL, `birthday` date NOT NULL, `country` varchar(255) NOT NULL, `address_pref` varchar(255) NOT NULL, `address_city` varchar(255) NOT NULL, `address_town` varchar(255) NOT NULL, `address_other` varchar(255) NOT NULL, `gender` integer NOT NULL, `profession` varchar(255) NOT NULL, `news_notification_enabled` bool NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `industry` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `industry_name` varchar(255) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `management_tag` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `tag_name` varchar(256) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `official_position` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `provider` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `owner_name` varchar(255) NOT NULL, `owner_phonetic_name` varchar(255) NOT NULL, `owner_address_pref` varchar(2) NOT NULL, `owner_address_city` varchar(255) NOT NULL, `owner_address_town` varchar(255) NULL, `owner_address_other` varchar(255) NULL, `owner_birthday` date NOT NULL, `provider_name` varchar(255) NOT NULL, `provider_corporate_number` varchar(255) NOT NULL, `provider_postal_code` varchar(7) NOT NULL, `provider_address_pref` varchar(2) NOT NULL, `provider_address_city` varchar(255) NOT NULL, `provider_address_town` varchar(255) NULL, `provider_address_other` varchar(255) NULL, `provider_phone_number` varchar(15) NOT NULL, `provider_content` varchar(255) NOT NULL, `inquiry_phone_number` varchar(255) NOT NULL, `inquiry_email` varchar(255) NOT NULL, `inquiry_department` varchar(255) NOT NULL, `service_name` varchar(255) NOT NULL, `service_logo_url` longtext NOT NULL, `available_service` varchar(255) NOT NULL, `status` integer NOT NULL, `auto_send_email` varchar(255) NOT NULL, `withdrawal_date` integer NOT NULL, `start_available_date` datetime(6) NOT NULL, `end_available_date` datetime(6) NULL, `value_enabled_flag` bool NOT NULL, `physical_card_flag` bool NOT NULL, `payable_bonus_flag` bool NOT NULL, `balance_inquiry_page_flag` bool NOT NULL, `exchange_bonus_flag` bool NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `shop` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `shop_name` varchar(24) NOT NULL, `shop_name_english_characters` varchar(255) NOT NULL, `shop_number` varchar(255) NOT NULL, `postal_code` varchar(7) NOT NULL, `address_pref` varchar(255) NOT NULL, `address_city` varchar(255) NOT NULL, `address_town` varchar(255) NULL, `address_other` varchar(255) NULL, `phone_number` varchar(15) NOT NULL, `start_available_date` date NOT NULL, `end_available_date` date NULL, `company_id` char(32) NOT NULL, `industry_id` char(32) NOT NULL, `provider_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `shop_management_tags` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `shop_id` char(32) NOT NULL, `managementtag_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `terminal` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `terminal_type` integer NOT NULL, `terminal_number` varchar(255) NOT NULL, `start_available_date` date NOT NULL, `end_available_date` date NULL, `remarks` varchar(255) NULL, `status` integer NOT NULL, `company_id` char(32) NOT NULL, `provider_id` char(32) NOT NULL, `shop_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `terminal_management_tags` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `terminal_id` char(32) NOT NULL, `managementtag_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `transaction_category` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `category_name` varchar(255) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:41] [schema] CREATE TABLE `use_condition_config` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY); (params None)
+ [DEBUG] [2021-08-23 18:11:42] [schema] CREATE TABLE `value_config` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `reference_id` varchar(32) NOT NULL, `value_type` integer NOT NULL, `usage_limit_company_id` varchar(255) NULL, `usage_limit_shop_id` varchar(255) NULL, `usage_limit_management_tag_id` varchar(255) NULL, `usage_limit_transaction_type` varchar(255) NULL, `extend_expiration_count` integer NOT NULL, `extend_expiration_unit` integer NOT NULL, `start_available_date` datetime(6) NOT NULL, `end_available_date` datetime(6) NULL, `is_active` bool NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:42] [schema] CREATE TABLE `value` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `category` integer NOT NULL, `amount` integer NOT NULL, `expired_at` datetime(6) NOT NULL, `card_id` char(32) NOT NULL, `use_condition_config_id` char(32) NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:42] [schema] CREATE TABLE `transaction` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `transaction_number` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `id` char(32) NOT NULL, `transaction_at` datetime(6) NOT NULL, `category` smallint NOT NULL, `total_prepaid_value_amount` integer NOT NULL, `total_payable_bonus_amount` integer NOT NULL, `total_exchange_bonus_amount` integer NOT NULL, `campaign_apply_timing` smallint NOT NULL, `operator` varchar(255) NULL, `transaction_method` smallint NOT NULL, `transaction_total_amount` double precision NULL, `transaction_value_amount` double precision NULL, `transaction_payable_bonus_amount` double precision NULL, `transaction_exchange_bonus_amount` double precision NULL, `transaction_status` integer NULL, `product_exchange_bonus_balance` integer NULL, `payable_bonus_balance` integer NULL, `payable_bonus_grant` integer NULL, `payable_bonus_transaction_amount` integer NULL, `value_balance` integer NULL, `value_grant` integer NULL, `value_transaction_amount` integer NULL, `pos_id` varchar(32) NULL, `transaction_type` integer NOT NULL, `product_exchange_bonus_amount` integer NULL, `product_exchange_bonus_grant` integer NULL, `apply_campaign_ids` varchar(255) NULL, `accounting_id` char(32) NULL, `card_id` char(32) NOT NULL, `company_id` char(32) NULL, `consumer_id` char(32) NULL, `parent_transaction_id_id` bigint NULL, `provider_id` char(32) NOT NULL, `shop_id` char(32) NULL, `terminal_id` char(32) NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:42] [schema] CREATE TABLE `terminal_management_tag` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `name` varchar(255) NOT NULL, `company_id` char(32) NOT NULL, `provider_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:42] [schema] CREATE TABLE `shop_management_tag` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `name` varchar(255) NOT NULL, `provider_id` char(32) NOT NULL, `shop_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:42] [schema] CREATE TABLE `request` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `requested_at` datetime(6) NOT NULL, `request_category` integer NOT NULL, `request_status` integer NOT NULL, `approve_account` char(32) NULL, `request_account` char(32) NOT NULL, `transaction_id` bigint NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:42] [schema] ALTER TABLE `consumer` ADD COLUMN `provider_id` char(32) NOT NULL , ADD CONSTRAINT `consumer_provider_id_880667ad_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:42] [schema] ALTER TABLE `console_account` ADD COLUMN `official_position_id` char(32) NOT NULL , ADD CONSTRAINT `console_account_official_position_id_474003d4_fk_official_` FOREIGN KEY (`official_position_id`) REFERENCES `official_position`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:42] [schema] ALTER TABLE `console_account` ADD COLUMN `provider_id` char(32) NOT NULL , ADD CONSTRAINT `console_account_provider_id_ca147f5f_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:42] [schema] CREATE TABLE `company_management_tag` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `name` varchar(255) NOT NULL, `company_id` char(32) NOT NULL, `provider_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:42] [schema] CREATE TABLE `company_management_tags` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `company_id` char(32) NOT NULL, `managementtag_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:42] [schema] ALTER TABLE `company` ADD COLUMN `provider_id` char(32) NOT NULL , ADD CONSTRAINT `company_provider_id_9f913e66_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:42] [schema] CREATE TABLE `card_transaction` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `transaction_at` datetime(6) NOT NULL, `transaction_type` integer NOT NULL, `company_id` varchar(32) NULL, `shop_id` varchar(32) NULL, `terminal_id` varchar(32) NULL, `total_prepaid_value` integer NOT NULL, `total_payable_bonus` integer NOT NULL, `total_exchange_bonus` integer NOT NULL, `charge_method` integer NULL, `replace_source_card_id` varchar(32) NULL, `replace_target_card_id` varchar(32) NULL, `card_id` char(32) NOT NULL, `card_config_id` char(32) NOT NULL, `provider_id` char(32) NOT NULL, `transaction_id` bigint NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:43] [schema] CREATE TABLE `card_detail` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `balance` integer NOT NULL, `balance_type` integer NOT NULL, `expires_at` date NOT NULL, `bonus_config_id` char(32) NULL, `card_id` char(32) NOT NULL, `value_config_id` char(32) NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:43] [schema] CREATE TABLE `card_config_payment` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `payment_limit_daily` integer NOT NULL, `payment_limit_monthly` integer NOT NULL, `start_available_date` datetime(6) NOT NULL, `end_available_date` datetime(6) NULL, `card_config_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:43] [schema] CREATE TABLE `card_config_charge` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `charge_limit_daily` integer NOT NULL, `charge_limit_monthly` integer NOT NULL, `charge_unit` integer NOT NULL, `start_available_date` datetime(6) NOT NULL, `end_available_date` datetime(6) NULL, `card_config_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:43] [schema] ALTER TABLE `card_config` ADD COLUMN `provider_id` char(32) NOT NULL , ADD CONSTRAINT `card_config_provider_id_fe68a430_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:43] [schema] ALTER TABLE `card` ADD COLUMN `card_config_id` char(32) NOT NULL , ADD CONSTRAINT `card_card_config_id_97824704_fk_card_config_id` FOREIGN KEY (`card_config_id`) REFERENCES `card_config`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:43] [schema] ALTER TABLE `card` ADD COLUMN `consumer_id` char(32) NULL , ADD CONSTRAINT `card_consumer_id_c4be70a0_fk_consumer_id` FOREIGN KEY (`consumer_id`) REFERENCES `consumer`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:43] [schema] CREATE TABLE `campaign_apply_rule` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `rule_type` integer NOT NULL, `pref` varchar(255) NULL, `city` varchar(255) NULL, `transaction_type` smallint NULL, `min_transaction_amount` integer NULL, `max_transaction_amount` integer NULL, `min_transaction_count` integer NULL, `max_transaction_count` integer NULL, `min_transaction_days` integer NULL, `max_transaction_days` integer NULL, `is_activate_during_period` bool NULL, `min_age` integer NULL, `max_age` integer NULL, `birthday_from` date NULL, `birthday_to` date NULL, `campaign_id_id` char(32) NOT NULL, `company_id` char(32) NULL, `company_management_tag_id` char(32) NULL, `shop_id` char(32) NULL, `shop_management_tag_id` char(32) NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:43] [schema] ALTER TABLE `campaign` ADD COLUMN `campaign_apply_rule_id` char(32) NOT NULL , ADD CONSTRAINT `campaign_campaign_apply_rule__39f25829_fk_campaign_` FOREIGN KEY (`campaign_apply_rule_id`) REFERENCES `campaign_apply_rule`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:43] [schema] ALTER TABLE `campaign` ADD COLUMN `card_config_id` char(32) NOT NULL , ADD CONSTRAINT `campaign_card_config_id_d1a8e49b_fk_card_config_id` FOREIGN KEY (`card_config_id`) REFERENCES `card_config`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:43] [schema] ALTER TABLE `bonus_config` ADD COLUMN `usage_limit_company_id` char(32) NULL , ADD CONSTRAINT `bonus_config_usage_limit_company_id_6413e733_fk_company_id` FOREIGN KEY (`usage_limit_company_id`) REFERENCES `company`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:44] [schema] ALTER TABLE `bonus_config` ADD COLUMN `usage_limit_management_tag_id` char(32) NULL , ADD CONSTRAINT `bonus_config_usage_limit_manageme_4d930b2d_fk_managemen` FOREIGN KEY (`usage_limit_management_tag_id`) REFERENCES `management_tag`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:44] [schema] ALTER TABLE `bonus_config` ADD COLUMN `usage_limit_shop_id` char(32) NULL , ADD CONSTRAINT `bonus_config_usage_limit_shop_id_cd23c008_fk_shop_id` FOREIGN KEY (`usage_limit_shop_id`) REFERENCES `shop`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:44] [schema] CREATE TABLE `bonus` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `category` integer NOT NULL, `grant_count` integer NOT NULL, `use_count` integer NOT NULL, `expired_at` date NOT NULL, `card_id` char(32) NOT NULL, `use_condition_config_id` char(32) NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:44] [schema] CREATE TABLE `batch_waiting_apply_campaign` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `accounting_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:44] [schema] ALTER TABLE `accounting` ADD COLUMN `company_id` char(32) NULL , ADD CONSTRAINT `accounting_company_id_7668e6c4_fk_company_id` FOREIGN KEY (`company_id`) REFERENCES `company`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:44] [schema] ALTER TABLE `accounting` ADD COLUMN `consumer_id` char(32) NULL , ADD CONSTRAINT `accounting_consumer_id_fff0dc6b_fk_consumer_id` FOREIGN KEY (`consumer_id`) REFERENCES `consumer`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:44] [schema] ALTER TABLE `accounting` ADD COLUMN `shop_id` char(32) NULL , ADD CONSTRAINT `accounting_shop_id_0228b828_fk_shop_id` FOREIGN KEY (`shop_id`) REFERENCES `shop`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:44] [schema] ALTER TABLE `accounting` ADD COLUMN `terminal_id` char(32) NOT NULL , ADD CONSTRAINT `accounting_terminal_id_88274470_fk_terminal_id` FOREIGN KEY (`terminal_id`) REFERENCES `terminal`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:44] [schema] CREATE INDEX `terminal_company_594d29_idx` ON `terminal` (`company_id`, `shop_id`, `terminal_number`); (params None)
+ [DEBUG] [2021-08-23 18:11:44] [schema] ALTER TABLE `campaign` ADD CONSTRAINT `campaign_bonus_config_id_d6959d97_fk_bonus_config_id` FOREIGN KEY (`bonus_config_id`) REFERENCES `bonus_config` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:44] [schema] ALTER TABLE `shop` ADD CONSTRAINT `shop_company_id_d8130ba1_fk_company_id` FOREIGN KEY (`company_id`) REFERENCES `company` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:44] [schema] ALTER TABLE `shop` ADD CONSTRAINT `shop_industry_id_cbbcca9c_fk_industry_id` FOREIGN KEY (`industry_id`) REFERENCES `industry` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:45] [schema] ALTER TABLE `shop` ADD CONSTRAINT `shop_provider_id_caec9c3d_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:45] [schema] ALTER TABLE `shop_management_tags` ADD CONSTRAINT `shop_management_tags_shop_id_managementtag_id_10ca272a_uniq` UNIQUE (`shop_id`, `managementtag_id`); (params ())
+ [DEBUG] [2021-08-23 18:11:45] [schema] ALTER TABLE `shop_management_tags` ADD CONSTRAINT `shop_management_tags_shop_id_11b25a09_fk_shop_id` FOREIGN KEY (`shop_id`) REFERENCES `shop` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:45] [schema] ALTER TABLE `shop_management_tags` ADD CONSTRAINT `shop_management_tags_managementtag_id_10a1b943_fk_managemen` FOREIGN KEY (`managementtag_id`) REFERENCES `management_tag` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:45] [schema] ALTER TABLE `terminal` ADD CONSTRAINT `terminal_company_id_51781c4f_fk_company_id` FOREIGN KEY (`company_id`) REFERENCES `company` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:45] [schema] ALTER TABLE `terminal` ADD CONSTRAINT `terminal_provider_id_912479c9_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:45] [schema] ALTER TABLE `terminal` ADD CONSTRAINT `terminal_shop_id_4f79a9df_fk_shop_id` FOREIGN KEY (`shop_id`) REFERENCES `shop` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:45] [schema] ALTER TABLE `terminal_management_tags` ADD CONSTRAINT `terminal_management_tags_terminal_id_managementta_4e08ad8c_uniq` UNIQUE (`terminal_id`, `managementtag_id`); (params ())
+ [DEBUG] [2021-08-23 18:11:45] [schema] ALTER TABLE `terminal_management_tags` ADD CONSTRAINT `terminal_management_tags_terminal_id_3c907d29_fk_terminal_id` FOREIGN KEY (`terminal_id`) REFERENCES `terminal` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:45] [schema] ALTER TABLE `terminal_management_tags` ADD CONSTRAINT `terminal_management__managementtag_id_7913eed9_fk_managemen` FOREIGN KEY (`managementtag_id`) REFERENCES `management_tag` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:45] [schema] ALTER TABLE `value` ADD CONSTRAINT `value_card_id_9b48bf33_fk_card_id` FOREIGN KEY (`card_id`) REFERENCES `card` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:45] [schema] ALTER TABLE `value` ADD CONSTRAINT `value_use_condition_config_48de485c_fk_use_condi` FOREIGN KEY (`use_condition_config_id`) REFERENCES `use_condition_config` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:45] [schema] ALTER TABLE `transaction` ADD CONSTRAINT `transaction_accounting_id_5e2c5a4f_fk_accounting_id` FOREIGN KEY (`accounting_id`) REFERENCES `accounting` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:46] [schema] ALTER TABLE `transaction` ADD CONSTRAINT `transaction_card_id_ad342358_fk_card_id` FOREIGN KEY (`card_id`) REFERENCES `card` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:46] [schema] ALTER TABLE `transaction` ADD CONSTRAINT `transaction_company_id_17a32c65_fk_company_id` FOREIGN KEY (`company_id`) REFERENCES `company` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:46] [schema] ALTER TABLE `transaction` ADD CONSTRAINT `transaction_consumer_id_99d9317d_fk_consumer_id` FOREIGN KEY (`consumer_id`) REFERENCES `consumer` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:46] [schema] ALTER TABLE `transaction` ADD CONSTRAINT `transaction_parent_transaction_i_379779df_fk_transacti` FOREIGN KEY (`parent_transaction_id_id`) REFERENCES `transaction` (`transaction_number`); (params ())
+ [DEBUG] [2021-08-23 18:11:46] [schema] ALTER TABLE `transaction` ADD CONSTRAINT `transaction_provider_id_68eebf6d_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:46] [schema] ALTER TABLE `transaction` ADD CONSTRAINT `transaction_shop_id_8c06c1b5_fk_shop_id` FOREIGN KEY (`shop_id`) REFERENCES `shop` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:46] [schema] ALTER TABLE `transaction` ADD CONSTRAINT `transaction_terminal_id_76804322_fk_terminal_id` FOREIGN KEY (`terminal_id`) REFERENCES `terminal` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:46] [schema] ALTER TABLE `terminal_management_tag` ADD CONSTRAINT `terminal_management_tag_company_id_830e35bb_fk_terminal_id` FOREIGN KEY (`company_id`) REFERENCES `terminal` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:47] [schema] ALTER TABLE `terminal_management_tag` ADD CONSTRAINT `terminal_management_tag_provider_id_919cab74_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:47] [schema] ALTER TABLE `shop_management_tag` ADD CONSTRAINT `shop_management_tag_provider_id_7c6d258d_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:47] [schema] ALTER TABLE `shop_management_tag` ADD CONSTRAINT `shop_management_tag_shop_id_ba770026_fk_shop_id` FOREIGN KEY (`shop_id`) REFERENCES `shop` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:47] [schema] ALTER TABLE `request` ADD CONSTRAINT `request_approve_account_9bfd3668_fk_console_account_id` FOREIGN KEY (`approve_account`) REFERENCES `console_account` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:47] [schema] ALTER TABLE `request` ADD CONSTRAINT `request_request_account_c0fdeac6_fk_console_account_id` FOREIGN KEY (`request_account`) REFERENCES `console_account` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:47] [schema] ALTER TABLE `request` ADD CONSTRAINT `request_transaction_id_ee9aba32_fk_transacti` FOREIGN KEY (`transaction_id`) REFERENCES `transaction` (`transaction_number`); (params ())
+ [DEBUG] [2021-08-23 18:11:47] [schema] ALTER TABLE `company_management_tag` ADD CONSTRAINT `company_management_tag_company_id_c6128514_fk_company_id` FOREIGN KEY (`company_id`) REFERENCES `company` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:47] [schema] ALTER TABLE `company_management_tag` ADD CONSTRAINT `company_management_tag_provider_id_8a52dd49_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:47] [schema] ALTER TABLE `company_management_tags` ADD CONSTRAINT `company_management_tags_company_id_managementtag_aa20e3fb_uniq` UNIQUE (`company_id`, `managementtag_id`); (params ())
+ [DEBUG] [2021-08-23 18:11:47] [schema] ALTER TABLE `company_management_tags` ADD CONSTRAINT `company_management_tags_company_id_5ab6d91e_fk_company_id` FOREIGN KEY (`company_id`) REFERENCES `company` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:47] [schema] ALTER TABLE `company_management_tags` ADD CONSTRAINT `company_management_t_managementtag_id_0573f866_fk_managemen` FOREIGN KEY (`managementtag_id`) REFERENCES `management_tag` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:47] [schema] ALTER TABLE `card_transaction` ADD CONSTRAINT `card_transaction_card_id_aaa92ea0_fk_card_id` FOREIGN KEY (`card_id`) REFERENCES `card` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:47] [schema] ALTER TABLE `card_transaction` ADD CONSTRAINT `card_transaction_card_config_id_8de3da53_fk_card_config_id` FOREIGN KEY (`card_config_id`) REFERENCES `card_config` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:48] [schema] ALTER TABLE `card_transaction` ADD CONSTRAINT `card_transaction_provider_id_faa9c4de_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:48] [schema] ALTER TABLE `card_transaction` ADD CONSTRAINT `card_transaction_transaction_id_de06a4f9_fk_transacti` FOREIGN KEY (`transaction_id`) REFERENCES `transaction` (`transaction_number`); (params ())
+ [DEBUG] [2021-08-23 18:11:48] [schema] ALTER TABLE `card_detail` ADD CONSTRAINT `card_detail_bonus_config_id_d19820fa_fk_bonus_config_id` FOREIGN KEY (`bonus_config_id`) REFERENCES `bonus_config` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:48] [schema] ALTER TABLE `card_detail` ADD CONSTRAINT `card_detail_card_id_e56bf139_fk_card_id` FOREIGN KEY (`card_id`) REFERENCES `card` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:48] [schema] ALTER TABLE `card_detail` ADD CONSTRAINT `card_detail_value_config_id_b9b4e51e_fk_value_config_id` FOREIGN KEY (`value_config_id`) REFERENCES `value_config` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:48] [schema] ALTER TABLE `card_config_payment` ADD CONSTRAINT `card_config_payment_card_config_id_960e7524_fk_card_config_id` FOREIGN KEY (`card_config_id`) REFERENCES `card_config` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:48] [schema] ALTER TABLE `card_config_charge` ADD CONSTRAINT `card_config_charge_card_config_id_ff7c479c_fk_card_config_id` FOREIGN KEY (`card_config_id`) REFERENCES `card_config` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:48] [schema] ALTER TABLE `campaign_apply_rule` ADD CONSTRAINT `campaign_apply_rule_campaign_id_id_096009fb_fk_campaign_id` FOREIGN KEY (`campaign_id_id`) REFERENCES `campaign` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:48] [schema] ALTER TABLE `campaign_apply_rule` ADD CONSTRAINT `campaign_apply_rule_company_id_726158a7_fk_company_id` FOREIGN KEY (`company_id`) REFERENCES `company` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:48] [schema] ALTER TABLE `campaign_apply_rule` ADD CONSTRAINT `campaign_apply_rule_company_management_t_bdcb6b3d_fk_company_m` FOREIGN KEY (`company_management_tag_id`) REFERENCES `company_management_tag` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:48] [schema] ALTER TABLE `campaign_apply_rule` ADD CONSTRAINT `campaign_apply_rule_shop_id_5c278524_fk_shop_id` FOREIGN KEY (`shop_id`) REFERENCES `shop` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:49] [schema] ALTER TABLE `campaign_apply_rule` ADD CONSTRAINT `campaign_apply_rule_shop_management_tag__2efa92d9_fk_shop_mana` FOREIGN KEY (`shop_management_tag_id`) REFERENCES `shop_management_tag` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:49] [schema] ALTER TABLE `bonus` ADD CONSTRAINT `bonus_card_id_49e10abe_fk_card_id` FOREIGN KEY (`card_id`) REFERENCES `card` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:49] [schema] ALTER TABLE `bonus` ADD CONSTRAINT `bonus_use_condition_config_fd60c0ba_fk_use_condi` FOREIGN KEY (`use_condition_config_id`) REFERENCES `use_condition_config` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:49] [schema] ALTER TABLE `batch_waiting_apply_campaign` ADD CONSTRAINT `batch_waiting_apply__accounting_id_7302a8fb_fk_accountin` FOREIGN KEY (`accounting_id`) REFERENCES `accounting` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:49] [schema] CREATE TABLE `business_type` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `business_type_name` varchar(191) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:49] [schema] CREATE TABLE `corp_info` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `host` varchar(256) NOT NULL, `company_name` varchar(256) NOT NULL, `service_name` varchar(256) NOT NULL, `logo_url` varchar(256) NOT NULL, `privacy_policy_url` varchar(256) NOT NULL, `privacy_policy_regulation_date` datetime(6) NOT NULL, `privacy_policy_version` varchar(256) NULL, `terms_of_service_url` varchar(256) NOT NULL, `terms_of_service_regulation_date` datetime(6) NOT NULL, `terms_of_service_version` varchar(256) NOT NULL, `copyright_notice` varchar(256) NOT NULL, `e_money_card` integer NOT NULL, `prepaid_value` integer NOT NULL, `payable_bonus` integer NOT NULL, `exchange_bonus` integer NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:49] [schema] ALTER TABLE `provider` DROP COLUMN `auto_send_email`; (params ())
+ [DEBUG] [2021-08-23 18:11:49] [schema] ALTER TABLE `provider` DROP COLUMN `available_service`; (params ())
+ [DEBUG] [2021-08-23 18:11:49] [schema] ALTER TABLE `provider` DROP COLUMN `balance_inquiry_page_flag`; (params ())
+ [DEBUG] [2021-08-23 18:11:49] [schema] ALTER TABLE `provider` DROP COLUMN `exchange_bonus_flag`; (params ())
+ [DEBUG] [2021-08-23 18:11:49] [schema] ALTER TABLE `provider` DROP COLUMN `inquiry_department`; (params ())
+ [DEBUG] [2021-08-23 18:11:50] [schema] ALTER TABLE `provider` DROP COLUMN `inquiry_email`; (params ())
+ [DEBUG] [2021-08-23 18:11:50] [schema] ALTER TABLE `provider` DROP COLUMN `payable_bonus_flag`; (params ())
+ [DEBUG] [2021-08-23 18:11:50] [schema] ALTER TABLE `provider` DROP COLUMN `physical_card_flag`; (params ())
+ [DEBUG] [2021-08-23 18:11:50] [schema] ALTER TABLE `provider` DROP COLUMN `provider_content`; (params ())
+ [DEBUG] [2021-08-23 18:11:50] [schema] ALTER TABLE `provider` DROP COLUMN `provider_corporate_number`; (params ())
+ [DEBUG] [2021-08-23 18:11:50] [schema] ALTER TABLE `provider` DROP COLUMN `status`; (params ())
+ [DEBUG] [2021-08-23 18:11:50] [schema] ALTER TABLE `provider` DROP COLUMN `value_enabled_flag`; (params ())
+ [DEBUG] [2021-08-23 18:11:50] [schema] ALTER TABLE `provider` DROP COLUMN `withdrawal_date`; (params ())
+ [DEBUG] [2021-08-23 18:11:50] [schema] ALTER TABLE `shop` DROP FOREIGN KEY `shop_industry_id_cbbcca9c_fk_industry_id`; (params ())
+ [DEBUG] [2021-08-23 18:11:50] [schema] ALTER TABLE `shop` DROP COLUMN `industry_id`; (params ())
+ [DEBUG] [2021-08-23 18:11:50] [schema] ALTER TABLE `terminal` DROP COLUMN `remarks`; (params ())
+ [DEBUG] [2021-08-23 18:11:51] [schema] ALTER TABLE `terminal` DROP COLUMN `status`; (params ())
+ [DEBUG] [2021-08-23 18:11:51] [schema] ALTER TABLE `transaction_category` DROP COLUMN `category_name`; (params ())
+ [DEBUG] [2021-08-23 18:11:51] [schema] ALTER TABLE `provider` ADD COLUMN `provider_coporate_number` varchar(191) DEFAULT %s NOT NULL; (params [''])
+ [DEBUG] [2021-08-23 18:11:51] [schema] ALTER TABLE `provider` ALTER COLUMN `provider_coporate_number` DROP DEFAULT; (params [])
+ [DEBUG] [2021-08-23 18:11:51] [schema] ALTER TABLE `transaction_category` ADD COLUMN `transaction_category_name` varchar(191) DEFAULT %s NOT NULL; (params [''])
+ [DEBUG] [2021-08-23 18:11:51] [schema] ALTER TABLE `transaction_category` ALTER COLUMN `transaction_category_name` DROP DEFAULT; (params [])
+ [DEBUG] [2021-08-23 18:11:51] [schema] ALTER TABLE `provider` MODIFY `inquiry_phone_number` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:51] [schema] ALTER TABLE `provider` MODIFY `owner_address_city` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:51] [schema] ALTER TABLE `provider` MODIFY `owner_address_other` varchar(191) NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:51] [schema] ALTER TABLE `provider` ALTER COLUMN `owner_address_other` SET DEFAULT %s; (params [''])
+ [DEBUG] [2021-08-23 18:11:51] [schema] UPDATE `provider` SET `owner_address_other` = %s WHERE `owner_address_other` IS NULL; (params [''])
+ [DEBUG] [2021-08-23 18:11:51] [schema] ALTER TABLE `provider` MODIFY `owner_address_other` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:51] [schema] ALTER TABLE `provider` ALTER COLUMN `owner_address_other` DROP DEFAULT; (params [])
+ [DEBUG] [2021-08-23 18:11:51] [schema] ALTER TABLE `provider` MODIFY `owner_address_pref` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:52] [schema] ALTER TABLE `provider` MODIFY `owner_address_town` varchar(191) NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:52] [schema] ALTER TABLE `provider` ALTER COLUMN `owner_address_town` SET DEFAULT %s; (params [''])
+ [DEBUG] [2021-08-23 18:11:52] [schema] UPDATE `provider` SET `owner_address_town` = %s WHERE `owner_address_town` IS NULL; (params [''])
+ [DEBUG] [2021-08-23 18:11:52] [schema] ALTER TABLE `provider` MODIFY `owner_address_town` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:52] [schema] ALTER TABLE `provider` ALTER COLUMN `owner_address_town` DROP DEFAULT; (params [])
+ [DEBUG] [2021-08-23 18:11:52] [schema] ALTER TABLE `provider` MODIFY `owner_birthday` date NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:52] [schema] ALTER TABLE `provider` MODIFY `owner_name` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:52] [schema] ALTER TABLE `provider` MODIFY `owner_phonetic_name` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:52] [schema] ALTER TABLE `provider` MODIFY `provider_address_city` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:52] [schema] ALTER TABLE `provider` MODIFY `provider_address_other` varchar(191) NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:52] [schema] ALTER TABLE `provider` ALTER COLUMN `provider_address_other` SET DEFAULT %s; (params [''])
+ [DEBUG] [2021-08-23 18:11:52] [schema] UPDATE `provider` SET `provider_address_other` = %s WHERE `provider_address_other` IS NULL; (params [''])
+ [DEBUG] [2021-08-23 18:11:52] [schema] ALTER TABLE `provider` MODIFY `provider_address_other` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:52] [schema] ALTER TABLE `provider` ALTER COLUMN `provider_address_other` DROP DEFAULT; (params [])
+ [DEBUG] [2021-08-23 18:11:53] [schema] ALTER TABLE `provider` MODIFY `provider_address_pref` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:53] [schema] ALTER TABLE `provider` MODIFY `provider_address_town` varchar(191) NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:53] [schema] ALTER TABLE `provider` ALTER COLUMN `provider_address_town` SET DEFAULT %s; (params [''])
+ [DEBUG] [2021-08-23 18:11:53] [schema] UPDATE `provider` SET `provider_address_town` = %s WHERE `provider_address_town` IS NULL; (params [''])
+ [DEBUG] [2021-08-23 18:11:53] [schema] ALTER TABLE `provider` MODIFY `provider_address_town` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:53] [schema] ALTER TABLE `provider` ALTER COLUMN `provider_address_town` DROP DEFAULT; (params [])
+ [DEBUG] [2021-08-23 18:11:53] [schema] ALTER TABLE `provider` MODIFY `provider_name` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:53] [schema] ALTER TABLE `provider` MODIFY `provider_phone_number` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:53] [schema] ALTER TABLE `provider` MODIFY `provider_postal_code` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:53] [schema] ALTER TABLE `provider` MODIFY `service_logo_url` varchar(200) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:53] [schema] ALTER TABLE `provider` MODIFY `service_name` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:53] [schema] ALTER TABLE `shop` MODIFY `address_city` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:54] [schema] ALTER TABLE `shop` MODIFY `address_other` varchar(191) NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:54] [schema] ALTER TABLE `shop` ALTER COLUMN `address_other` SET DEFAULT %s; (params [''])
+ [DEBUG] [2021-08-23 18:11:54] [schema] UPDATE `shop` SET `address_other` = %s WHERE `address_other` IS NULL; (params [''])
+ [DEBUG] [2021-08-23 18:11:54] [schema] ALTER TABLE `shop` MODIFY `address_other` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:54] [schema] ALTER TABLE `shop` ALTER COLUMN `address_other` DROP DEFAULT; (params [])
+ [DEBUG] [2021-08-23 18:11:54] [schema] ALTER TABLE `shop` MODIFY `address_pref` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:54] [schema] ALTER TABLE `shop` MODIFY `address_town` varchar(191) NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:54] [schema] ALTER TABLE `shop` ALTER COLUMN `address_town` SET DEFAULT %s; (params [''])
+ [DEBUG] [2021-08-23 18:11:54] [schema] UPDATE `shop` SET `address_town` = %s WHERE `address_town` IS NULL; (params [''])
+ [DEBUG] [2021-08-23 18:11:54] [schema] ALTER TABLE `shop` MODIFY `address_town` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:54] [schema] ALTER TABLE `shop` ALTER COLUMN `address_town` DROP DEFAULT; (params [])
+ [DEBUG] [2021-08-23 18:11:54] [schema] ALTER TABLE `shop` MODIFY `phone_number` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:54] [schema] ALTER TABLE `shop` MODIFY `postal_code` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:54] [schema] ALTER TABLE `shop` MODIFY `shop_name` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:54] [schema] ALTER TABLE `shop` MODIFY `shop_name_english_characters` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:55] [schema] ALTER TABLE `shop` MODIFY `shop_number` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:55] [schema] ALTER TABLE `terminal` DROP FOREIGN KEY `terminal_provider_id_912479c9_fk_provider_id`; (params ())
+ [DEBUG] [2021-08-23 18:11:55] [schema] ALTER TABLE `terminal` ADD CONSTRAINT `terminal_provider_id_912479c9_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:11:55] [schema] ALTER TABLE `terminal` MODIFY `terminal_number` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:55] [schema] ALTER TABLE `terminal` MODIFY `terminal_type` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:11:55] [schema] ALTER TABLE `shop` ADD COLUMN `business_type_id` char(32) NOT NULL , ADD CONSTRAINT `shop_business_type_id_4655ba4e_fk_business_type_id` FOREIGN KEY (`business_type_id`) REFERENCES `business_type`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:11:55] [schema] CREATE TABLE `django_session` (`session_key` varchar(40) NOT NULL PRIMARY KEY, `session_data` longtext NOT NULL, `expire_date` datetime(6) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:11:55] [schema] CREATE INDEX `django_session_expire_date_a5c62663` ON `django_session` (`expire_date`); (params ())
+ [DEBUG] [2021-08-23 18:12:25] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 18:12:26] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 18:12:26] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 18:12:31] [schema] CREATE TABLE `django_migrations` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `app` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `applied` datetime(6) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:31] [schema] CREATE TABLE `django_content_type` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(100) NOT NULL, `app_label` varchar(100) NOT NULL, `model` varchar(100) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:31] [schema] ALTER TABLE `django_content_type` ADD CONSTRAINT `django_content_type_app_label_model_76bd3d3b_uniq` UNIQUE (`app_label`, `model`); (params ())
+ [DEBUG] [2021-08-23 18:12:31] [schema] CREATE TABLE `auth_permission` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(50) NOT NULL, `content_type_id` integer NOT NULL, `codename` varchar(100) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:31] [schema] CREATE TABLE `auth_group` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(80) NOT NULL UNIQUE); (params None)
+ [DEBUG] [2021-08-23 18:12:31] [schema] CREATE TABLE `auth_group_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `group_id` integer NOT NULL, `permission_id` integer NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:31] [schema] CREATE TABLE `auth_user` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `password` varchar(128) NOT NULL, `last_login` datetime(6) NOT NULL, `is_superuser` bool NOT NULL, `username` varchar(30) NOT NULL UNIQUE, `first_name` varchar(30) NOT NULL, `last_name` varchar(30) NOT NULL, `email` varchar(75) NOT NULL, `is_staff` bool NOT NULL, `is_active` bool NOT NULL, `date_joined` datetime(6) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:31] [schema] CREATE TABLE `auth_user_groups` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` integer NOT NULL, `group_id` integer NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:31] [schema] CREATE TABLE `auth_user_user_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `user_id` integer NOT NULL, `permission_id` integer NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:31] [schema] ALTER TABLE `auth_permission` ADD CONSTRAINT `auth_permission_content_type_id_codename_01ab375a_uniq` UNIQUE (`content_type_id`, `codename`); (params ())
+ [DEBUG] [2021-08-23 18:12:31] [schema] ALTER TABLE `auth_permission` ADD CONSTRAINT `auth_permission_content_type_id_2f476e4b_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:31] [schema] ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_permission_id_0cd325b0_uniq` UNIQUE (`group_id`, `permission_id`); (params ())
+ [DEBUG] [2021-08-23 18:12:31] [schema] ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_b120cbf9_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:31] [schema] ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissio_permission_id_84c5c92e_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:31] [schema] ALTER TABLE `auth_user_groups` ADD CONSTRAINT `auth_user_groups_user_id_group_id_94350c0c_uniq` UNIQUE (`user_id`, `group_id`); (params ())
+ [DEBUG] [2021-08-23 18:12:31] [schema] ALTER TABLE `auth_user_groups` ADD CONSTRAINT `auth_user_groups_user_id_6a12ed8b_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:32] [schema] ALTER TABLE `auth_user_groups` ADD CONSTRAINT `auth_user_groups_group_id_97559544_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:32] [schema] ALTER TABLE `auth_user_user_permissions` ADD CONSTRAINT `auth_user_user_permissions_user_id_permission_id_14a6b632_uniq` UNIQUE (`user_id`, `permission_id`); (params ())
+ [DEBUG] [2021-08-23 18:12:32] [schema] ALTER TABLE `auth_user_user_permissions` ADD CONSTRAINT `auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:32] [schema] ALTER TABLE `auth_user_user_permissions` ADD CONSTRAINT `auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:32] [schema] CREATE TABLE `django_admin_log` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `action_time` datetime(6) NOT NULL, `object_id` longtext NULL, `object_repr` varchar(200) NOT NULL, `action_flag` smallint UNSIGNED NOT NULL, `change_message` longtext NOT NULL, `content_type_id` integer NULL, `user_id` integer NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:32] [schema] ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:32] [schema] ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_user_id_c564eba6_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:32] [schema] ALTER TABLE `django_content_type` MODIFY `name` varchar(100) NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:32] [schema] ALTER TABLE `django_content_type` DROP COLUMN `name`; (params ())
+ [DEBUG] [2021-08-23 18:12:32] [schema] ALTER TABLE `auth_permission` MODIFY `name` varchar(255) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:32] [schema] ALTER TABLE `auth_user` MODIFY `email` varchar(254) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:32] [schema] ALTER TABLE `auth_user` MODIFY `last_login` datetime(6) NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:32] [schema] ALTER TABLE `auth_user` MODIFY `username` varchar(150) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:33] [schema] ALTER TABLE `auth_user` MODIFY `last_name` varchar(150) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:33] [schema] ALTER TABLE `auth_group` MODIFY `name` varchar(150) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:33] [schema] ALTER TABLE `auth_user` MODIFY `first_name` varchar(150) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:33] [schema] CREATE TABLE `accounting` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `accounting_type` integer NULL, `total_amount` integer NULL, `company_name` varchar(255) NULL, `shop_name` varchar(255) NULL, `terminal_number` varchar(255) NULL, `accounting_at` datetime(6) NULL, `card_id` varchar(255) NULL, `reference_accounting_id` varchar(32) NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:33] [schema] CREATE TABLE `apply_campaign` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `campaign_id` varchar(32) NOT NULL, `campaign_name` varchar(255) NOT NULL, `card_transaction_id` varchar(32) NOT NULL, `applied_at` datetime(6) NOT NULL, `bonus_id` varchar(32) NOT NULL, `bonus_category` integer NOT NULL, `bonus_grant_count` integer NOT NULL, `bonus_expired_at` date NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:33] [schema] CREATE TABLE `bonus_config` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `reference_id` varchar(32) NOT NULL, `bonus_type` integer NOT NULL, `extend_expiration_count` integer NOT NULL, `extend_expiration_unit` integer NOT NULL, `start_available_date` datetime(6) NOT NULL, `end_available_date` datetime(6) NULL, `is_active` bool NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:33] [schema] CREATE TABLE `campaign` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `name` varchar(255) NOT NULL, `apply_campaign_priority` integer NOT NULL, `start_campaign_at` datetime(6) NOT NULL, `end_campaign_at` datetime(6) NOT NULL, `note` longtext NULL, `bonus_type` integer NOT NULL, `bonus_grant_rule` varchar(256) NOT NULL, `bonus_grant_percent` double precision NULL, `bonus_grant_amount` integer NULL, `bonus_config_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:33] [schema] CREATE TABLE `card` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `card_number` varchar(24) NOT NULL UNIQUE, `pin_number` varchar(255) NOT NULL, `magnetic_information` varchar(69) NULL UNIQUE, `status` integer NOT NULL, `activated_at` datetime(6) NULL, `destroyed_at` datetime(6) NULL, `is_locked` bool NOT NULL, `is_test` bool NOT NULL, `remarks` longtext NULL, `payable_available_total_balance` bigint NOT NULL, `replacement_source_card_number` varchar(255) NULL, `replacement_target_card_number` varchar(255) NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:33] [schema] CREATE TABLE `card_config` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `card_name` varchar(255) NOT NULL, `card_type` varchar(3) NOT NULL, `card_design_url` longtext NOT NULL, `value_name` varchar(255) NOT NULL, `value_currency_unit` varchar(255) NOT NULL, `value_balance_limit` integer NOT NULL, `payable_bonus_name` varchar(255) NOT NULL, `payable_bonus_currency_unit` varchar(255) NOT NULL, `payable_bonus_balance_limit` integer NOT NULL, `exchange_bonus_name` varchar(255) NOT NULL, `exchange_bonus_currency_unit` varchar(255) NOT NULL, `exchange_bonus_balance_limit` integer NOT NULL, `start_available_date` datetime(6) NOT NULL, `end_available_date` datetime(6) NULL, `card_category` varchar(255) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:33] [schema] CREATE TABLE `company` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `company_name` varchar(255) NOT NULL, `corporate_number` varchar(13) NOT NULL, `postal_code` varchar(7) NOT NULL, `address_pref` varchar(2) NOT NULL, `address_city` varchar(255) NOT NULL, `address_town` varchar(255) NULL, `address_other` varchar(255) NULL, `phone_number` varchar(15) NOT NULL, `available_service` varchar(255) NOT NULL, `available_transaction_type` varchar(255) NOT NULL, `start_available_date` date NOT NULL, `end_available_date` date NULL, `status` integer NOT NULL, `remarks` varchar(255) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:33] [schema] CREATE TABLE `console_account` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `email` varchar(255) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:33] [schema] CREATE TABLE `consumer` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `status` integer NOT NULL, `consumer_number` varchar(255) NOT NULL, `email` varchar(255) NOT NULL, `user_name` varchar(255) NOT NULL, `user_phonetic_name` varchar(255) NOT NULL, `nickname` varchar(255) NULL, `phone_number` varchar(255) NOT NULL, `birthday` date NOT NULL, `country` varchar(255) NOT NULL, `address_pref` varchar(255) NOT NULL, `address_city` varchar(255) NOT NULL, `address_town` varchar(255) NOT NULL, `address_other` varchar(255) NOT NULL, `gender` integer NOT NULL, `profession` varchar(255) NOT NULL, `news_notification_enabled` bool NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:33] [schema] CREATE TABLE `industry` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `industry_name` varchar(255) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:33] [schema] CREATE TABLE `management_tag` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `tag_name` varchar(256) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:34] [schema] CREATE TABLE `official_position` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY); (params None)
+ [DEBUG] [2021-08-23 18:12:34] [schema] CREATE TABLE `provider` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `owner_name` varchar(255) NOT NULL, `owner_phonetic_name` varchar(255) NOT NULL, `owner_address_pref` varchar(2) NOT NULL, `owner_address_city` varchar(255) NOT NULL, `owner_address_town` varchar(255) NULL, `owner_address_other` varchar(255) NULL, `owner_birthday` date NOT NULL, `provider_name` varchar(255) NOT NULL, `provider_corporate_number` varchar(255) NOT NULL, `provider_postal_code` varchar(7) NOT NULL, `provider_address_pref` varchar(2) NOT NULL, `provider_address_city` varchar(255) NOT NULL, `provider_address_town` varchar(255) NULL, `provider_address_other` varchar(255) NULL, `provider_phone_number` varchar(15) NOT NULL, `provider_content` varchar(255) NOT NULL, `inquiry_phone_number` varchar(255) NOT NULL, `inquiry_email` varchar(255) NOT NULL, `inquiry_department` varchar(255) NOT NULL, `service_name` varchar(255) NOT NULL, `service_logo_url` longtext NOT NULL, `available_service` varchar(255) NOT NULL, `status` integer NOT NULL, `auto_send_email` varchar(255) NOT NULL, `withdrawal_date` integer NOT NULL, `start_available_date` datetime(6) NOT NULL, `end_available_date` datetime(6) NULL, `value_enabled_flag` bool NOT NULL, `physical_card_flag` bool NOT NULL, `payable_bonus_flag` bool NOT NULL, `balance_inquiry_page_flag` bool NOT NULL, `exchange_bonus_flag` bool NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:34] [schema] CREATE TABLE `shop` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `shop_name` varchar(24) NOT NULL, `shop_name_english_characters` varchar(255) NOT NULL, `shop_number` varchar(255) NOT NULL, `postal_code` varchar(7) NOT NULL, `address_pref` varchar(255) NOT NULL, `address_city` varchar(255) NOT NULL, `address_town` varchar(255) NULL, `address_other` varchar(255) NULL, `phone_number` varchar(15) NOT NULL, `start_available_date` date NOT NULL, `end_available_date` date NULL, `company_id` char(32) NOT NULL, `industry_id` char(32) NOT NULL, `provider_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:34] [schema] CREATE TABLE `shop_management_tags` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `shop_id` char(32) NOT NULL, `managementtag_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:34] [schema] CREATE TABLE `terminal` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `terminal_type` integer NOT NULL, `terminal_number` varchar(255) NOT NULL, `start_available_date` date NOT NULL, `end_available_date` date NULL, `remarks` varchar(255) NULL, `status` integer NOT NULL, `company_id` char(32) NOT NULL, `provider_id` char(32) NOT NULL, `shop_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:34] [schema] CREATE TABLE `terminal_management_tags` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `terminal_id` char(32) NOT NULL, `managementtag_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:34] [schema] CREATE TABLE `transaction_category` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `category_name` varchar(255) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:34] [schema] CREATE TABLE `use_condition_config` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY); (params None)
+ [DEBUG] [2021-08-23 18:12:34] [schema] CREATE TABLE `value_config` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `reference_id` varchar(32) NOT NULL, `value_type` integer NOT NULL, `usage_limit_company_id` varchar(255) NULL, `usage_limit_shop_id` varchar(255) NULL, `usage_limit_management_tag_id` varchar(255) NULL, `usage_limit_transaction_type` varchar(255) NULL, `extend_expiration_count` integer NOT NULL, `extend_expiration_unit` integer NOT NULL, `start_available_date` datetime(6) NOT NULL, `end_available_date` datetime(6) NULL, `is_active` bool NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:34] [schema] CREATE TABLE `value` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `category` integer NOT NULL, `amount` integer NOT NULL, `expired_at` datetime(6) NOT NULL, `card_id` char(32) NOT NULL, `use_condition_config_id` char(32) NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:34] [schema] CREATE TABLE `transaction` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `transaction_number` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `id` char(32) NOT NULL, `transaction_at` datetime(6) NOT NULL, `category` smallint NOT NULL, `total_prepaid_value_amount` integer NOT NULL, `total_payable_bonus_amount` integer NOT NULL, `total_exchange_bonus_amount` integer NOT NULL, `campaign_apply_timing` smallint NOT NULL, `operator` varchar(255) NULL, `transaction_method` smallint NOT NULL, `transaction_total_amount` double precision NULL, `transaction_value_amount` double precision NULL, `transaction_payable_bonus_amount` double precision NULL, `transaction_exchange_bonus_amount` double precision NULL, `transaction_status` integer NULL, `product_exchange_bonus_balance` integer NULL, `payable_bonus_balance` integer NULL, `payable_bonus_grant` integer NULL, `payable_bonus_transaction_amount` integer NULL, `value_balance` integer NULL, `value_grant` integer NULL, `value_transaction_amount` integer NULL, `pos_id` varchar(32) NULL, `transaction_type` integer NOT NULL, `product_exchange_bonus_amount` integer NULL, `product_exchange_bonus_grant` integer NULL, `apply_campaign_ids` varchar(255) NULL, `accounting_id` char(32) NULL, `card_id` char(32) NOT NULL, `company_id` char(32) NULL, `consumer_id` char(32) NULL, `parent_transaction_id_id` bigint NULL, `provider_id` char(32) NOT NULL, `shop_id` char(32) NULL, `terminal_id` char(32) NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:34] [schema] CREATE TABLE `terminal_management_tag` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `name` varchar(255) NOT NULL, `company_id` char(32) NOT NULL, `provider_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:34] [schema] CREATE TABLE `shop_management_tag` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `name` varchar(255) NOT NULL, `provider_id` char(32) NOT NULL, `shop_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:34] [schema] CREATE TABLE `request` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `requested_at` datetime(6) NOT NULL, `request_category` integer NOT NULL, `request_status` integer NOT NULL, `approve_account` char(32) NULL, `request_account` char(32) NOT NULL, `transaction_id` bigint NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:34] [schema] ALTER TABLE `consumer` ADD COLUMN `provider_id` char(32) NOT NULL , ADD CONSTRAINT `consumer_provider_id_880667ad_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:35] [schema] ALTER TABLE `console_account` ADD COLUMN `official_position_id` char(32) NOT NULL , ADD CONSTRAINT `console_account_official_position_id_474003d4_fk_official_` FOREIGN KEY (`official_position_id`) REFERENCES `official_position`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:35] [schema] ALTER TABLE `console_account` ADD COLUMN `provider_id` char(32) NOT NULL , ADD CONSTRAINT `console_account_provider_id_ca147f5f_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:35] [schema] CREATE TABLE `company_management_tag` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `name` varchar(255) NOT NULL, `company_id` char(32) NOT NULL, `provider_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:35] [schema] CREATE TABLE `company_management_tags` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `company_id` char(32) NOT NULL, `managementtag_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:35] [schema] ALTER TABLE `company` ADD COLUMN `provider_id` char(32) NOT NULL , ADD CONSTRAINT `company_provider_id_9f913e66_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:35] [schema] CREATE TABLE `card_transaction` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `transaction_at` datetime(6) NOT NULL, `transaction_type` integer NOT NULL, `company_id` varchar(32) NULL, `shop_id` varchar(32) NULL, `terminal_id` varchar(32) NULL, `total_prepaid_value` integer NOT NULL, `total_payable_bonus` integer NOT NULL, `total_exchange_bonus` integer NOT NULL, `charge_method` integer NULL, `replace_source_card_id` varchar(32) NULL, `replace_target_card_id` varchar(32) NULL, `card_id` char(32) NOT NULL, `card_config_id` char(32) NOT NULL, `provider_id` char(32) NOT NULL, `transaction_id` bigint NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:35] [schema] CREATE TABLE `card_detail` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `balance` integer NOT NULL, `balance_type` integer NOT NULL, `expires_at` date NOT NULL, `bonus_config_id` char(32) NULL, `card_id` char(32) NOT NULL, `value_config_id` char(32) NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:35] [schema] CREATE TABLE `card_config_payment` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `payment_limit_daily` integer NOT NULL, `payment_limit_monthly` integer NOT NULL, `start_available_date` datetime(6) NOT NULL, `end_available_date` datetime(6) NULL, `card_config_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:35] [schema] CREATE TABLE `card_config_charge` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `charge_limit_daily` integer NOT NULL, `charge_limit_monthly` integer NOT NULL, `charge_unit` integer NOT NULL, `start_available_date` datetime(6) NOT NULL, `end_available_date` datetime(6) NULL, `card_config_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:35] [schema] ALTER TABLE `card_config` ADD COLUMN `provider_id` char(32) NOT NULL , ADD CONSTRAINT `card_config_provider_id_fe68a430_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:35] [schema] ALTER TABLE `card` ADD COLUMN `card_config_id` char(32) NOT NULL , ADD CONSTRAINT `card_card_config_id_97824704_fk_card_config_id` FOREIGN KEY (`card_config_id`) REFERENCES `card_config`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:35] [schema] ALTER TABLE `card` ADD COLUMN `consumer_id` char(32) NULL , ADD CONSTRAINT `card_consumer_id_c4be70a0_fk_consumer_id` FOREIGN KEY (`consumer_id`) REFERENCES `consumer`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:36] [schema] CREATE TABLE `campaign_apply_rule` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `rule_type` integer NOT NULL, `pref` varchar(255) NULL, `city` varchar(255) NULL, `transaction_type` smallint NULL, `min_transaction_amount` integer NULL, `max_transaction_amount` integer NULL, `min_transaction_count` integer NULL, `max_transaction_count` integer NULL, `min_transaction_days` integer NULL, `max_transaction_days` integer NULL, `is_activate_during_period` bool NULL, `min_age` integer NULL, `max_age` integer NULL, `birthday_from` date NULL, `birthday_to` date NULL, `campaign_id_id` char(32) NOT NULL, `company_id` char(32) NULL, `company_management_tag_id` char(32) NULL, `shop_id` char(32) NULL, `shop_management_tag_id` char(32) NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:36] [schema] ALTER TABLE `campaign` ADD COLUMN `campaign_apply_rule_id` char(32) NOT NULL , ADD CONSTRAINT `campaign_campaign_apply_rule__39f25829_fk_campaign_` FOREIGN KEY (`campaign_apply_rule_id`) REFERENCES `campaign_apply_rule`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:36] [schema] ALTER TABLE `campaign` ADD COLUMN `card_config_id` char(32) NOT NULL , ADD CONSTRAINT `campaign_card_config_id_d1a8e49b_fk_card_config_id` FOREIGN KEY (`card_config_id`) REFERENCES `card_config`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:36] [schema] ALTER TABLE `bonus_config` ADD COLUMN `usage_limit_company_id` char(32) NULL , ADD CONSTRAINT `bonus_config_usage_limit_company_id_6413e733_fk_company_id` FOREIGN KEY (`usage_limit_company_id`) REFERENCES `company`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:36] [schema] ALTER TABLE `bonus_config` ADD COLUMN `usage_limit_management_tag_id` char(32) NULL , ADD CONSTRAINT `bonus_config_usage_limit_manageme_4d930b2d_fk_managemen` FOREIGN KEY (`usage_limit_management_tag_id`) REFERENCES `management_tag`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:36] [schema] ALTER TABLE `bonus_config` ADD COLUMN `usage_limit_shop_id` char(32) NULL , ADD CONSTRAINT `bonus_config_usage_limit_shop_id_cd23c008_fk_shop_id` FOREIGN KEY (`usage_limit_shop_id`) REFERENCES `shop`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:36] [schema] CREATE TABLE `bonus` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `category` integer NOT NULL, `grant_count` integer NOT NULL, `use_count` integer NOT NULL, `expired_at` date NOT NULL, `card_id` char(32) NOT NULL, `use_condition_config_id` char(32) NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:36] [schema] CREATE TABLE `batch_waiting_apply_campaign` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` bigint AUTO_INCREMENT NOT NULL PRIMARY KEY, `accounting_id` char(32) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:36] [schema] ALTER TABLE `accounting` ADD COLUMN `company_id` char(32) NULL , ADD CONSTRAINT `accounting_company_id_7668e6c4_fk_company_id` FOREIGN KEY (`company_id`) REFERENCES `company`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:36] [schema] ALTER TABLE `accounting` ADD COLUMN `consumer_id` char(32) NULL , ADD CONSTRAINT `accounting_consumer_id_fff0dc6b_fk_consumer_id` FOREIGN KEY (`consumer_id`) REFERENCES `consumer`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:37] [schema] ALTER TABLE `accounting` ADD COLUMN `shop_id` char(32) NULL , ADD CONSTRAINT `accounting_shop_id_0228b828_fk_shop_id` FOREIGN KEY (`shop_id`) REFERENCES `shop`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:37] [schema] ALTER TABLE `accounting` ADD COLUMN `terminal_id` char(32) NOT NULL , ADD CONSTRAINT `accounting_terminal_id_88274470_fk_terminal_id` FOREIGN KEY (`terminal_id`) REFERENCES `terminal`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:37] [schema] CREATE INDEX `terminal_company_594d29_idx` ON `terminal` (`company_id`, `shop_id`, `terminal_number`); (params None)
+ [DEBUG] [2021-08-23 18:12:37] [schema] ALTER TABLE `campaign` ADD CONSTRAINT `campaign_bonus_config_id_d6959d97_fk_bonus_config_id` FOREIGN KEY (`bonus_config_id`) REFERENCES `bonus_config` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:37] [schema] ALTER TABLE `shop` ADD CONSTRAINT `shop_company_id_d8130ba1_fk_company_id` FOREIGN KEY (`company_id`) REFERENCES `company` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:37] [schema] ALTER TABLE `shop` ADD CONSTRAINT `shop_industry_id_cbbcca9c_fk_industry_id` FOREIGN KEY (`industry_id`) REFERENCES `industry` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:37] [schema] ALTER TABLE `shop` ADD CONSTRAINT `shop_provider_id_caec9c3d_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:37] [schema] ALTER TABLE `shop_management_tags` ADD CONSTRAINT `shop_management_tags_shop_id_managementtag_id_10ca272a_uniq` UNIQUE (`shop_id`, `managementtag_id`); (params ())
+ [DEBUG] [2021-08-23 18:12:37] [schema] ALTER TABLE `shop_management_tags` ADD CONSTRAINT `shop_management_tags_shop_id_11b25a09_fk_shop_id` FOREIGN KEY (`shop_id`) REFERENCES `shop` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:37] [schema] ALTER TABLE `shop_management_tags` ADD CONSTRAINT `shop_management_tags_managementtag_id_10a1b943_fk_managemen` FOREIGN KEY (`managementtag_id`) REFERENCES `management_tag` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:37] [schema] ALTER TABLE `terminal` ADD CONSTRAINT `terminal_company_id_51781c4f_fk_company_id` FOREIGN KEY (`company_id`) REFERENCES `company` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:37] [schema] ALTER TABLE `terminal` ADD CONSTRAINT `terminal_provider_id_912479c9_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:38] [schema] ALTER TABLE `terminal` ADD CONSTRAINT `terminal_shop_id_4f79a9df_fk_shop_id` FOREIGN KEY (`shop_id`) REFERENCES `shop` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:38] [schema] ALTER TABLE `terminal_management_tags` ADD CONSTRAINT `terminal_management_tags_terminal_id_managementta_4e08ad8c_uniq` UNIQUE (`terminal_id`, `managementtag_id`); (params ())
+ [DEBUG] [2021-08-23 18:12:38] [schema] ALTER TABLE `terminal_management_tags` ADD CONSTRAINT `terminal_management_tags_terminal_id_3c907d29_fk_terminal_id` FOREIGN KEY (`terminal_id`) REFERENCES `terminal` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:38] [schema] ALTER TABLE `terminal_management_tags` ADD CONSTRAINT `terminal_management__managementtag_id_7913eed9_fk_managemen` FOREIGN KEY (`managementtag_id`) REFERENCES `management_tag` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:38] [schema] ALTER TABLE `value` ADD CONSTRAINT `value_card_id_9b48bf33_fk_card_id` FOREIGN KEY (`card_id`) REFERENCES `card` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:38] [schema] ALTER TABLE `value` ADD CONSTRAINT `value_use_condition_config_48de485c_fk_use_condi` FOREIGN KEY (`use_condition_config_id`) REFERENCES `use_condition_config` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:38] [schema] ALTER TABLE `transaction` ADD CONSTRAINT `transaction_accounting_id_5e2c5a4f_fk_accounting_id` FOREIGN KEY (`accounting_id`) REFERENCES `accounting` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:38] [schema] ALTER TABLE `transaction` ADD CONSTRAINT `transaction_card_id_ad342358_fk_card_id` FOREIGN KEY (`card_id`) REFERENCES `card` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:38] [schema] ALTER TABLE `transaction` ADD CONSTRAINT `transaction_company_id_17a32c65_fk_company_id` FOREIGN KEY (`company_id`) REFERENCES `company` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:38] [schema] ALTER TABLE `transaction` ADD CONSTRAINT `transaction_consumer_id_99d9317d_fk_consumer_id` FOREIGN KEY (`consumer_id`) REFERENCES `consumer` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:38] [schema] ALTER TABLE `transaction` ADD CONSTRAINT `transaction_parent_transaction_i_379779df_fk_transacti` FOREIGN KEY (`parent_transaction_id_id`) REFERENCES `transaction` (`transaction_number`); (params ())
+ [DEBUG] [2021-08-23 18:12:39] [schema] ALTER TABLE `transaction` ADD CONSTRAINT `transaction_provider_id_68eebf6d_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:39] [schema] ALTER TABLE `transaction` ADD CONSTRAINT `transaction_shop_id_8c06c1b5_fk_shop_id` FOREIGN KEY (`shop_id`) REFERENCES `shop` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:39] [schema] ALTER TABLE `transaction` ADD CONSTRAINT `transaction_terminal_id_76804322_fk_terminal_id` FOREIGN KEY (`terminal_id`) REFERENCES `terminal` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:39] [schema] ALTER TABLE `terminal_management_tag` ADD CONSTRAINT `terminal_management_tag_company_id_830e35bb_fk_terminal_id` FOREIGN KEY (`company_id`) REFERENCES `terminal` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:39] [schema] ALTER TABLE `terminal_management_tag` ADD CONSTRAINT `terminal_management_tag_provider_id_919cab74_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:39] [schema] ALTER TABLE `shop_management_tag` ADD CONSTRAINT `shop_management_tag_provider_id_7c6d258d_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:39] [schema] ALTER TABLE `shop_management_tag` ADD CONSTRAINT `shop_management_tag_shop_id_ba770026_fk_shop_id` FOREIGN KEY (`shop_id`) REFERENCES `shop` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:39] [schema] ALTER TABLE `request` ADD CONSTRAINT `request_approve_account_9bfd3668_fk_console_account_id` FOREIGN KEY (`approve_account`) REFERENCES `console_account` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:39] [schema] ALTER TABLE `request` ADD CONSTRAINT `request_request_account_c0fdeac6_fk_console_account_id` FOREIGN KEY (`request_account`) REFERENCES `console_account` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:39] [schema] ALTER TABLE `request` ADD CONSTRAINT `request_transaction_id_ee9aba32_fk_transacti` FOREIGN KEY (`transaction_id`) REFERENCES `transaction` (`transaction_number`); (params ())
+ [DEBUG] [2021-08-23 18:12:40] [schema] ALTER TABLE `company_management_tag` ADD CONSTRAINT `company_management_tag_company_id_c6128514_fk_company_id` FOREIGN KEY (`company_id`) REFERENCES `company` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:40] [schema] ALTER TABLE `company_management_tag` ADD CONSTRAINT `company_management_tag_provider_id_8a52dd49_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:40] [schema] ALTER TABLE `company_management_tags` ADD CONSTRAINT `company_management_tags_company_id_managementtag_aa20e3fb_uniq` UNIQUE (`company_id`, `managementtag_id`); (params ())
+ [DEBUG] [2021-08-23 18:12:40] [schema] ALTER TABLE `company_management_tags` ADD CONSTRAINT `company_management_tags_company_id_5ab6d91e_fk_company_id` FOREIGN KEY (`company_id`) REFERENCES `company` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:40] [schema] ALTER TABLE `company_management_tags` ADD CONSTRAINT `company_management_t_managementtag_id_0573f866_fk_managemen` FOREIGN KEY (`managementtag_id`) REFERENCES `management_tag` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:40] [schema] ALTER TABLE `card_transaction` ADD CONSTRAINT `card_transaction_card_id_aaa92ea0_fk_card_id` FOREIGN KEY (`card_id`) REFERENCES `card` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:40] [schema] ALTER TABLE `card_transaction` ADD CONSTRAINT `card_transaction_card_config_id_8de3da53_fk_card_config_id` FOREIGN KEY (`card_config_id`) REFERENCES `card_config` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:40] [schema] ALTER TABLE `card_transaction` ADD CONSTRAINT `card_transaction_provider_id_faa9c4de_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:40] [schema] ALTER TABLE `card_transaction` ADD CONSTRAINT `card_transaction_transaction_id_de06a4f9_fk_transacti` FOREIGN KEY (`transaction_id`) REFERENCES `transaction` (`transaction_number`); (params ())
+ [DEBUG] [2021-08-23 18:12:40] [schema] ALTER TABLE `card_detail` ADD CONSTRAINT `card_detail_bonus_config_id_d19820fa_fk_bonus_config_id` FOREIGN KEY (`bonus_config_id`) REFERENCES `bonus_config` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:40] [schema] ALTER TABLE `card_detail` ADD CONSTRAINT `card_detail_card_id_e56bf139_fk_card_id` FOREIGN KEY (`card_id`) REFERENCES `card` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:40] [schema] ALTER TABLE `card_detail` ADD CONSTRAINT `card_detail_value_config_id_b9b4e51e_fk_value_config_id` FOREIGN KEY (`value_config_id`) REFERENCES `value_config` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:41] [schema] ALTER TABLE `card_config_payment` ADD CONSTRAINT `card_config_payment_card_config_id_960e7524_fk_card_config_id` FOREIGN KEY (`card_config_id`) REFERENCES `card_config` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:41] [schema] ALTER TABLE `card_config_charge` ADD CONSTRAINT `card_config_charge_card_config_id_ff7c479c_fk_card_config_id` FOREIGN KEY (`card_config_id`) REFERENCES `card_config` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:41] [schema] ALTER TABLE `campaign_apply_rule` ADD CONSTRAINT `campaign_apply_rule_campaign_id_id_096009fb_fk_campaign_id` FOREIGN KEY (`campaign_id_id`) REFERENCES `campaign` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:41] [schema] ALTER TABLE `campaign_apply_rule` ADD CONSTRAINT `campaign_apply_rule_company_id_726158a7_fk_company_id` FOREIGN KEY (`company_id`) REFERENCES `company` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:41] [schema] ALTER TABLE `campaign_apply_rule` ADD CONSTRAINT `campaign_apply_rule_company_management_t_bdcb6b3d_fk_company_m` FOREIGN KEY (`company_management_tag_id`) REFERENCES `company_management_tag` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:41] [schema] ALTER TABLE `campaign_apply_rule` ADD CONSTRAINT `campaign_apply_rule_shop_id_5c278524_fk_shop_id` FOREIGN KEY (`shop_id`) REFERENCES `shop` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:41] [schema] ALTER TABLE `campaign_apply_rule` ADD CONSTRAINT `campaign_apply_rule_shop_management_tag__2efa92d9_fk_shop_mana` FOREIGN KEY (`shop_management_tag_id`) REFERENCES `shop_management_tag` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:41] [schema] ALTER TABLE `bonus` ADD CONSTRAINT `bonus_card_id_49e10abe_fk_card_id` FOREIGN KEY (`card_id`) REFERENCES `card` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:41] [schema] ALTER TABLE `bonus` ADD CONSTRAINT `bonus_use_condition_config_fd60c0ba_fk_use_condi` FOREIGN KEY (`use_condition_config_id`) REFERENCES `use_condition_config` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:41] [schema] ALTER TABLE `batch_waiting_apply_campaign` ADD CONSTRAINT `batch_waiting_apply__accounting_id_7302a8fb_fk_accountin` FOREIGN KEY (`accounting_id`) REFERENCES `accounting` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:41] [schema] CREATE TABLE `business_type` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `business_type_name` varchar(191) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:42] [schema] CREATE TABLE `corp_info` (`created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `id` char(32) NOT NULL PRIMARY KEY, `host` varchar(256) NOT NULL, `company_name` varchar(256) NOT NULL, `service_name` varchar(256) NOT NULL, `logo_url` varchar(256) NOT NULL, `privacy_policy_url` varchar(256) NOT NULL, `privacy_policy_regulation_date` datetime(6) NOT NULL, `privacy_policy_version` varchar(256) NULL, `terms_of_service_url` varchar(256) NOT NULL, `terms_of_service_regulation_date` datetime(6) NOT NULL, `terms_of_service_version` varchar(256) NOT NULL, `copyright_notice` varchar(256) NOT NULL, `e_money_card` integer NOT NULL, `prepaid_value` integer NOT NULL, `payable_bonus` integer NOT NULL, `exchange_bonus` integer NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:42] [schema] ALTER TABLE `provider` DROP COLUMN `auto_send_email`; (params ())
+ [DEBUG] [2021-08-23 18:12:42] [schema] ALTER TABLE `provider` DROP COLUMN `available_service`; (params ())
+ [DEBUG] [2021-08-23 18:12:42] [schema] ALTER TABLE `provider` DROP COLUMN `balance_inquiry_page_flag`; (params ())
+ [DEBUG] [2021-08-23 18:12:42] [schema] ALTER TABLE `provider` DROP COLUMN `exchange_bonus_flag`; (params ())
+ [DEBUG] [2021-08-23 18:12:42] [schema] ALTER TABLE `provider` DROP COLUMN `inquiry_department`; (params ())
+ [DEBUG] [2021-08-23 18:12:42] [schema] ALTER TABLE `provider` DROP COLUMN `inquiry_email`; (params ())
+ [DEBUG] [2021-08-23 18:12:42] [schema] ALTER TABLE `provider` DROP COLUMN `payable_bonus_flag`; (params ())
+ [DEBUG] [2021-08-23 18:12:42] [schema] ALTER TABLE `provider` DROP COLUMN `physical_card_flag`; (params ())
+ [DEBUG] [2021-08-23 18:12:42] [schema] ALTER TABLE `provider` DROP COLUMN `provider_content`; (params ())
+ [DEBUG] [2021-08-23 18:12:42] [schema] ALTER TABLE `provider` DROP COLUMN `provider_corporate_number`; (params ())
+ [DEBUG] [2021-08-23 18:12:43] [schema] ALTER TABLE `provider` DROP COLUMN `status`; (params ())
+ [DEBUG] [2021-08-23 18:12:43] [schema] ALTER TABLE `provider` DROP COLUMN `value_enabled_flag`; (params ())
+ [DEBUG] [2021-08-23 18:12:43] [schema] ALTER TABLE `provider` DROP COLUMN `withdrawal_date`; (params ())
+ [DEBUG] [2021-08-23 18:12:43] [schema] ALTER TABLE `shop` DROP FOREIGN KEY `shop_industry_id_cbbcca9c_fk_industry_id`; (params ())
+ [DEBUG] [2021-08-23 18:12:43] [schema] ALTER TABLE `shop` DROP COLUMN `industry_id`; (params ())
+ [DEBUG] [2021-08-23 18:12:43] [schema] ALTER TABLE `terminal` DROP COLUMN `remarks`; (params ())
+ [DEBUG] [2021-08-23 18:12:43] [schema] ALTER TABLE `terminal` DROP COLUMN `status`; (params ())
+ [DEBUG] [2021-08-23 18:12:43] [schema] ALTER TABLE `transaction_category` DROP COLUMN `category_name`; (params ())
+ [DEBUG] [2021-08-23 18:12:43] [schema] ALTER TABLE `provider` ADD COLUMN `provider_coporate_number` varchar(191) DEFAULT %s NOT NULL; (params [''])
+ [DEBUG] [2021-08-23 18:12:43] [schema] ALTER TABLE `provider` ALTER COLUMN `provider_coporate_number` DROP DEFAULT; (params [])
+ [DEBUG] [2021-08-23 18:12:43] [schema] ALTER TABLE `transaction_category` ADD COLUMN `transaction_category_name` varchar(191) DEFAULT %s NOT NULL; (params [''])
+ [DEBUG] [2021-08-23 18:12:43] [schema] ALTER TABLE `transaction_category` ALTER COLUMN `transaction_category_name` DROP DEFAULT; (params [])
+ [DEBUG] [2021-08-23 18:12:43] [schema] ALTER TABLE `provider` MODIFY `inquiry_phone_number` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:44] [schema] ALTER TABLE `provider` MODIFY `owner_address_city` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:44] [schema] ALTER TABLE `provider` MODIFY `owner_address_other` varchar(191) NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:44] [schema] ALTER TABLE `provider` ALTER COLUMN `owner_address_other` SET DEFAULT %s; (params [''])
+ [DEBUG] [2021-08-23 18:12:44] [schema] UPDATE `provider` SET `owner_address_other` = %s WHERE `owner_address_other` IS NULL; (params [''])
+ [DEBUG] [2021-08-23 18:12:44] [schema] ALTER TABLE `provider` MODIFY `owner_address_other` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:44] [schema] ALTER TABLE `provider` ALTER COLUMN `owner_address_other` DROP DEFAULT; (params [])
+ [DEBUG] [2021-08-23 18:12:44] [schema] ALTER TABLE `provider` MODIFY `owner_address_pref` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:44] [schema] ALTER TABLE `provider` MODIFY `owner_address_town` varchar(191) NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:44] [schema] ALTER TABLE `provider` ALTER COLUMN `owner_address_town` SET DEFAULT %s; (params [''])
+ [DEBUG] [2021-08-23 18:12:44] [schema] UPDATE `provider` SET `owner_address_town` = %s WHERE `owner_address_town` IS NULL; (params [''])
+ [DEBUG] [2021-08-23 18:12:44] [schema] ALTER TABLE `provider` MODIFY `owner_address_town` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:44] [schema] ALTER TABLE `provider` ALTER COLUMN `owner_address_town` DROP DEFAULT; (params [])
+ [DEBUG] [2021-08-23 18:12:44] [schema] ALTER TABLE `provider` MODIFY `owner_birthday` date NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:44] [schema] ALTER TABLE `provider` MODIFY `owner_name` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:45] [schema] ALTER TABLE `provider` MODIFY `owner_phonetic_name` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:45] [schema] ALTER TABLE `provider` MODIFY `provider_address_city` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:45] [schema] ALTER TABLE `provider` MODIFY `provider_address_other` varchar(191) NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:45] [schema] ALTER TABLE `provider` ALTER COLUMN `provider_address_other` SET DEFAULT %s; (params [''])
+ [DEBUG] [2021-08-23 18:12:45] [schema] UPDATE `provider` SET `provider_address_other` = %s WHERE `provider_address_other` IS NULL; (params [''])
+ [DEBUG] [2021-08-23 18:12:45] [schema] ALTER TABLE `provider` MODIFY `provider_address_other` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:45] [schema] ALTER TABLE `provider` ALTER COLUMN `provider_address_other` DROP DEFAULT; (params [])
+ [DEBUG] [2021-08-23 18:12:45] [schema] ALTER TABLE `provider` MODIFY `provider_address_pref` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:45] [schema] ALTER TABLE `provider` MODIFY `provider_address_town` varchar(191) NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:45] [schema] ALTER TABLE `provider` ALTER COLUMN `provider_address_town` SET DEFAULT %s; (params [''])
+ [DEBUG] [2021-08-23 18:12:45] [schema] UPDATE `provider` SET `provider_address_town` = %s WHERE `provider_address_town` IS NULL; (params [''])
+ [DEBUG] [2021-08-23 18:12:45] [schema] ALTER TABLE `provider` MODIFY `provider_address_town` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:45] [schema] ALTER TABLE `provider` ALTER COLUMN `provider_address_town` DROP DEFAULT; (params [])
+ [DEBUG] [2021-08-23 18:12:45] [schema] ALTER TABLE `provider` MODIFY `provider_name` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:46] [schema] ALTER TABLE `provider` MODIFY `provider_phone_number` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:46] [schema] ALTER TABLE `provider` MODIFY `provider_postal_code` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:46] [schema] ALTER TABLE `provider` MODIFY `service_logo_url` varchar(200) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:46] [schema] ALTER TABLE `provider` MODIFY `service_name` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:46] [schema] ALTER TABLE `shop` MODIFY `address_city` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:46] [schema] ALTER TABLE `shop` MODIFY `address_other` varchar(191) NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:46] [schema] ALTER TABLE `shop` ALTER COLUMN `address_other` SET DEFAULT %s; (params [''])
+ [DEBUG] [2021-08-23 18:12:46] [schema] UPDATE `shop` SET `address_other` = %s WHERE `address_other` IS NULL; (params [''])
+ [DEBUG] [2021-08-23 18:12:46] [schema] ALTER TABLE `shop` MODIFY `address_other` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:46] [schema] ALTER TABLE `shop` ALTER COLUMN `address_other` DROP DEFAULT; (params [])
+ [DEBUG] [2021-08-23 18:12:46] [schema] ALTER TABLE `shop` MODIFY `address_pref` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:46] [schema] ALTER TABLE `shop` MODIFY `address_town` varchar(191) NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:46] [schema] ALTER TABLE `shop` ALTER COLUMN `address_town` SET DEFAULT %s; (params [''])
+ [DEBUG] [2021-08-23 18:12:47] [schema] UPDATE `shop` SET `address_town` = %s WHERE `address_town` IS NULL; (params [''])
+ [DEBUG] [2021-08-23 18:12:47] [schema] ALTER TABLE `shop` MODIFY `address_town` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:47] [schema] ALTER TABLE `shop` ALTER COLUMN `address_town` DROP DEFAULT; (params [])
+ [DEBUG] [2021-08-23 18:12:47] [schema] ALTER TABLE `shop` MODIFY `phone_number` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:47] [schema] ALTER TABLE `shop` MODIFY `postal_code` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:47] [schema] ALTER TABLE `shop` MODIFY `shop_name` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:47] [schema] ALTER TABLE `shop` MODIFY `shop_name_english_characters` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:47] [schema] ALTER TABLE `shop` MODIFY `shop_number` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:47] [schema] ALTER TABLE `terminal` DROP FOREIGN KEY `terminal_provider_id_912479c9_fk_provider_id`; (params ())
+ [DEBUG] [2021-08-23 18:12:47] [schema] ALTER TABLE `terminal` ADD CONSTRAINT `terminal_provider_id_912479c9_fk_provider_id` FOREIGN KEY (`provider_id`) REFERENCES `provider` (`id`); (params ())
+ [DEBUG] [2021-08-23 18:12:47] [schema] ALTER TABLE `terminal` MODIFY `terminal_number` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:47] [schema] ALTER TABLE `terminal` MODIFY `terminal_type` varchar(191) NOT NULL; (params [])
+ [DEBUG] [2021-08-23 18:12:48] [schema] ALTER TABLE `shop` ADD COLUMN `business_type_id` char(32) NOT NULL , ADD CONSTRAINT `shop_business_type_id_4655ba4e_fk_business_type_id` FOREIGN KEY (`business_type_id`) REFERENCES `business_type`(`id`); (params [])
+ [DEBUG] [2021-08-23 18:12:48] [schema] CREATE TABLE `django_session` (`session_key` varchar(40) NOT NULL PRIMARY KEY, `session_data` longtext NOT NULL, `expire_date` datetime(6) NOT NULL); (params None)
+ [DEBUG] [2021-08-23 18:12:48] [schema] CREATE INDEX `django_session_expire_date_a5c62663` ON `django_session` (`expire_date`); (params ())
+ [DEBUG] [2021-08-23 18:14:18] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-23 18:14:19] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-23 18:14:19] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-23 18:14:19] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-23 18:14:19] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-23 18:14:19] [utils] (0.070) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-23 18:14:19] [utils] (0.002) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()

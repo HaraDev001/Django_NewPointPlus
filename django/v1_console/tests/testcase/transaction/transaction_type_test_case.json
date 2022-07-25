@@ -1,0 +1,25 @@
+[
+    {
+        "id": "case1",
+        "name": "case1: get all transaction type",
+        "url": "/console/api/v1/transactions/type/",
+        "method": "GET",
+        "status_code": 200,
+        "params": {},
+        "body": {},
+        "result": [
+            {
+                "id": "07e0ba74-7dc7-47e5-a5c9-fdda70fa4fcd",
+                "name": "取引種別名 1"
+            },
+            {
+                "id": "4a561011-6d4a-49e2-8383-e83aa0472e5d",
+                "name": "取引種別名 2"
+            },
+            {
+                "id": "f40dac8b-8fd5-4598-811c-5e088ec443f7",
+                "name": "取引種別名 3"
+            }
+        ]
+    }
+]

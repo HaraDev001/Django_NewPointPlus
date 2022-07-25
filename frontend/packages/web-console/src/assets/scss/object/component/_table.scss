@@ -1,0 +1,65 @@
+.c-table {
+    border-collapse: collapse;
+    box-shadow: 0 1px 0 0 #e0e0e0;
+    border-radius: 0 !important;
+    &__body {
+        border: 1px #E0E0E0 solid;
+    }
+}
+
+.v-data-table {
+    thead {
+        background-color: #f5f5f5;
+    }
+    // Striped table
+    tbody tr:nth-of-type(even) {
+        background-color: #fafafa;
+    }
+    // Table column border
+    th + th,
+    td + td {
+        border-left: thin solid rgba(0, 0, 0, 0.12);
+    }
+}
+
+.v-data-footer {
+    .v-input__slot {
+        border: 1px solid #0000001F;
+        padding: 0 10px;
+        border-radius: 5px;
+        &:before, &:after {
+            display: none;
+        }
+    }
+}
+
+.transition-table {
+    tbody {
+        > tr:first-child {
+            .text-right {
+                font-size: 20px;
+            }
+        }
+    }
+    .v-icon.v-icon {
+        color: #ffffff;
+        font-size: 18px;
+    }
+    .edit-item {
+        color: #ef6c00;
+        border-color: #dadce0;
+    }
+    .white-text {
+        color: #ffffff;
+    }
+    .transactionSelected {
+        background-color: rgb(238 238 238);
+        .white-text {
+            color: rgba(0, 0, 0, 0.87);
+        }
+        .v-input--checkbox.primary--text {
+            color: rgba(0, 0, 0, 0.87) !important;
+            caret-color: rgba(0, 0, 0, 0.87) !important;
+        }
+    }
+}

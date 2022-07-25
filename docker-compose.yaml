@@ -1,0 +1,55 @@
+version: '3'
+services:
+    django:
+        env_file:
+            - ./django/.env
+        build:
+            context: ./
+            dockerfile: ./django/Dockerfile
+        volumes:
+            - ./django/:/usr/src/app/
+        command: >
+            bash -c '
+            python manage.py migrate &&
+            python manage.py createcachetable &&
+            uwsgi --socket :8001 --module config.wsgi'
+        # 改竄検知ログ用サンプル
+        # echo fs.inotify.max_user_watches=524288 | tee -a /etc/sysctl.conf && sysctl -p
+        # uwsgi --socket :8001 --module config.wsgi &
+        # inotifywait -r -e attrib,modify,delete,delete_self,create,moved_from,moved_to
+        # --exclude "^/dev/|log|^/tmp/|^/sys/" -m --format "[FALSIFICATION DETECTION] %T %w%f (%e)" --timefmt "%F %T" /'
+        expose:
+            - "8001"
+        privileged: true
+        depends_on:
+            - mysql
+    frontend:
+        build:
+            context: .
+            dockerfile: ./frontend/Dockerfile
+        volumes:
+            - ./frontend/:/usr/src/app/frontend/
+        working_dir: /usr/src/app/frontend/
+        tty: true
+    nginx:
+        build:
+            context: ./
+            dockerfile: ./nginx/Dockerfile
+        volumes:
+            - ./nginx/site.conf:/etc/nginx/conf.d/default.conf
+            - ./nginx/uwsgi_params:/etc/nginx/uwsgi_params
+            - ./frontend/dist:/var/www/public/
+        ports:
+            - "80:80"
+        depends_on:
+            - django
+            - frontend
+    mysql:
+        image: mysql:5.7
+        env_file: ./mysql/.env
+        ports:
+            - "3306:3306"
+        volumes:
+            - ./mysql/data:/var/lib/mysql
+            - ./mysql/conf.d:/etc/mysql/conf.d
+            - ./mysql/initdb.d:/docker-entrypoint-initdb.d

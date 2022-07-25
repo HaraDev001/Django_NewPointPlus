@@ -1,0 +1,2002 @@
+openapi: 3.0.3
+info:
+  title: new point+plus API admin
+  version: 1.0.0
+  description: 管理Web用API
+paths:
+  /accounts/:
+    get:
+      operationId: accounts_retrieve
+      description: 同じ事業者に紐づく管理Webアカウントの一覧を取得する
+      summary: 管理Webアカウント一覧取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - accounts
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    post:
+      operationId: accounts_create
+      description: 管理Webアカウントの登録を行う
+      summary: 管理Webアカウント登録
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - accounts
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /accounts/{id}:
+    get:
+      operationId: accounts_retrieve_2
+      description: 同じ事業者に紐づく管理Webアカウントの詳細を取得する
+      summary: 管理Webアカウント詳細取得
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - accounts
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: accounts_update
+      description: 管理Webアカウントの情報を変更する
+      summary: 管理Webアカウント情報変更
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - accounts
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /accounts/operations/logs/:
+    get:
+      operationId: accounts_operations_logs_retrieve
+      description: 管理Webの操作履歴を取得する
+      summary: 操作履歴取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - accounts
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /accounts/operations/permissions/:
+    get:
+      operationId: accounts_operations_permissions_retrieve
+      description: 管理アカウントの操作権限の一覧を取得する
+      summary: 操作権限一覧取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - accounts
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /accounts/password/forgot/:
+    put:
+      operationId: accounts_password_forgot_update
+      description: 管理Webアカウントのパスワード再設定処理を行う
+      summary: 管理Webアカウントログインパスワード再設定
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - accounts
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /accounts/password/forgot/request:
+    post:
+      operationId: accounts_password_forgot_request_create
+      description: 管理Webアカウントのパスワード再設定申請を送信する
+      summary: 管理Webアカウントログインパスワード再設定申請
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - accounts
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /accounts/password/set:
+    put:
+      operationId: accounts_password_set_update
+      description: 初回ログイン時に初期パスワードを変更する
+      summary: 管理Webアカウント初期パスワード変更
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - accounts
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /auth/token/:
+    post:
+      operationId: auth_token_create
+      description: 管理Webのアカウントで認証を行い、API実行に利用するトークンを発行する
+      summary: 事業者アクセストークン発行
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - auth
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: auth_token_update
+      description: 認証トークンの更新処理を行う
+      summary: 事業者アクセストークン更新
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - auth
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    delete:
+      operationId: auth_token_destroy
+      description: 認証トークンの失効処理を行う
+      summary: 事業者アクセストークン失効
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - auth
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /card-configs/:
+    get:
+      operationId: card_configs_retrieve
+      description: 事業者が発行するカードに紐付くカード設定の一覧を取得する
+      summary: カード設定一覧取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - card-configs
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    post:
+      operationId: card_configs_create
+      description: 事業者が発行するカードに紐付くカード設定を登録する
+      summary: カード設定登録
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - card-configs
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /card-configs/{id}/:
+    get:
+      operationId: card_configs_retrieve_2
+      description: 事業者が発行するカードに紐付くカード設定の詳細情報を取得する
+      summary: カード設定詳細取得
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - card-configs
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: card_configs_update
+      description: 事業者が発行するカードに紐付くカード設定の情報を変更する
+      summary: カード設定情報変更
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - card-configs
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /cards/:
+    get:
+      operationId: cards_retrieve
+      description: カードの一覧を取得する
+      summary: カード一覧取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - cards
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /cards/{id}/:
+    get:
+      operationId: cards_retrieve_2
+      description: カードの詳細情報を取得する
+      summary: カード詳細取得
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - cards
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: cards_update
+      description: カード情報を変更する
+      summary: カード情報変更
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - cards
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /cards/{id}/requests/:
+    post:
+      operationId: cards_requests_create
+      description: カード情報の変更を申請する
+      summary: カード情報変更申請
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - cards
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /cards/{id}/requests/{request_id}/:
+    put:
+      operationId: cards_requests_update
+      description: カード情報の変更申請を承認または否認する
+      summary: カード情報変更承認
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: path
+        name: request_id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - cards
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /cards/{id}/requests/{request_id}/withdrawal/:
+    put:
+      operationId: cards_requests_withdrawal_update
+      description: カード情報の変更申請を取り下げる
+      summary: カード情報変更申請取下
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: path
+        name: request_id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - cards
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /cards/issue/:
+    get:
+      operationId: cards_issue_retrieve
+      description: カードの発行履歴の一覧を取得する
+      summary: カード発行履歴一覧取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - cards
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /cards/issue/reserve/:
+    post:
+      operationId: cards_issue_reserve_create
+      description: カードの発行を予約する
+      summary: カード発行予約
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - cards
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /cards/replace/:
+    put:
+      operationId: cards_replace_update
+      description: 一方のカード残高をもう一方のカード残高に統合する
+      summary: カード付替
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - cards
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /cards/replace/requests/:
+    post:
+      operationId: cards_replace_requests_create
+      description: 一方のカード残高からもう一方のカード残高への統合を申請する
+      summary: カード付替申請
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - cards
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /cards/replace/requests/{id}/:
+    put:
+      operationId: cards_replace_requests_update
+      description: カード付替の申請を承認または否認する
+      summary: カード付替承認
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - cards
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /companies/:
+    get:
+      operationId: companies_retrieve
+      description: 事業者に紐付く企業の一覧を取得する。
+      summary: 企業一覧取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - companies
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    post:
+      operationId: companies_create
+      description: 事業者に紐付く企業を登録する
+      summary: 企業登録
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - companies
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /companies/{id}/:
+    get:
+      operationId: companies_retrieve_2
+      description: 事業者に紐付く企業の詳細情報を取得する
+      summary: 企業詳細取得
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - companies
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: companies_update
+      description: 事業者に紐付く企業の情報を変更する
+      summary: 企業情報変更
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - companies
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /events/canpaigns/:
+    get:
+      operationId: events_canpaigns_retrieve
+      description: キャンペーンの一覧を取得する
+      summary: キャンペーン一覧取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - events
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    post:
+      operationId: events_canpaigns_create
+      description: キャンペーン情報を登録する
+      summary: キャンペーン登録
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - events
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /events/canpaigns/{id}/:
+    get:
+      operationId: events_canpaigns_retrieve_2
+      description: キャンペーンの詳細情報を取得する
+      summary: キャンペーン詳細取得
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - events
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: events_canpaigns_update
+      description: キャンペーン情報を変更する
+      summary: キャンペーン情報変更
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - events
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /events/canpaigns/{id}/requests/:
+    post:
+      operationId: events_canpaigns_requests_create_3
+      description: キャンペーン情報の変更を申請する
+      summary: キャンペーン情報変更申請
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - events
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /events/canpaigns/{id}/requests/{request_id}/:
+    put:
+      operationId: events_canpaigns_requests_update
+      description: キャンペーン情報の変更申請を承認または否認する
+      summary: キャンペーン情報変更承認
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: path
+        name: request_id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - events
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /events/canpaigns/{id}/requests/{request_id}/withdrawal/:
+    put:
+      operationId: events_canpaigns_requests_withdrawal_update_2
+      description: キャンペーン情報の変更申請を取り下げる
+      summary: キャンペーン情報変更申請取下
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: path
+        name: request_id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - events
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /events/canpaigns/requests/:
+    post:
+      operationId: events_canpaigns_requests_create
+      description: キャンペーンの登録を申請する
+      summary: キャンペーン登録申請
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - events
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /events/canpaigns/requests/{id}/:
+    post:
+      operationId: events_canpaigns_requests_create_2
+      description: キャンペーンの登録申請を承認または否認する
+      summary: キャンペーン登録承認
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - events
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /events/canpaigns/requests/{id}/withdrawal/:
+    put:
+      operationId: events_canpaigns_requests_withdrawal_update
+      description: キャンペーンの登録申請を取り下げる
+      summary: キャンペーン登録申請取下
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - events
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /events/force-grant/:
+    get:
+      operationId: events_force_grant_retrieve
+      description: 強制付与履歴の一覧を取得する
+      summary: 強制付与履歴一覧取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - events
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /events/force-grant/{id}/:
+    get:
+      operationId: events_force_grant_retrieve_2
+      description: 強制付与履歴の詳細情報を取得する
+      summary: 強制付与履歴詳細取得
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - events
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /events/force-grant/reserve/:
+    post:
+      operationId: events_force_grant_reserve_create
+      description: 指定したカードへのバリューやボーナス付与を予約する
+      summary: 強制付与予約
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - events
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /events/force-grant/reserve/requests/:
+    post:
+      operationId: events_force_grant_reserve_requests_create
+      description: 指定したカードへのバリューやボーナス付与の予約を申請する
+      summary: 強制付与予約申請
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - events
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /events/force-grant/reserve/requests/{id}/:
+    post:
+      operationId: events_force_grant_reserve_requests_create_2
+      description: 強制付与の予約申請を承認または否認する
+      summary: 強制付与予約承認
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - events
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /events/force-grant/reserve/requests/{id}/withdrawal/:
+    put:
+      operationId: events_force_grant_reserve_requests_withdrawal_update
+      description: 強制付与の予約申請を取り下げる
+      summary: 強制付与予約申請取下
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - events
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /providers/:
+    get:
+      operationId: providers_retrieve
+      description: 事業者の一覧を取得する
+      summary: 事業者一覧取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - providers
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    post:
+      operationId: providers_create
+      description: サービス利用開始にあたり、事業者情報および管理Webアカウントの仮登録を行う
+      summary: 事業者仮入会
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - providers
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /providers/{id}/tree/:
+    get:
+      operationId: providers_tree_retrieve
+      description: 事業者に紐付く企業、店舗、店舗端末のツリー構造を取得する
+      summary: 企業ツリー取得
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - providers
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: providers_tree_update
+      description: 事業者に紐付く企業、店舗、店舗端末のツリー構造を変更する
+      summary: 企業ツリー変更
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - providers
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /providers/examine/:
+    get:
+      operationId: providers_examine_retrieve
+      description: 事業者の入会や変更時における審査対象の一覧を取得する
+      summary: 事業者審査一覧取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - providers
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /providers/examine/{id}/:
+    get:
+      operationId: providers_examine_retrieve_2
+      description: 事業者の入会や変更時における審査対象の詳細情報を取得する
+      summary: 事業者審査詳細取得
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - providers
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: providers_examine_update
+      description: 事業者の入会や変更に伴う審査の承認または否認を行う
+      summary: 事業者審査承認
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - providers
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /providers/verify/:
+    post:
+      operationId: providers_verify_create
+      description: サービス利用開始にあたり、事業者情報および管理Webアカウントの仮登録を行う
+      summary: 事業者本入会
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - providers
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /requests/:
+    get:
+      operationId: requests_retrieve
+      description: 各種操作（諸変更や取引取消等）の申請の一覧を取得する
+      summary: 申請一覧取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - requests
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /requests/campaigns/{id}:
+    get:
+      operationId: requests_campaigns_retrieve
+      description: キャンペーンの登録や変更申請の詳細情報を取得する
+      summary: キャンペーン設定申請詳細取得
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - requests
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /requests/cards/{id}:
+    get:
+      operationId: requests_cards_retrieve
+      description: カード情報変更申請の詳細情報を取得する
+      summary: カード情報変更申請詳細取得
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - requests
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /requests/cards/replace/{id}:
+    get:
+      operationId: requests_cards_replace_retrieve
+      description: カード付替申請の詳細情報を取得する
+      summary: カード付替申請詳細取得
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - requests
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /requests/force-grant/{id}:
+    get:
+      operationId: requests_force_grant_retrieve
+      description: 強制付与予約申請の詳細情報を取得する
+      summary: 強制付与申請詳細取得
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - requests
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /requests/transactions/cancel/{id}:
+    get:
+      operationId: requests_transactions_cancel_retrieve
+      description: 取引取消申請の詳細情報を取得する
+      summary: 取引取消申請詳細取得
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - requests
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /service/privacy/:
+    get:
+      operationId: service_privacy_retrieve
+      description: 管理Webのプライバシーポリシーを取得する
+      summary: 管理Webプライバシーポリシー取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - service
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /service/terms/:
+    get:
+      operationId: service_terms_retrieve
+      description: 管理Webの利用規約を取得する
+      summary: 管理Web利用規約取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - service
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: service_terms_update
+      description: 管理Webの利用規約に対して同意する
+      summary: 管理Web利用規約同意
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - service
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /shops/:
+    get:
+      operationId: shops_retrieve
+      description: 企業に紐付く店舗の一覧を取得する
+      summary: 店舗一覧取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - shops
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Shop'
+              examples:
+                例2:
+                  value:
+                    shop_name: 店名
+                    shop_number: 111
+                  summary: short summary
+                  description: longer description
+          description: ''
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Common'
+          description: Bad request (something invalid)
+    post:
+      operationId: shops_create
+      description: 企業に紐付く店舗を登録する
+      summary: 店舗登録
+      tags:
+      - shops
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Shop'
+            examples:
+              例1:
+                value:
+                  shop_name: 店名
+                summary: short summary
+                description: longer description
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Shop'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Shop'
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Shop'
+              examples:
+                例2:
+                  value:
+                    shop_name: 店名
+                    shop_number: 111
+                  summary: short summary
+                  description: longer description
+          description: ''
+        '400':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Common'
+          description: Bad request (something invalid)
+  /shops/{id}/:
+    get:
+      operationId: shops_retrieve_2
+      description: 企業に紐付く店舗の詳細情報を取得する
+      summary: 店舗詳細取得
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      tags:
+      - shops
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: shops_update
+      description: 企業に紐付く店舗の情報を変更する
+      summary: 店舗情報変更
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      tags:
+      - shops
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /summary/balance/:
+    get:
+      operationId: summary_balance_retrieve
+      description: 発行保証金供託に必要な前払い式支払手段の基準日における集計結果を取得する
+      summary: 基準日未使用残高集計取得API
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - summary
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /summary/card/:
+    get:
+      operationId: summary_card_retrieve
+      description: カードにおける取引の集計結果を取得する
+      summary: カード取引集計取得API
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - summary
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /summary/event/:
+    get:
+      operationId: summary_event_retrieve
+      description: イベント別での取引の集計結果を取得する
+      summary: イベント集計取得API
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - summary
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /summary/issue/:
+    get:
+      operationId: summary_issue_retrieve
+      description: 電子マネーの発行数の集計を取得する
+      summary: 電子マネー発行数集計取得API
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - summary
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /tags/{id}/:
+    put:
+      operationId: tags_update
+      description: 事業者の管理に合わせたグルーピング（ブランドやフランチャイズ店等）を行う単位の情報を変更する
+      summary: 管理タグ情報変更
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - tags
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /terminals/:
+    get:
+      operationId: terminals_retrieve
+      description: 店舗に紐付く端末の一覧を取得する
+      summary: 店舗端末一覧取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - terminals
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    post:
+      operationId: terminals_create
+      description: 店舗に紐付く端末を登録する
+      summary: 店舗端末登録
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - terminals
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /terminals/{id}/:
+    get:
+      operationId: terminals_retrieve_2
+      description: 店舗に紐付く端末の詳細情報を取得する
+      summary: 店舗端末詳細取得
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - terminals
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: terminals_update
+      description: 店舗に紐付く端末の情報を変更する
+      summary: 店舗端末情報変更
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - terminals
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /transactions/:
+    get:
+      operationId: transactions_retrieve
+      description: 取引履歴の一覧を取得する
+      summary: 取引履歴一覧取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - transactions
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /transactions/{id}/:
+    get:
+      operationId: transactions_retrieve_2
+      description: 取引履歴の詳細情報を取得する
+      summary: 取引履歴詳細取得
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - transactions
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /transactions/{id}/cancel/:
+    put:
+      operationId: transactions_cancel_update
+      description: 過去に行った取引を取り消す
+      summary: 取引取消
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - transactions
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /transactions/{id}/cancel/requests/:
+    post:
+      operationId: transactions_cancel_requests_create
+      description: 過去に行った取引の取り消しを申請する
+      summary: 取引取消申請
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - transactions
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /transactions/{id}/cancel/requests/{id}:
+    put:
+      operationId: transactions_cancel_requests_update
+      description: 取引取消の申請を承認または否認する
+      summary: 取引取消承認
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - transactions
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /transactions/{id}/cancel/requests/{id}/withdrawal:
+    put:
+      operationId: transactions_cancel_requests_withdrawal_update
+      description: 取引取消の申請を取り下げる
+      summary: 取引取消申請取下
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - transactions
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /transactions/doubt/:
+    get:
+      operationId: transactions_doubt_retrieve
+      description: 指定の検知ルールにて疑わしいと判断された取引の一覧を取得する
+      summary: 疑わしい取引一覧取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - transactions
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /transactions/type/:
+    get:
+      operationId: transactions_type_retrieve
+      description: チャージや決済等の取引パターンの一覧を取得する
+      summary: 取引種別一覧取得
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - transactions
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /usage-limits/:
+    get:
+      operationId: usage_limits_retrieve
+      description: バリューやボーナスに設定できる利用制限パターンの一覧を取得する
+      summary: 利用制限設定一覧取得API
+      parameters:
+      - in: query
+        name: status
+        schema:
+          type: string
+      tags:
+      - usage-limits
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+components:
+  schemas:
+    Common:
+      type: object
+      properties:
+        status:
+          $ref: '#/components/schemas/Status'
+      required:
+      - status
+    Shop:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          readOnly: true
+        updated_at:
+          type: string
+          format: date-time
+          readOnly: true
+          title: 更新日時
+        shop_name:
+          type: string
+          title: 店舗名
+          maxLength: 256
+        shop_name_english_characters:
+          type: string
+          title: 店舗名ローマ字
+          maxLength: 256
+        shop_number:
+          type: string
+          title: 店舗番号
+          maxLength: 256
+        postal_code:
+          type: string
+          title: 郵便番号
+          maxLength: 256
+        address_pref:
+          type: string
+          title: 住所(都道府県)
+          maxLength: 256
+        address_city:
+          type: string
+          title: 住所(市区町村)
+          maxLength: 256
+        address_town:
+          type: string
+          title: 住所(町域)
+          maxLength: 256
+        address_other:
+          type: string
+          title: 住所(その他)
+          maxLength: 256
+        phone_number:
+          type: string
+          title: 電話番号
+          maxLength: 256
+        available_service:
+          type: string
+          title: 利用可能サービス
+          maxLength: 256
+        available_transaction_type:
+          type: string
+          title: 利用可能取引種別
+          maxLength: 256
+        start_available_date:
+          type: string
+          format: date
+          nullable: true
+          title: 利用開始日
+        end_available_date:
+          type: string
+          format: date
+          nullable: true
+          title: 利用終了日
+        apply_update_at:
+          type: string
+          format: date
+          nullable: true
+          title: 変更適用日
+        company:
+          type: string
+          format: uuid
+          title: 企業ID
+        management_tags:
+          type: array
+          items:
+            type: string
+            format: uuid
+            nullable: true
+            title: 管理タグ
+          title: 管理タグ
+      required:
+      - id
+      - updated_at
+    Status:
+      type: object
+      properties:
+        code:
+          type: string
+          maxLength: 200
+        message:
+          type: string
+          maxLength: 200
+      required:
+      - code
+      - message
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: Session
+servers:
+- url: https://localhost:8000/admin/api/v1
+  description: Local

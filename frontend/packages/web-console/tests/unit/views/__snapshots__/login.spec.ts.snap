@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`views/login mount Login 1`] = `
+<v-app-stub
+  id="app"
+>
+  <v-app-bar-stub
+    app="true"
+    class="d-flex justify-center"
+    color="transparent"
+    elevation="1"
+    extensionheight="48"
+    flat="true"
+    src=""
+    tag="header"
+    value="true"
+  >
+    <div
+      class="d-flex align-center"
+    >
+      <v-img-stub
+        options="[object Object]"
+        position="center center"
+        src="~@/assets/cmn/logo.svg"
+        transition="fade-transition"
+        width="132"
+      />
+    </div>
+  </v-app-bar-stub>
+   
+  <v-container-stub
+    fill-height=""
+    tag="div"
+  >
+    <v-card-stub
+      class="ma-auto pa-8 pb-12"
+      loaderheight="4"
+      maxwidth="364"
+      outlined="true"
+      tag="div"
+    >
+      <v-card-text-stub
+        class="pa-0"
+      >
+        <div
+          class="ma-0 pt-1 pb-2 px-0"
+        >
+          <v-text-field-stub
+            backgroundcolor=""
+            clearicon="$clear"
+            dense="true"
+            errorcount="1"
+            errormessages=""
+            hidedetails="auto"
+            loaderheight="2"
+            maxlength="256"
+            messages=""
+            outlined="true"
+            rules="[Function],[Function]"
+            successmessages=""
+            type="text"
+            value="aaa@gmail.com"
+          />
+        </div>
+         
+        <div
+          class="ma-0 pt-2 pb-2 px-0"
+        >
+          <v-text-field-stub
+            appendicon="remove_red_eye"
+            backgroundcolor=""
+            clearicon="$clear"
+            dense="true"
+            errorcount="1"
+            errormessages=""
+            hidedetails="auto"
+            loaderheight="2"
+            maxlength="100"
+            messages=""
+            outlined="true"
+            rules="[Function]"
+            successmessages=""
+            type="password"
+            value="123456"
+          />
+        </div>
+         
+        <span
+          class="red--text"
+          style="white-space: pre-line;"
+        >
+          
+                    
+                
+        </span>
+      </v-card-text-stub>
+       
+      <v-btn-stub
+        activeclass=""
+        block="true"
+        class="mt-5"
+        color="primary"
+        depressed="true"
+        id="login-btn"
+        large="true"
+        tag="button"
+        type="button"
+      >
+        
+                
+            
+      </v-btn-stub>
+    </v-card-stub>
+  </v-container-stub>
+   
+  <layout-footer-stub />
+</v-app-stub>
+`;

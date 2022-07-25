@@ -1,0 +1,323 @@
+openapi: 3.0.3
+info:
+  title: new point+plus API shop
+  version: 1.0.0
+  description: 店舗Web用API
+paths:
+  /accounting_history/{id}/:
+    get:
+      operationId: accounting_history_retrieve
+      description: ''
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      tags:
+      - accounting_history
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /companies/:
+    get:
+      operationId: companies_list
+      description: ''
+      parameters:
+      - name: limit
+        required: false
+        in: query
+        description: Number of results to return per page.
+        schema:
+          type: integer
+      - name: offset
+        required: false
+        in: query
+        description: The initial index from which to return the results.
+        schema:
+          type: integer
+      tags:
+      - companies
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaginatedCompanyList'
+          description: ''
+    post:
+      operationId: companies_create
+      description: ''
+      parameters:
+      - in: query
+        name: address_city
+        schema:
+          type: string
+          title: 住所(市区町村)
+          maxLength: 256
+      - in: query
+        name: address_other
+        schema:
+          type: string
+          title: 住所(その他)
+          maxLength: 256
+      - in: query
+        name: address_pref
+        schema:
+          type: string
+          title: 住所(都道府県)
+          maxLength: 256
+      - in: query
+        name: address_town
+        schema:
+          type: string
+          title: 住所(町域)
+          maxLength: 256
+      - in: query
+        name: apply_update_at
+        schema:
+          type: string
+          format: date
+          nullable: true
+          title: 変更適用日
+      - in: query
+        name: available_service
+        schema:
+          type: string
+          title: 利用可能サービス
+          maxLength: 256
+      - in: query
+        name: available_transaction_type
+        schema:
+          type: string
+          title: 利用可能取引種別
+          maxLength: 256
+      - in: query
+        name: company_name
+        schema:
+          type: string
+          title: 企業名
+          maxLength: 256
+      - in: query
+        name: corporate_number
+        schema:
+          type: string
+          title: 企業番号
+          maxLength: 256
+      - in: query
+        name: created_at
+        schema:
+          type: string
+          format: date-time
+          title: 作成日時
+        required: true
+      - in: query
+        name: end_available_date
+        schema:
+          type: string
+          format: date
+          nullable: true
+          title: 利用終了日
+      - in: query
+        name: id
+        schema:
+          type: string
+          format: uuid
+        required: true
+      - in: query
+        name: management_tags
+        schema:
+          type: array
+          items:
+            type: string
+            format: uuid
+            nullable: true
+            title: 管理タグ
+          title: 管理タグ
+      - in: query
+        name: nested
+        schema:
+          $ref: '#/components/schemas/Company'
+      - in: query
+        name: phone_number
+        schema:
+          type: string
+          title: 電話番号
+          maxLength: 256
+      - in: path
+        name: pk
+        schema:
+          type: string
+          format: uuid
+        required: true
+      - in: query
+        name: postal_code
+        schema:
+          type: string
+          title: 郵便番号
+          maxLength: 256
+      - in: query
+        name: queryparam1
+        schema:
+          type: string
+          format: uuid
+      - in: query
+        name: start_available_date
+        schema:
+          type: string
+          format: date
+          nullable: true
+          title: 利用開始日
+      - in: query
+        name: updated_at
+        schema:
+          type: string
+          format: date-time
+          title: 更新日時
+        required: true
+      tags:
+      - companies
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Company'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Company'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Company'
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Company'
+          description: ''
+components:
+  schemas:
+    Company:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          readOnly: true
+        created_at:
+          type: string
+          format: date-time
+          readOnly: true
+          title: 作成日時
+        updated_at:
+          type: string
+          format: date-time
+          readOnly: true
+          title: 更新日時
+        company_name:
+          type: string
+          title: 企業名
+          maxLength: 256
+        corporate_number:
+          type: string
+          title: 企業番号
+          maxLength: 256
+        postal_code:
+          type: string
+          title: 郵便番号
+          maxLength: 256
+        address_pref:
+          type: string
+          title: 住所(都道府県)
+          maxLength: 256
+        address_city:
+          type: string
+          title: 住所(市区町村)
+          maxLength: 256
+        address_town:
+          type: string
+          title: 住所(町域)
+          maxLength: 256
+        address_other:
+          type: string
+          title: 住所(その他)
+          maxLength: 256
+        phone_number:
+          type: string
+          title: 電話番号
+          maxLength: 256
+        available_service:
+          type: string
+          title: 利用可能サービス
+          maxLength: 256
+        available_transaction_type:
+          type: string
+          title: 利用可能取引種別
+          maxLength: 256
+        start_available_date:
+          type: string
+          format: date
+          nullable: true
+          title: 利用開始日
+        end_available_date:
+          type: string
+          format: date
+          nullable: true
+          title: 利用終了日
+        apply_update_at:
+          type: string
+          format: date
+          nullable: true
+          title: 変更適用日
+        management_tags:
+          type: array
+          items:
+            type: string
+            format: uuid
+            nullable: true
+            title: 管理タグ
+          title: 管理タグ
+      required:
+      - created_at
+      - id
+      - updated_at
+    PaginatedCompanyList:
+      type: object
+      properties:
+        count:
+          type: integer
+          example: 123
+        next:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?offset=400&limit=100
+        previous:
+          type: string
+          nullable: true
+          format: uri
+          example: http://api.example.org/accounts/?offset=200&limit=100
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/Company'
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: Session

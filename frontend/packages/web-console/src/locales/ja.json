@@ -1,0 +1,189 @@
+{
+	"common": {
+		"clear": "クリア",
+		"search": "検索",
+		"downloadCSV": "CSVダウンロード",
+		"downloadCSVVerification": "検索結果をCSVファイルへ出力します。出力が完了次第、メールにて通知が送られ、ダウンロード用URLが発行されます。続行しますか？",
+		"uploadCSV": "CSVアップロード",
+		"deny": "否認",
+		"approve": "承認",
+		"cancel": "キャンセル",
+		"send": "送信",
+		"apply": "適用",
+		"others": "その他",
+		"note": "備考",
+		"test": "テスト",
+		"change": "変更",
+		"cancelApprovalWaiting" : "取消承認待ち",
+		"itemsPerPageText" : "表示する行数：",
+		"snackbarDownloadCSV": "検索結果の出力が開始されました。ダウンロードURL発行まで今しばらくお待ちください。"
+	},
+
+	"user": {
+		"emailAddress": "メールアドレス",
+		"password": "パスワード",
+		"login": "ログイン",
+		"changeInitialPassword": "初期パスワードを変更",
+		"currentPassword": "現在のパスワード",
+		"newPassword": "新しいパスワード",
+		"newPasswordConfirm": "新しいパスワード確認",
+		"logout": "ログアウト"
+  	},
+
+	"card": {
+		"title": "カード",
+		"cardDisplayType": "表示するカードの種類",
+		"cardProduction": "本番カード",
+		"cardTest": "テストカード",
+		"cardSettingName": "カード設定名",
+		"cardStatus": "カード状態",
+		"cardSettingType": "カード設定種別",
+		"cardNumber": "カード番号",
+		"cardManagement": "カード管理",
+
+		"cardDetail": {
+			"transactionHistory": "取引履歴を確認",
+			"bonusBalance": "ボーナス残高",
+			"unableSettleBonusBalance": "決済利用不可ボーナス残高",
+			"basicInfo": "基本情報",
+			"pinNumber": "PIN番号",
+			"firstTransactionDate": "初回取引日時",
+			"noPaymentAvailableBonus": "決済利用不可ボーナス",
+			"changeApprovalWaiting": "変更承認待ち",
+			"changeApprovalInfo": "※下記は承認前の情報です",
+
+			"changeCardInfoBtn": "カード情報変更",
+			"changeCardInfo": {
+				"changeCardInfoMsg": "否認する理由を選択してください。",
+				"applyConfirm": "カード情報の変更を確認",
+				"applyConfirmMsg": "変更された内容で承認申請が送られます。続行しますか？"
+			},
+
+			"chargeBalanceTab": "チャージ残高",
+			"chargeBalance":
+			{
+				"balance": "残高",
+				"balanceByUsageRestriction": "利用制限別残高",
+				"usageLimit": "利用制限",
+				"balanceByExpireDate": "有効期限別残高",
+				"expireDate": "有効期限",
+				"grantedAmount": "付与予定額",
+				"scheduledDate": "付与予定日"
+			}
+		},
+		"cardList": {
+			"cardStatusChange": "カード状態変更",
+			"cardStatus": "カード状態",
+			"confirmChangeStatus": "カード状態の変更を確認",
+			"applyConfirmMsg": "変更された内容で承認申請が送られます。続行しますか？",
+			"detail": "詳細"
+		}
+	},
+
+	"transaction": {
+		"title": "取引",
+		"summary": "取引集計",
+		"aggregationPeriod": "集計期間",
+		"transactionType": "取引種別",
+		"transactionDateTime": "取引日時",
+		"transactionStatus": "取引状態",
+		"transactionNumber": "取引番号",
+		"transactionAmount": "取引額",
+		"transactionCancellation": "取引取消",
+		"eventName": "イベント名",
+		"transactionConfirmCancellation" : "取引の取消しを確認",
+		"transactionApprovalRequest" : "選択された項目を取消すための承認申請が送られます。続行しますか？",
+
+		"historyList": "取引履歴",
+		"history": {
+			"startDate": "集計開始日",
+			"endDate": "集計終了日",
+			"terminalType": "端末種別",
+			"targetCompany": "対象企業",
+			"targetStore": "対象店舗",
+			"grantAmountOrNumber": "付与額/数",
+			"grantDateTime": "付与日時",
+			"companyName": "企業名",
+			"storeName": "店舗名",
+			"terminalNumber": "端末番号"
+		},
+
+		"cancelApprove": {
+			"approvalDecision": "承認判定",
+			"transactionHistoryCancel": "取引履歴の取消",
+			"approvalConfirm": "承認の確認",
+			"approvalConfirmMsg": "変更が適用されます。続行しますか？",
+
+			"denialReasonPopup": "否認理由の入力",
+			"denialReason": {
+				"denialReasonMsg": "否認する理由を選択してください。",
+				"otherReason": "補足理由",
+				"select": {
+					"doubleCheck": "再確認してください",
+					"cannotApprove": "この変更は承認できません"
+				},
+				"denialConfirm": "否認の確認",
+				"denialConfirmMsg": "変更が適用されません。続行しますか？"
+			}
+		},
+
+		"statistic": {
+			"cardTotal": "カード取引集計",
+			"baseDateUnusedBalance": "基準日未使用残高",
+			"eventAggregation": "イベント集計",
+			"totalNumberMoneyIssued": "電子マネー発行数集計",
+			"aggregationCriteria": "集計基準",
+			"managementTag": "管理タグ",
+			"enterprise": "企業",
+			"store": "店舗",
+			"storeTerminal": "店舗端末",
+			"itemToHide": "非表示にする項目の",
+			"clickTheItem": "をクリックしてください",
+			"transactionTotalCard": "種別：カード取引集計",
+			"aggregationCriteriaDaily": "集計基準：日次",
+			"editItemDone": "項目編集終了",
+			"editItem": "項目編集",
+			"table": {
+				"prepaidValue": "前払バリュー額",
+				"number": "件数",
+				"prepaidValueCancel": "前払バリュー 取消額",
+				"prepaidValueAmount": "前払バリュー 額",
+				"numberBonuses": "決済併用 ボーナス数"
+			}
+		}
+	},
+	"CSVDownload": {
+		"title": "CSVダウンロード",
+		"itemTitleContent": "データ内容：",
+		"itemTitlePeriod": "対象期間：",
+		"downloadFileRemark": "（自動でダウンロードが始まらない場合はこちらからダウンロードしてください）",
+		"annotationFirstHalf": "※このファイルは",
+		"annotationSecondHalf": "から72時間ダウンロード可能です"
+	},
+	"error": {
+		"common": {
+			"codeItemTitle": "エラーコード：",
+			"goToback": "前のページに戻る"
+		},
+		"403": {
+			"title": "アクセスが許可されていません",
+			"code": "403",
+			"text": "大変申し訳ございませんが、お探しのページへのアクセスは禁止されています。"
+		},
+		"404": {
+			"title": "お探しのページが見つかりません",
+			"code": "404",
+			"text": "大変申し訳ございませんが、お探しのページは、削除されたか、ファイル名が間違っている可能性があります。<br>アドレスを確認してください。"
+		},
+		"500": {
+			"title": "エラーが発生しました",
+			"code": "500",
+			"text": "大変申し訳ございませんが、サーバーで問題が発生したため、ページを表示することができません。<br>お手数ですが、時間を置いてから再度アクセスしてください。"
+		},
+		"503": {
+			"title": "アクセスが集中しています",
+			"code": "503",
+			"text": "大変申し訳ございませんが、アクセスが集中している為、一時的にページを表示することができません。<br>お手数ですが、時間を置いてから再度アクセスしてください。"
+		}
+	}
+}

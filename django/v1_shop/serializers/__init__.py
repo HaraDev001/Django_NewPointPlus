@@ -1,0 +1,2 @@
+# 作成したSerializerはここにimportすること
+from .company_serializers import CompanySerializer

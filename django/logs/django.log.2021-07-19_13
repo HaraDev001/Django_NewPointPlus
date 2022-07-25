@@ -1,0 +1,38 @@
+[2021-07-19 13:12:51] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-19 13:12:52] [DEBUG] [utils] (0.003) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 13:12:52] [DEBUG] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2021-07-19 13:12:52] [DEBUG] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 13:12:52] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-19 13:16:59] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-19 13:17:04] [DEBUG] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 13:17:04] [DEBUG] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2021-07-19 13:17:04] [DEBUG] [utils] (0.001) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 13:17:04] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env

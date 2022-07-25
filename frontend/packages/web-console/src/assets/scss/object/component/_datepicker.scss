@@ -1,0 +1,43 @@
+.v-text-field {
+    // Format datepicker btn
+    &.date-picker {
+        background-color: #e0e0e0;
+        width: 130px;
+
+        input {
+            text-align: center;
+        }
+
+        fieldset {
+            border-color: #e0e0e0;
+        }
+
+        > .v-input__control > .v-input__slot {
+            cursor: default;
+        }
+
+        &:hover {
+            background-color: #cccccc;
+            transition: 0.3s;
+        }
+    }
+
+    &.select-datepicker {
+
+        &.v-text-field--enclosed:not(.v-text-field--rounded) {
+
+            > .v-input__control > .v-input__slot {
+                padding: 0;
+            }
+
+            .v-label {
+                padding-left: 12px;
+            }
+
+            input {
+                padding: 8px 12px;
+            }
+        }
+    }
+}
+

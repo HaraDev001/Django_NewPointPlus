@@ -1,0 +1,51 @@
+version: '3'
+services:
+    django:
+        env_file:
+            - ./django/.env
+        build:
+            context: ./
+            dockerfile: ./django/Dockerfile
+        volumes:
+            - ./django/:/usr/src/app/
+        command: >
+            bash -c '
+            yes | python manage.py makemigrations && 
+            python manage.py migrate && 
+            uwsgi --socket :8001 --module config.wsgi'
+        expose:
+            - "8001"
+        privileged: true
+        depends_on:
+            - mysql
+    vue:
+        build:
+            context: .
+            dockerfile: ./vue/Dockerfile
+        volumes:
+            - ./vue:/usr/src/app
+        working_dir: /usr/src/app
+        command: >
+            bash -c '
+            npm install &&
+            npm run build:dev'
+    nginx:
+        build:
+            context: ./
+            dockerfile: ./nginx/Dockerfile
+        volumes:
+            - ./nginx/site.conf:/etc/nginx/conf.d/default.conf
+            - ./nginx/uwsgi_params:/etc/nginx/uwsgi_params
+            - ./vue/public:/var/www/public/
+        ports:
+            - "80:80"
+        depends_on:
+            - django
+    mysql:
+        image: mysql:5.7
+        env_file: ./mysql/.env
+        ports:
+            - "3306:3306"
+        volumes:
+            - ./mysql/data:/var/lib/mysql
+            - ./mysql/conf.d:/etc/mysql/conf.d

@@ -1,0 +1,137 @@
+[2021-08-04 22:11:16] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:11:16] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:22:01] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:22:02] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:27:26] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:27:27] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:27:27] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.018) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.097) SHOW FULL TABLES; args=None
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.024) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.035) SHOW FULL TABLES; args=None
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.040) SHOW FULL TABLES; args=None
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.036) SHOW FULL TABLES; args=None
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.026) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',)
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'admin' AND `django_content_type`.`model` = 'logentry') LIMIT 21; args=('admin', 'logentry')
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.012) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (1) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(1,)
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',)
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',)
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'permission') LIMIT 21; args=('auth', 'permission')
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'group') LIMIT 21; args=('auth', 'group')
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'user') LIMIT 21; args=('auth', 'user')
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.008) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (2, 3, 4) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(2, 3, 4)
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',)
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',)
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'contenttypes' AND `django_content_type`.`model` = 'contenttype') LIMIT 21; args=('contenttypes', 'contenttype')
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (5) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(5,)
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',)
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',)
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'sessions' AND `django_content_type`.`model` = 'session') LIMIT 21; args=('sessions', 'session')
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (6) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(6,)
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',)
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'database'; args=('database',)
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'accounting') LIMIT 21; args=('database', 'accounting')
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'bonusconfig') LIMIT 21; args=('database', 'bonusconfig')
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'card') LIMIT 21; args=('database', 'card')
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'company') LIMIT 21; args=('database', 'company')
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'consumer') LIMIT 21; args=('database', 'consumer')
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'managementtag') LIMIT 21; args=('database', 'managementtag')
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'shop') LIMIT 21; args=('database', 'shop')
+[2021-08-04 22:27:32] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'terminal') LIMIT 21; args=('database', 'terminal')
+[2021-08-04 22:27:33] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'valueconfig') LIMIT 21; args=('database', 'valueconfig')
+[2021-08-04 22:27:33] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'transaction') LIMIT 21; args=('database', 'transaction')
+[2021-08-04 22:27:33] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'terminalauthtoken') LIMIT 21; args=('database', 'terminalauthtoken')
+[2021-08-04 22:27:33] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'carddetail') LIMIT 21; args=('database', 'carddetail')
+[2021-08-04 22:27:33] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'cardconfig') LIMIT 21; args=('database', 'cardconfig')
+[2021-08-04 22:27:33] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'campaign') LIMIT 21; args=('database', 'campaign')
+[2021-08-04 22:27:33] [DEBUG] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'batchwaitingapplycampaign') LIMIT 21; args=('database', 'batchwaitingapplycampaign')
+[2021-08-04 22:27:33] [DEBUG] [utils] (0.003) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 29, 30, 31) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 29, 30, 31)
+[2021-08-04 22:27:33] [DEBUG] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'database'; args=('database',)
+[2021-08-04 22:30:00] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:30:01] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:30:01] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:41:12] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:41:13] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:41:13] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:42:01] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:42:02] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:42:02] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:43:37] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:43:38] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:43:38] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:44:43] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:44:43] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:44:43] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:45:34] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:45:35] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:45:35] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:46:09] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:46:09] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:46:10] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:46:36] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:46:37] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:46:37] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:48:53] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:48:53] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:48:53] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:50:10] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:50:10] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:50:10] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:50:40] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:50:40] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:50:40] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:51:06] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:51:06] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:51:06] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:52:50] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:52:51] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:52:51] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:55:12] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:55:13] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:55:13] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:56:45] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:56:45] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:56:45] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 22:58:12] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 22:58:12] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 22:58:12] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 23:01:19] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 23:01:20] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 23:01:20] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 23:03:27] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 23:03:27] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 23:03:27] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 23:05:15] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 23:05:15] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 23:05:15] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 23:06:00] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 23:06:00] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 23:06:00] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 23:08:29] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 23:08:30] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 23:08:30] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 23:08:41] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 23:08:42] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 23:08:42] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-08-04 23:16:03] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-08-04 23:16:03] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-08-04 23:16:03] [DEBUG] [selector_events] Using selector: EpollSelector

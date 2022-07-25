@@ -1,0 +1,235 @@
+[2021-07-30 11:11:19] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 11:11:19] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 11:11:19] [WARNING] [log] Not Found: /card/api/v1/cards/service/corp_info/
+[2021-07-30 11:11:19] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 11:13:35] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 11:13:35] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 11:13:35] [WARNING] [log] Not Found: /card/api/v1/cards/service/corp_info/
+[2021-07-30 11:13:35] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 11:14:20] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 11:14:20] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 11:14:20] [WARNING] [log] Not Found: /card/api/v1/cards/service/corp_info/
+[2021-07-30 11:14:20] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 11:14:46] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 11:14:46] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 11:14:46] [WARNING] [log] Not Found: /card/api/v1/cards/service/corp_info/
+[2021-07-30 11:14:46] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 11:15:40] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 11:15:40] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 11:15:40] [ERROR] [log] Internal Server Error: /card/api/v1/service/corp_info/
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[2021-07-30 11:15:40] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 11:19:40] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 11:19:41] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 11:19:41] [ERROR] [log] Internal Server Error: /card/api/v1/service/corp_info/
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/v1_card/views/service_views.py", line 18, in get
+    serializer = CorpInfoRequestSerializer(data=rrequest_data)
+NameError: name 'rrequest_data' is not defined
+[2021-07-30 11:19:41] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 11:19:58] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 11:19:58] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 11:19:58] [ERROR] [log] Internal Server Error: /card/api/v1/service/corp_info/
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[2021-07-30 11:19:58] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 11:20:20] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 11:20:20] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 11:20:20] [ERROR] [log] Internal Server Error: /card/api/v1/service/corp_info/
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[2021-07-30 11:20:20] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 11:21:11] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 11:21:11] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 11:21:11] [ERROR] [log] Internal Server Error: /card/api/v1/service/corp_info/
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[2021-07-30 11:21:11] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 11:28:29] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 11:28:30] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 11:28:30] [ERROR] [log] Internal Server Error: /card/api/v1/service/corp_info/
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/v1_card/views/service_views.py", line 21, in get
+    return Response(response_data, response_status)
+NameError: name 'Response' is not defined
+[2021-07-30 11:28:30] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 11:29:13] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 11:29:13] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 11:29:13] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 12:07:54] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 12:08:27] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 12:08:45] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 12:08:45] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 12:08:45] [ERROR] [log] Internal Server Error: /card/api/v1/service/corp_info/
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/v1_card/views/service_views.py", line 21, in get
+    response_data, response_status = serializer.save()
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/v1_card/serializers/corp_info_serializers.py", line 40, in create
+    corp_info_repository: ICorpInfoRepository = IMockCorpInfoRepository()
+  File "/usr/src/app/v1_card/data/IMockCorpInfoRepository.py", line 38, in __init__
+    account=account2
+NameError: name 'account2' is not defined
+[2021-07-30 12:08:45] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 12:08:57] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 12:08:57] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 12:08:57] [ERROR] [log] Internal Server Error: /card/api/v1/service/corp_info/
+Traceback (most recent call last):
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/app/v1_card/views/service_views.py", line 21, in get
+    response_data, response_status = serializer.save()
+  File "/root/.local/share/virtualenvs/app-lp47FrbD/lib/python3.8/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "/usr/src/app/v1_card/serializers/corp_info_serializers.py", line 42, in create
+    instance, response_status = corp_info.execute(validated_data['host'])
+  File "/usr/src/app/v1_card/buisiness_logic/corp_info/corp_info.py", line 17, in execute
+    corp_info = self.corp_info_repository.get_corp_info(host)
+  File "/usr/src/app/v1_card/data/IMockCorpInfoRepository.py", line 60, in get_corp_info
+    raise e
+  File "/usr/src/app/v1_card/data/IMockCorpInfoRepository.py", line 56, in get_corp_info
+    return self.corp_info[host]
+AttributeError: 'IMockCorpInfoRepository' object has no attribute 'corp_info'
+[2021-07-30 12:08:57] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 12:09:14] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 12:09:14] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 12:09:14] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 12:11:34] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 12:11:34] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 12:11:34] [WARNING] [log] Bad Request: /card/api/v1/service/corp_info/
+[2021-07-30 12:11:34] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 12:12:37] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 12:12:38] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 12:12:38] [WARNING] [log] Bad Request: /card/api/v1/service/corp_info/
+[2021-07-30 12:12:38] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 12:14:11] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 12:14:11] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 12:14:11] [WARNING] [log] Bad Request: /card/api/v1/service/corp_info/
+[2021-07-30 12:14:11] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 12:14:37] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 12:14:38] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 12:14:38] [WARNING] [log] Bad Request: /card/api/v1/service/corp_info/
+[2021-07-30 12:14:38] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 12:14:51] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 12:14:51] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 12:14:51] [WARNING] [log] Bad Request: /card/api/v1/service/corp_info/
+[2021-07-30 12:14:51] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 12:20:10] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 12:20:11] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 12:20:11] [WARNING] [log] Bad Request: /card/api/v1/service/corp_info/
+[2021-07-30 12:20:11] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-30 13:16:13] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-30 13:16:13] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-30 13:16:13] [DEBUG] [selector_events] Using selector: EpollSelector

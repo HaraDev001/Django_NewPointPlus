@@ -1,0 +1,185 @@
+openapi: 3.0.3
+info:
+  title: new point+plus API card
+  version: 1.0.0
+  description: 残高照会ページ用API
+paths:
+  /auth/token/:
+    post:
+      operationId: auth_token_create
+      description: カード番号とPINで認証を行い、API実行に利用するトークンを発行する。
+      summary: カードアクセストークン発行API
+      tags:
+      - 認証関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: auth_token_update
+      description: カードアクセストークンを更新する。
+      summary: カードアクセストークン更新API
+      tags:
+      - 認証関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    delete:
+      operationId: auth_token_destroy
+      description: カードアクセストークンを失効する。
+      summary: カードアクセストークン失効API
+      tags:
+      - 認証関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /cards/{card_number}/:
+    get:
+      operationId: cards_retrieve
+      description: カードの詳細情報を取得する。
+      summary: カード詳細取得API
+      parameters:
+      - in: path
+        name: card_number
+        schema:
+          type: string
+        required: true
+      tags:
+      - カード関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /cards/{card_number}/balance/:
+    get:
+      operationId: cards_balance_retrieve
+      description: カードの残高を取得する。
+      summary: 残高照会API
+      parameters:
+      - in: path
+        name: card_number
+        schema:
+          type: string
+        required: true
+      tags:
+      - カード関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /cards/{card_number}/transactions/:
+    get:
+      operationId: cards_transactions_list
+      description: 取引履歴の一覧を取得する。
+      summary: 取引履歴一覧取得API
+      parameters:
+      - in: path
+        name: card_number
+        schema:
+          type: string
+        required: true
+      tags:
+      - 取引関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /cards/{card_number}/transactions/{transaction_id}/:
+    get:
+      operationId: cards_transactions_retrieve
+      description: 取引履歴の詳細情報を取得する。
+      summary: 取引履歴詳細取得API
+      parameters:
+      - in: path
+        name: card_number
+        schema:
+          type: string
+        required: true
+      - in: path
+        name: transaction_id
+        schema:
+          type: string
+        required: true
+      tags:
+      - 取引関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /service/logo/:
+    get:
+      operationId: service_logo_retrieve
+      description: 事業者が提供する電子マネーアプリのサービスロゴを取得する。
+      summary: サービスロゴ取得API
+      tags:
+      - サービス関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /service/privacy/:
+    get:
+      operationId: service_privacy_retrieve
+      description: 事業者が提供する電子マネーアプリのプライバシーポリシーを取得する。
+      summary: カードプライバシーポリシー取得API
+      tags:
+      - サービス関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /service/terms/:
+    get:
+      operationId: service_terms_retrieve
+      description: 事業者が提供する電子マネーアプリの利用規約を取得する。
+      summary: カード利用規約取得API
+      tags:
+      - サービス関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: Session
+servers:
+- url: https://localhost:8000/card/api/v1
+  description: Local

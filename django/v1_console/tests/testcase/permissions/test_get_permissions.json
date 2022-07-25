@@ -1,0 +1,197 @@
+[
+  {
+    "id": "aw-17-9-01",
+    "url": "/console/api/v1/accounts/operations/permissions/",
+    "name": "TEST GET PERMISSION INVALID PROVIDER_ID FORMAT",
+    "params": {
+      "provider_id": "abc 112 31"
+    },
+    "body": {},
+    "method": "GET",
+    "status_code": 200,
+    "result": []
+  },
+  {
+    "id": "aw-17-9-02",
+    "url": "/console/api/v1/accounts/operations/permissions/",
+    "name": "TEST GET PERMISSION NONEXISTENCE PROVIDER_ID",
+    "params": {
+      "provider_id": "7a36de49-c3e5-4f91-b9fa-3f27ff0c77b6"
+    },
+    "body": {},
+    "method": "GET",
+    "status_code": 200,
+    "result": []
+  },
+  {
+    "id": "aw-17-9-03",
+    "url": "/console/api/v1/accounts/operations/permissions/",
+    "name": "TEST GET PERMISSION SUCCESS",
+    "params": {},
+    "body": {},
+    "method": "GET",
+    "status_code": 200,
+    "result": [
+      {
+        "permission_name": "APPROVE_CANCEL_TRANSACTION_REQUEST",
+        "permission_content": {
+          "target": "取引取消",
+          "permission": 2
+        },
+        "remarks": "deny arara"
+      },
+      {
+        "permission_name": "CANCEL_TRANSACTION",
+        "permission_content": {
+          "target": "取引取消",
+          "permission": 2
+        },
+        "remarks": "deny arara"
+      },
+      {
+        "permission_name": "CREATE_TRANSACTION",
+        "permission_content": {
+          "target": "取引取消",
+          "permission": 2
+        },
+        "remarks": "deny arara"
+      },
+      {
+        "permission_name": "EXPORT_CARD_CSV",
+        "permission_content": {
+          "target": "カード管理",
+          "permission": 1
+        },
+        "remarks": "allow all"
+      },
+      {
+        "permission_name": "EXPORT_TRANSACTION_CSV",
+        "permission_content": {
+          "target": "取引履歴",
+          "permission": 1
+        },
+        "remarks": "allow all"
+      },
+      {
+        "permission_name": "GET_BALANCE_SUMMARY",
+        "permission_content": {
+          "target": "集計",
+          "permission": 1
+        },
+        "remarks": "deny shop"
+      },
+      {
+        "permission_name": "GET_CARD_DETAIL",
+        "permission_content": {
+          "target": "カード管理",
+          "permission": 1
+        },
+        "remarks": "allow all"
+      },
+      {
+        "permission_name": "GET_CARD_LIST",
+        "permission_content": {
+          "target": "カード管理",
+          "permission": 1
+        },
+        "remarks": "allow all"
+      },
+      {
+        "permission_name": "GET_CARD_SUMMARY",
+        "permission_content": {
+          "target": "集計",
+          "permission": 1
+        },
+        "remarks": "allow all"
+      },
+      {
+        "permission_name": "GET_EVENT_SUMMARY",
+        "permission_content": {
+          "target": "集計",
+          "permission": 1
+        },
+        "remarks": "deny shop staff"
+      },
+      {
+        "permission_name": "GET_ISSUE_TOTAL_SUMMARY",
+        "permission_content": {
+          "target": "集計",
+          "permission": 1
+        },
+        "remarks": "deny shop"
+      },
+      {
+        "permission_name": "GET_ISSUE_TRANSITION_SUMMARY",
+        "permission_content": {
+          "target": "集計",
+          "permission": 1
+        },
+        "remarks": "deny shop"
+      },
+      {
+        "permission_name": "GET_TRANSACTION_DETAIL",
+        "permission_content": {
+          "target": "取引履歴",
+          "permission": 1
+        },
+        "remarks": "allow all"
+      },
+      {
+        "permission_name": "GET_TRANSACTION_HISTORY",
+        "permission_content": {
+          "target": "取引履歴",
+          "permission": 1
+        },
+        "remarks": "allow all"
+      },
+      {
+        "permission_name": "ISSUE_TOKEN",
+        "permission_content": {
+          "target": "ログイン・ログアウト",
+          "permission": 1
+        },
+        "remarks": "allow all"
+      },
+      {
+        "permission_name": "REFRESH_TOKEN",
+        "permission_content": {
+          "target": "ログイン・ログアウト",
+          "permission": 1
+        },
+        "remarks": "allow all"
+      },
+      {
+        "permission_name": "REQUEST_CANCEL_TRANSACTION",
+        "permission_content": {
+          "target": "取引取消",
+          "permission": 2
+        },
+        "remarks": "deny arara"
+      },
+      {
+        "permission_name": "REVOKE_TOKEN",
+        "permission_content": {
+          "target": "ログイン・ログアウト",
+          "permission": 1
+        },
+        "remarks": "allow all"
+      },
+      {
+        "permission_name": "SET_INIT_PASSWORD",
+        "permission_content": {
+          "target": "ログイン・ログアウト",
+          "permission": 1
+        },
+        "remarks": "allow all"
+      },
+      {
+        "permission_name": "WITHDRAWAL_TRANSACTION_CANCEL_REQUEST",
+        "permission_content": {
+          "target": "取引取消",
+          "permission": 2
+        },
+        "remarks": "deny arara"
+      }
+    ]
+  }
+]

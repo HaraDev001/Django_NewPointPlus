@@ -1,0 +1,17 @@
+{
+  "name": "frontend",
+  "description": "新P+Pフロントエンド",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/api",
+      "packages/utils",
+      "packages/web-console",
+      "packages/web-shop",
+      "packages/web-mypage",
+      "packages/web-card"
+    ]
+  },
+  "dependencies": {}
+}

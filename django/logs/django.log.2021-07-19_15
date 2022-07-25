@@ -1,0 +1,171 @@
+[2021-07-19 15:22:24] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-19 15:22:24] [DEBUG] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:22:24] [DEBUG] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2021-07-19 15:22:24] [DEBUG] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:22:24] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-19 15:26:45] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-19 15:26:50] [DEBUG] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:26:50] [DEBUG] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2021-07-19 15:26:50] [DEBUG] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:26:50] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-19 15:37:34] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-19 15:37:34] [DEBUG] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:37:34] [DEBUG] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2021-07-19 15:37:34] [DEBUG] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:37:34] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-19 15:38:16] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-19 15:38:21] [DEBUG] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:38:21] [DEBUG] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2021-07-19 15:38:21] [DEBUG] [utils] (0.001) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:38:21] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-19 15:40:32] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-19 15:40:32] [DEBUG] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:40:32] [DEBUG] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2021-07-19 15:40:32] [DEBUG] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:40:32] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-19 15:42:42] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-19 15:42:47] [DEBUG] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:42:47] [DEBUG] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2021-07-19 15:42:47] [DEBUG] [utils] (0.001) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:42:48] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-19 15:43:04] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-19 15:43:09] [DEBUG] [utils] (0.001) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:43:09] [DEBUG] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2021-07-19 15:43:09] [DEBUG] [utils] (0.001) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:43:09] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-19 15:45:01] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-19 15:45:06] [DEBUG] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:45:06] [DEBUG] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2021-07-19 15:45:06] [DEBUG] [utils] (0.001) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:45:06] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-19 15:46:04] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-19 15:46:04] [DEBUG] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:46:04] [DEBUG] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+[2021-07-19 15:46:04] [DEBUG] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+[2021-07-19 15:46:04] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env

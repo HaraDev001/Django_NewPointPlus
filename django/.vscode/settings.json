@@ -1,0 +1,29 @@
+{
+    "python.venvPath": ".venv",
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": [
+        "--max-line-length",
+        "120",
+        "--experimental",
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length",
+        "120",
+        "--exclude",
+        "__init__.py",
+        "--extend-ignore",
+        "F403,F405,E501"
+    ],
+    "python.linting.mypyEnabled": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.rulers": [
+        120
+    ],
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#ff4081"
+    },
+    "python.sortImports.args": [
+        "--atomic"
+    ],
+}

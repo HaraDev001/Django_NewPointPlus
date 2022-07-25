@@ -1,0 +1,380 @@
+openapi: 3.0.3
+info:
+  title: new point+plus API card
+  version: 1.0.0
+  description: 残高照会ページ用API
+paths:
+  /auth/token/:
+    post:
+      operationId: auth_token_create
+      description: カード番号とPINで認証を行い、API実行に利用するトークンを発行する。
+      summary: カードアクセストークン発行API
+      tags:
+      - 認証関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    put:
+      operationId: auth_token_update
+      description: カードアクセストークンを更新する。
+      summary: カードアクセストークン更新API
+      tags:
+      - 認証関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+    delete:
+      operationId: auth_token_destroy
+      description: カードアクセストークンを失効する。
+      summary: カードアクセストークン失効API
+      tags:
+      - 認証関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /cards/{card_number}/:
+    get:
+      operationId: cards_retrieve
+      description: カードの詳細情報を取得する。
+      summary: カード詳細取得API
+      parameters:
+      - in: path
+        name: card_number
+        schema:
+          type: string
+        required: true
+      tags:
+      - カード関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Card'
+          description: ''
+  /cards/{card_number}/balance/:
+    get:
+      operationId: cards_balance_retrieve
+      description: カードの残高を取得する。
+      summary: 残高照会API
+      parameters:
+      - in: path
+        name: card_number
+        schema:
+          type: string
+        required: true
+      tags:
+      - カード関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CardBalance'
+          description: ''
+  /cards/{card_number}/transactions/:
+    get:
+      operationId: cards_transactions_list
+      description: 取引履歴の一覧を取得する。
+      summary: 取引履歴一覧取得API
+      parameters:
+      - in: path
+        name: card_number
+        schema:
+          type: string
+        required: true
+      tags:
+      - 取引関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /cards/{card_number}/transactions/{transaction_id}/:
+    get:
+      operationId: cards_transactions_retrieve
+      description: 取引履歴の詳細情報を取得する。
+      summary: 取引履歴詳細取得API
+      parameters:
+      - in: path
+        name: card_number
+        schema:
+          type: string
+        required: true
+      - in: path
+        name: transaction_id
+        schema:
+          type: string
+        required: true
+      tags:
+      - 取引関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /service/logo/:
+    get:
+      operationId: service_logo_retrieve
+      description: 事業者が提供する電子マネーアプリのサービスロゴを取得する。
+      summary: サービスロゴ取得API
+      tags:
+      - サービス関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /service/privacy/:
+    get:
+      operationId: service_privacy_retrieve
+      description: 事業者が提供する電子マネーアプリのプライバシーポリシーを取得する。
+      summary: カードプライバシーポリシー取得API
+      tags:
+      - サービス関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /service/terms/:
+    get:
+      operationId: service_terms_retrieve
+      description: 事業者が提供する電子マネーアプリの利用規約を取得する。
+      summary: カード利用規約取得API
+      tags:
+      - サービス関連
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '200':
+          description: No response body
+components:
+  schemas:
+    BalancebyExpiration:
+      type: object
+      properties:
+        expires_at:
+          type: string
+          format: date
+        balance:
+          type: integer
+      required:
+      - balance
+      - expires_at
+    BalancebyUsageLimitserializer:
+      type: object
+      properties:
+        usage_limit_pattern:
+          type: integer
+        target:
+          $ref: '#/components/schemas/UsageLimitTarget'
+        balance:
+          type: integer
+      required:
+      - balance
+      - target
+      - usage_limit_pattern
+    Card:
+      type: object
+      properties:
+        card_config_name:
+          type: string
+        card_design:
+          type: string
+        card_number:
+          type: integer
+        status:
+          type: integer
+        provider_id:
+          type: string
+        transaction_limit_value:
+          $ref: '#/components/schemas/TransactionLimitValue'
+        transaction_result_value:
+          $ref: '#/components/schemas/TransactionResultValue'
+      required:
+      - card_config_name
+      - card_design
+      - card_number
+      - provider_id
+      - status
+      - transaction_limit_value
+      - transaction_result_value
+    CardBalance:
+      type: object
+      properties:
+        total_balance:
+          type: string
+          readOnly: true
+        prepaid_value:
+          $ref: '#/components/schemas/PrepaidValueBalance'
+        payable_bonus:
+          $ref: '#/components/schemas/PayableBonus'
+        product_exchange_bonus:
+          $ref: '#/components/schemas/ProductExchange'
+      required:
+      - payable_bonus
+      - prepaid_value
+      - product_exchange_bonus
+      - total_balance
+    Company:
+      type: object
+      properties:
+        company_number:
+          type: integer
+        company_name:
+          type: string
+      required:
+      - company_name
+      - company_number
+    PayableBonus:
+      type: object
+      properties:
+        total_balance:
+          type: integer
+        balance_by_usage_limit:
+          $ref: '#/components/schemas/BalancebyUsageLimitserializer'
+        balance_by_expiration:
+          $ref: '#/components/schemas/BalancebyExpiration'
+        to_be_granted_balance:
+          $ref: '#/components/schemas/ToBeGrantedBalance'
+      required:
+      - balance_by_expiration
+      - balance_by_usage_limit
+      - to_be_granted_balance
+      - total_balance
+    PrepaidValueBalance:
+      type: object
+      properties:
+        total_balance:
+          type: integer
+        balance_by_usage_limit:
+          $ref: '#/components/schemas/BalancebyUsageLimitserializer'
+        balance_by_expiration:
+          $ref: '#/components/schemas/BalancebyExpiration'
+        to_be_granted_balance:
+          $ref: '#/components/schemas/ToBeGrantedBalance'
+      required:
+      - balance_by_expiration
+      - balance_by_usage_limit
+      - to_be_granted_balance
+      - total_balance
+    ProductExchange:
+      type: object
+      properties:
+        total_balance:
+          type: integer
+        balance_by_usage_limit:
+          $ref: '#/components/schemas/BalancebyUsageLimitserializer'
+        balance_by_expiration:
+          $ref: '#/components/schemas/BalancebyExpiration'
+        to_be_granted_balance:
+          $ref: '#/components/schemas/ToBeGrantedBalance'
+      required:
+      - balance_by_expiration
+      - balance_by_usage_limit
+      - to_be_granted_balance
+      - total_balance
+    Shop:
+      type: object
+      properties:
+        shop_number:
+          type: integer
+        shop_name:
+          type: string
+      required:
+      - shop_name
+      - shop_number
+    ToBeGrantedBalance:
+      type: object
+      properties:
+        to_be_granted_at:
+          type: string
+          format: date
+        balance:
+          type: integer
+      required:
+      - balance
+      - to_be_granted_at
+    TransactionLimitValue:
+      type: object
+      properties:
+        value_charge_limit_for_day:
+          type: integer
+          default: 0
+        value_charge_limit_for_month:
+          type: integer
+          default: 0
+        value_payment_limit_for_day:
+          type: integer
+        value_payment_limit_for_month:
+          type: integer
+      required:
+      - value_payment_limit_for_day
+      - value_payment_limit_for_month
+    TransactionResultValue:
+      type: object
+      properties:
+        value_charge_result_for_day:
+          type: integer
+        value_charge_result_for_month:
+          type: integer
+        value_payment_result_for_day:
+          type: integer
+        value_payment_result_for_month:
+          type: integer
+      required:
+      - value_charge_result_for_day
+      - value_charge_result_for_month
+      - value_payment_result_for_day
+      - value_payment_result_for_month
+    UsageLimitTarget:
+      type: object
+      properties:
+        company:
+          $ref: '#/components/schemas/Company'
+        shop:
+          $ref: '#/components/schemas/Shop'
+      required:
+      - company
+      - shop
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: Session
+servers:
+- url: https://localhost:8000/card/api/v1
+  description: Local

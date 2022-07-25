@@ -1,0 +1,219 @@
+[
+  {
+    "id": "aw_12_2_case_1",
+    "name": "test no params",
+    "url": "/console/api/v1/companies/",
+    "params": null,
+    "body": null,
+    "result": {
+      "count": 2,
+      "next": null,
+      "previous": null,
+      "results": [
+        {
+          "corporate_number": "68498494",
+          "company_name": "test1",
+          "management_tags": ["tag1","tag2"],
+          "company_status": 1,
+          "remarks": "remark1"
+        },
+        {
+          "corporate_number": "656416",
+          "company_name": "test2",
+          "management_tags": [
+            "tag1"
+          ],
+          "company_status": 2,
+          "remarks": "remark2"
+        }
+      ]
+    },
+    "method": "GET",
+    "status_code": 200
+  },
+  {
+    "id": "aw_12_2_case_2",
+    "name": "test filter provider_id",
+    "url": "/console/api/v1/companies/",
+    "params": {"provider_id": "1e7ac16e213b45d0ac0eb26072f7f5c2"},
+    "body": null,
+    "result": {
+      "count": 1,
+      "next": null,
+      "previous": null,
+      "results": [
+        {
+            "corporate_number": "656416",
+            "company_name": "test2",
+            "management_tags": [
+                "tag1"
+            ],
+            "company_status": 2,
+            "remarks": "remark2"
+        }
+      ]
+    },
+    "method": "GET",
+    "status_code": 200
+  },
+  {
+    "id": "aw_12_2_case_3",
+    "name": "test validate provider_id",
+    "url": "/console/api/v1/companies/",
+    "params": {"provider_id": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"},
+    "body": null,
+    "result": {
+    },
+    "method": "GET",
+    "status_code": 400
+  },
+  {
+    "id": "aw_12_2_case_4",
+    "name": "test filter company_name",
+    "url": "/console/api/v1/companies/",
+    "params": {"company_name": "test1"},
+    "body": null,
+    "result": {
+      "count": 1,
+      "next": null,
+      "previous": null,
+      "results": [
+        {
+          "corporate_number": "68498494",
+          "company_name": "test1",
+          "management_tags": ["tag1","tag2"],
+          "company_status": 1,
+          "remarks": "remark1"
+        }
+      ]
+    },
+    "method": "GET",
+    "status_code": 200
+  },
+  {
+    "id": "aw_12_2_case_5",
+    "name": "test validate company_name",
+    "url": "/console/api/v1/companies/",
+    "params": {"company_name": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff" },
+    "body": null,
+    "result": {
+    },
+    "method": "GET",
+    "status_code": 400
+  },
+  {
+    "id": "aw_12_2_case_6",
+    "name": "test filter corporate_number",
+    "url": "/console/api/v1/companies/",
+    "params": {"corporate_number": "68498494"},
+    "body": null,
+    "result": {
+      "count": 1,
+      "next": null,
+      "previous": null,
+      "results": [
+        {
+          "corporate_number": "68498494",
+          "company_name": "test1",
+          "management_tags": ["tag1","tag2"],
+          "company_status": 1,
+          "remarks": "remark1"
+        }
+      ]
+    },
+    "method": "GET",
+    "status_code": 200
+  },
+  {
+    "id": "aw_12_2_case_7",
+    "name": "test validate corporate_number",
+    "url": "/console/api/v1/companies/",
+    "params": {"corporate_number": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"},
+    "body": null,
+    "result": {
+      },
+    "method": "GET",
+    "status_code": 400
+    }
+  ,
+  {
+    "id": "aw_12_2_case_8",
+    "name": "test filter management_tag",
+    "url": "/console/api/v1/companies/",
+    "params": {"management_tag": "tag1"},
+    "body": null,
+    "result": {
+      "count": 2,
+      "next": null,
+      "previous": null,
+      "results": [
+        {
+          "corporate_number": "656416",
+          "company_name": "test2",
+          "management_tags": [
+            "tag1"
+          ],
+          "company_status": 2,
+          "remarks": "remark2"
+        },
+        {
+          "corporate_number": "68498494",
+          "company_name": "test1",
+          "management_tags": ["tag1","tag2"],
+          "company_status": 1,
+          "remarks": "remark1"
+        }
+      ]
+    },
+    "method": "GET",
+    "status_code": 200
+  },
+  {
+    "id": "aw_12_2_case_9",
+    "name": "test validate management_tag",
+    "url": "/console/api/v1/companies/",
+    "params": {"management_tag": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"},
+    "body": null,
+    "result": {
+      },
+    "method": "GET",
+    "status_code": 400
+  },
+  {
+    "id": "aw_12_2_case_10",
+    "name": "test filter status",
+    "url": "/console/api/v1/companies/",
+    "params": {"status": 2 },
+    "body": null,
+    "result": {
+      "count": 1,
+      "next": null,
+      "previous": null,
+      "results": [
+        {
+          "corporate_number": "656416",
+          "company_name": "test2",
+          "management_tags": [
+            "tag1"
+          ],
+          "company_status": 2,
+          "remarks": "remark2"
+        }
+      ]
+    },
+    "method": "GET",
+    "status_code": 200
+  },
+  {
+    "id": "aw_12_2_case_11",
+    "name": "test validate status",
+    "url": "/console/api/v1/companies/",
+    "params": {"status": "abcxyz"},
+      "body": null,
+      "result": {
+      },
+      "method": "GET",
+      "status_code": 400
+  }
+
+]

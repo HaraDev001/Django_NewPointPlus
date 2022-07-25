@@ -1,0 +1,42 @@
+version: 0.2
+
+env:
+  secrets-manager:
+    DOCKER_USER: DockerHubSecrets:name
+    DOCKER_TOKEN: DockerHubSecrets:token
+
+phases:
+  pre_build:
+    commands:
+      - echo ECRへのプッシュ準備...
+      - REGION_URL=${AWS_ACCOUNT_ID}.dkr.ecr.${REGION}.amazonaws.com
+      - aws ecr get-login-password --region $REGION | docker login --username AWS --password-stdin $REGION_URL
+      - DJANGO_REPOSITORY_URI=${REGION_URL}/${DJANGO_REPO_NAME}
+      - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+      - IMAGE_TAG=${COMMIT_HASH:=latest}
+      - ENV_PATH=s3://${ENV_FILE_S3_BUCK}/env/.env.${ENV}
+      - aws s3 cp $ENV_PATH ./django/.env --region $REGION
+  build:
+    commands:
+      - echo ビルドの開始日時 `date`
+      - echo DockerImagesのビルド...
+      - echo $DOCKER_TOKEN | docker login -u $DOCKER_USER --password-stdin
+      - docker build -t $DJANGO_REPOSITORY_URI:latest -f django/Dockerfile .
+      - docker tag $DJANGO_REPOSITORY_URI:latest $DJANGO_REPOSITORY_URI:$IMAGE_TAG
+  post_build:
+    commands:
+      - echo ビルド完了日時 `date`
+      - echo DockerImagesのプッシュ...
+      - docker push $DJANGO_REPOSITORY_URI:latest
+      - docker push $DJANGO_REPOSITORY_URI:$IMAGE_TAG
+      - echo image definitions file の作成...
+      - echo "[{\"name\":\"django\",\"imageUri\":\"${DJANGO_REPOSITORY_URI}:${IMAGE_TAG}\"}]" > djangoimagedefinitions.json
+      # 文字数制限がCodePipelineの方であるため、足りなくなった場合は文字数を調整してください。
+      # Member must have length less than or equal to 1000, Member must have length greater than or equal to 1.
+      # - cat task_definition_template.json | sed -e s@\<REGION\>@${REGION}@g -e s@\<ENV_FILE_S3_BUCK\>@${ENV_FILE_S3_BUCK}@g -e s@\<ENV_FILE_S3_DIR\>@${ENV_FILE_S3_DIR}@g -e s@\<ECS_STACK\>@${ECS_STACK}@g -e s@\<PHP_IMAGE_NAME\>@${PHP_REPOSITORY_URI}:${IMAGE_TAG}@ -e s@\<NGINX_IMAGE_NAME\>@${NGINX_REPOSITORY_URI}:${IMAGE_TAG}@ -e s@\<TASK_DEF_EXE_ROLE_ARN\>@${TASK_DEF_EXE_ROLE_ARN}@ -e s@\<TASK_DEF_ROLE_ARN\>@${TASK_DEF_ROLE_ARN}@ -e s@\<TASK_DEF_ARN\>@${TASK_DEF_ARN}@ > taskdef.json
+artifacts:
+    files:
+      - djangoimagedefinitions.json
+      # - taskdef.json
+      # # 3MBの制限にひっかかるのでartifactsに含める
+      # - appspec.yaml

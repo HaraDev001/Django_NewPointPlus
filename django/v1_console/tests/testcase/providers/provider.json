@@ -1,0 +1,153 @@
+[
+  {
+    "id": "aw_11_3_case_1",
+    "name": "get all",
+    "url": "/console/api/v1/providers/",
+    "params": null,
+    "body": null,
+    "result": {
+      "count": 2,
+      "next": null,
+      "previous": null,
+      "results": [
+        {
+          "provider_id": "1e7ac16e-213b-45d0-ac0e-b26072f7f5c2",
+          "provider_name": "test1",
+          "provider_status": 0,
+          "provider_owner_name": "test1",
+          "use_service": {
+              "is_physical_card_enable": true
+          },
+          "use_account": {
+              "is_value_enable": true,
+              "is_payable_bonus_enable": true,
+              "is_exchange_bonus_enable": true
+          },
+          "use_web": {
+              "balance_inquiry_page_enable": true
+          }
+        },
+        {
+          "provider_id": "c259a030-4730-4ccc-9619-3e15f6e4da58",
+          "provider_name": "test2",
+          "provider_status": 0,
+          "provider_owner_name": "test2",
+          "use_service": {
+              "is_physical_card_enable": true
+          },
+          "use_account": {
+              "is_value_enable": true,
+              "is_payable_bonus_enable": true,
+              "is_exchange_bonus_enable": true
+          },
+          "use_web": {
+              "balance_inquiry_page_enable": true
+          }
+        }
+      ]
+    },
+    "method": "GET",
+    "status_code": 200
+  },
+  {
+    "id": "aw_11_3_case_2",
+    "name": "filter by provider_id",
+    "url": "/console/api/v1/providers/",
+    "params": {"provider_id": "1e7ac16e-213b-45d0-ac0e-b26072f7f5c2"},
+    "body": null,
+    "result": {
+      "count": 1,
+      "next": null,
+      "previous": null,
+      "results": [
+        {
+          "provider_id": "1e7ac16e-213b-45d0-ac0e-b26072f7f5c2",
+          "provider_name": "test1",
+          "provider_status": 0,
+          "provider_owner_name": "test1",
+          "use_service": {
+              "is_physical_card_enable": true
+          },
+          "use_account": {
+              "is_value_enable": true,
+              "is_payable_bonus_enable": true,
+              "is_exchange_bonus_enable": true
+          },
+          "use_web": {
+              "balance_inquiry_page_enable": true
+          }
+        }
+      ]
+    },
+    "method": "GET",
+    "status_code": 200
+  },
+  {
+    "id": "aw_11_3_case_3",
+    "name": "filter by provider_name",
+    "url": "/console/api/v1/providers/",
+    "params": {"provider_name": "st1"},
+    "body": null,
+    "result": {
+      "count": 1,
+      "next": null,
+      "previous": null,
+      "results": [
+        {
+          "provider_name": "test1"
+        }
+      ]
+    },
+    "method": "GET",
+    "status_code": 200
+  },
+  {
+    "id": "aw_11_3_case_4",
+    "name": "filter by status",
+    "url": "/console/api/v1/providers/",
+    "params": {"status": 1},
+    "body": null,
+    "result": {
+      "count": 0,
+      "next": null,
+      "previous": null,
+      "results": [
+      ]
+    },
+    "method": "GET",
+    "status_code": 200
+  },
+  {
+    "id": "aw_11_3_case_5",
+    "name": "check status validate",
+    "url": "/console/api/v1/providers/",
+    "params": {"status": "ffff"},
+    "body": null,
+    "result": {
+    },
+    "method": "GET",
+    "status_code": 400
+  },
+  {
+    "id": "aw_11_3_case_6",
+    "name": "check provider_id validate",
+    "url": "/console/api/v1/providers/",
+    "params": {"provider_id": "ffff"},
+    "body": null,
+    "result": {
+    },
+    "method": "GET",
+    "status_code": 400
+  },
+  {
+    "id": "aw_11_3_case_7",
+    "name": "check provider_name validate",
+    "url": "/console/api/v1/providers/",
+    "params": {"provider_name": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"},
+    "body": null,
+    "result": {
+    },
+    "method": "GET",
+    "status_code": 400
+  }
+]

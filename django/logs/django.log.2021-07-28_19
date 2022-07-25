@@ -1,0 +1,134 @@
+[2021-07-28 14:21:55] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:25:16] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:26:05] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:26:26] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:28:05] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:28:31] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:30:24] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:30:54] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:31:46] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:31:59] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:32:12] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:32:30] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:33:33] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:34:04] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:35:39] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:36:41] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:37:04] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:37:14] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:37:38] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:38:16] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:38:55] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:39:13] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 14:39:13] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 14:39:13] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 14:44:45] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 14:44:45] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 14:44:45] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 15:06:47] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 15:06:47] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 15:06:47] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 15:18:28] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 15:18:28] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 15:18:29] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 15:46:49] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 15:46:49] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 15:46:49] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 15:57:10] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 15:57:10] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 15:57:10] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 16:04:27] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 16:04:27] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 16:04:27] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 16:05:00] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 16:05:00] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 16:05:00] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 16:27:05] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 16:27:06] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 16:27:06] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 16:29:27] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 16:29:27] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 16:29:27] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 16:32:48] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 16:32:49] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 16:32:49] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 16:33:44] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 16:33:44] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 16:33:44] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 16:36:07] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 16:36:07] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 16:36:07] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 16:37:33] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 16:37:33] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 16:37:33] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 16:40:39] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 16:40:39] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 16:40:39] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 16:47:15] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 16:47:15] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 16:47:15] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 16:48:50] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 16:48:51] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 16:48:51] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 16:49:06] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 16:49:06] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 16:49:06] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 16:55:08] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 16:55:08] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 16:55:08] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 16:59:36] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 16:59:36] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 16:59:36] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 17:01:21] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 17:01:21] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 17:01:21] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 17:01:55] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 17:01:55] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 17:01:55] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 17:02:28] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 17:02:28] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 17:02:28] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 17:03:53] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 17:03:53] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 17:03:54] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 17:06:24] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 17:06:24] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 17:06:24] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 17:09:55] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 17:09:55] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 17:09:55] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 17:10:58] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 17:10:59] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 17:10:59] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 17:16:39] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 17:16:39] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 17:16:39] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 17:17:34] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 17:17:34] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 17:17:34] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 17:33:07] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 17:33:07] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 17:33:07] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 17:33:22] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 17:33:22] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 17:33:22] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 18:06:47] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 18:06:47] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 18:06:47] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 18:07:50] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 18:07:50] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 18:07:50] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 18:55:52] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 18:55:52] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 18:55:52] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 18:56:44] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 18:56:44] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 18:56:44] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 18:59:29] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 18:59:29] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 18:59:29] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 19:27:28] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 19:27:28] [DEBUG] [selector_events] Using selector: EpollSelector
+[2021-07-28 19:28:32] [DEBUG] [environ] Read environment variables from: /usr/src/app/.env
+[2021-07-28 19:28:32] [DEBUG] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+[2021-07-28 19:28:32] [DEBUG] [selector_events] Using selector: EpollSelector

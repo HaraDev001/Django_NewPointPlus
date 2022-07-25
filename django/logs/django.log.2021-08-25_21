@@ -1,0 +1,163 @@
+ [DEBUG] [2021-08-25 21:27:53] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-25 21:27:53] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-25 21:27:53] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-25 21:27:53] [utils] (0.001) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-25 21:27:53] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-25 21:27:53] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-25 21:27:53] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.121) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.002) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.036) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.052) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.052) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',)
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'admin' AND `django_content_type`.`model` = 'logentry') LIMIT 21; args=('admin', 'logentry')
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.005) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (1) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(1,)
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',)
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',)
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'permission') LIMIT 21; args=('auth', 'permission')
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'group') LIMIT 21; args=('auth', 'group')
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'user') LIMIT 21; args=('auth', 'user')
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (2, 3, 4) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(2, 3, 4)
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',)
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',)
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'contenttypes' AND `django_content_type`.`model` = 'contenttype') LIMIT 21; args=('contenttypes', 'contenttype')
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (5) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(5,)
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',)
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',)
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'sessions' AND `django_content_type`.`model` = 'session') LIMIT 21; args=('sessions', 'session')
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (6) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(6,)
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',)
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'rest_framework_simplejwt'; args=('rest_framework_simplejwt',)
+ [DEBUG] [2021-08-25 21:27:54] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'rest_framework_simplejwt'; args=('rest_framework_simplejwt',)
+ [DEBUG] [2021-08-25 21:27:55] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-25 21:27:55] [utils] (0.000) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-25 21:27:55] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-25 21:27:55] [utils] (0.036) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-25 21:30:51] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-25 21:30:52] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-25 21:30:52] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-25 21:30:57] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-25 21:30:57] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-25 21:30:57] [utils] (0.059) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-25 21:30:57] [utils] (0.002) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-25 21:31:12] [selector_events] Using selector: EpollSelector
+ [DEBUG] [2021-08-25 21:31:17] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-25 21:31:17] [utils] (0.001) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-25 21:31:17] [utils] (0.002) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None
+ [DEBUG] [2021-08-25 21:31:17] [environ] Read environment variables from: /usr/src/app/.env
+ [DEBUG] [2021-08-25 21:31:18] [environ] get 'DEBUG' casted as '<class 'bool'>' with default '<NoValue>'
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.036) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.039) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.040) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.039) SHOW FULL TABLES; args=None
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=()
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.002) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',)
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'admin' AND `django_content_type`.`model` = 'logentry') LIMIT 21; args=('admin', 'logentry')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.002) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (1) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(1,)
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',)
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',)
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'permission') LIMIT 21; args=('auth', 'permission')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'group') LIMIT 21; args=('auth', 'group')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'user') LIMIT 21; args=('auth', 'user')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (2, 3, 4) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(2, 3, 4)
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',)
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',)
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'contenttypes' AND `django_content_type`.`model` = 'contenttype') LIMIT 21; args=('contenttypes', 'contenttype')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (5) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(5,)
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',)
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',)
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'sessions' AND `django_content_type`.`model` = 'session') LIMIT 21; args=('sessions', 'session')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (6) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(6,)
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',)
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'rest_framework_simplejwt'; args=('rest_framework_simplejwt',)
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'rest_framework_simplejwt'; args=('rest_framework_simplejwt',)
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'database'; args=('database',)
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'bonus') LIMIT 21; args=('database', 'bonus')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'businesstype') LIMIT 21; args=('database', 'businesstype')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'campaign') LIMIT 21; args=('database', 'campaign')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'card') LIMIT 21; args=('database', 'card')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'cardconfig') LIMIT 21; args=('database', 'cardconfig')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'company') LIMIT 21; args=('database', 'company')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'consoleaccount') LIMIT 21; args=('database', 'consoleaccount')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'consumer') LIMIT 21; args=('database', 'consumer')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'corpinfo') LIMIT 21; args=('database', 'corpinfo')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'group') LIMIT 21; args=('database', 'group')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'managementtag') LIMIT 21; args=('database', 'managementtag')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'officialposition') LIMIT 21; args=('database', 'officialposition')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'permission') LIMIT 21; args=('database', 'permission')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'prefectures') LIMIT 21; args=('database', 'prefectures')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'provider') LIMIT 21; args=('database', 'provider')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'role') LIMIT 21; args=('database', 'role')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'shop') LIMIT 21; args=('database', 'shop')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'terminal') LIMIT 21; args=('database', 'terminal')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'transactioncategory') LIMIT 21; args=('database', 'transactioncategory')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'usecondition') LIMIT 21; args=('database', 'usecondition')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'value') LIMIT 21; args=('database', 'value')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'useconditiontransactioncategoryrelation') LIMIT 21; args=('database', 'useconditiontransactioncategoryrelation')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'useconditionshoprelation') LIMIT 21; args=('database', 'useconditionshoprelation')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'useconditionmanagementtagrelation') LIMIT 21; args=('database', 'useconditionmanagementtagrelation')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'useconditioncompanyrelation') LIMIT 21; args=('database', 'useconditioncompanyrelation')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'transaction') LIMIT 21; args=('database', 'transaction')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'request') LIMIT 21; args=('database', 'request')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'permissionmanagement') LIMIT 21; args=('database', 'permissionmanagement')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'cardtransaction') LIMIT 21; args=('database', 'cardtransaction')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'cardconfigpayment') LIMIT 21; args=('database', 'cardconfigpayment')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'cardconfigcharge') LIMIT 21; args=('database', 'cardconfigcharge')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'campaigncardconfigrelation') LIMIT 21; args=('database', 'campaigncardconfigrelation')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'campaignbonusconfig') LIMIT 21; args=('database', 'campaignbonusconfig')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'campaignapplyruletransactiondetail') LIMIT 21; args=('database', 'campaignapplyruletransactiondetail')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'campaignapplyruletransactioncategory') LIMIT 21; args=('database', 'campaignapplyruletransactioncategory')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'campaignapplyruleplace') LIMIT 21; args=('database', 'campaignapplyruleplace')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'campaignapplyrulecardactivatedate') LIMIT 21; args=('database', 'campaignapplyrulecardactivatedate')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'campaignapplyruleactivetiming') LIMIT 21; args=('database', 'campaignapplyruleactivetiming')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.000) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'database' AND `django_content_type`.`model` = 'applycampaign') LIMIT 21; args=('database', 'applycampaign')
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.019) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (29, 30, 31, 34, 36, 38, 41, 42, 43, 44, 45, 47, 48, 49, 51, 54, 56, 57, 58, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(29, 30, 31, 34, 36, 38, 41, 42, 43, 44, 45, 47, 48, 49, 51, 54, 56, 57, 58, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79)
+ [DEBUG] [2021-08-25 21:31:18] [utils] (0.001) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'database'; args=('database',)

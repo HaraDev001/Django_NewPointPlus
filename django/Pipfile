@@ -1,0 +1,30 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+mypy = "*"
+faker = "*"
+freezegun = "*"
+
+[packages]
+Django = "==3.2.2"
+djangorestframework = "*"
+django-filter = "*"
+django-cors-headers = "*"
+mysqlclient = "*"
+django-environ = "*"
+uwsgi = "*"
+boto3 = "*"
+watchtower = "*"
+pyyaml = "*"
+python-dateutil = "*"
+drf-spectacular = "*"
+authlib = "*"
+djangorestframework-simplejwt = "*"
+pycognito = "*"
+
+[requires]
+python_version = "3.8"
